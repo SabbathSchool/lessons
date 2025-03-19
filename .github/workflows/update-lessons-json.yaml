@@ -3,6 +3,7 @@ name: Content Sync and Update
 on:
   push:
     branches: [upload]
+  workflow_dispatch:
 
 jobs:
   sync-and-update:
