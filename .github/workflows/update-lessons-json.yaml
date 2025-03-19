@@ -1,25 +1,25 @@
 name: Content Sync and Update
 
 on:
-  push:
+  workflow_dispatch:
+  schedule:
+    # Midnight(UTC+3)
+    - cron: '0 21 * * *' 
 
 jobs:
   sync-and-update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout upload branch
-        if: github.ref == 'refs/heads/upload' 
         uses: actions/checkout@v4
         with:
           ref: upload
           fetch-depth: 0
 
       - name: Setup Node.js
-        if: github.ref == 'refs/heads/upload' 
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       - name: Run Content Sync and Update Action
-        if: github.ref == 'refs/heads/upload'
         uses: churnisa/actions/ssl-content-sync@master
