@@ -101,7 +101,7 @@ def combine_titles():
                 decade, year, quarter, language = match.groups()
                 
                 # Create path for title.json that would be created
-                original_path = f"{decade}/{year}/{quarter}/{language}/content.json"
+                original_path = f"{decade}/{year}/{quarter}/{language}/contents.json"
                 
                 # Write commented file path
                 combined.write(f"<!-- This is a single file -->\n")
