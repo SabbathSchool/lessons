@@ -95,9 +95,14 @@
       "quarter": "Q1-Q2",
       "type": "biannual",
       "description": "Old Testament History - Sabbath School Lesson for 1888 Q1-Q2",
-      "weeks": 26,
+      "weeks": 27,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1888/h1"
+      "slug": "/lessons/1888/h1",
+      "languages": [
+        "en",
+        "luo",
+        "swa"
+      ]
     },
     {
       "id": 10,
