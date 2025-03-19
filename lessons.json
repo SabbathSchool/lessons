@@ -106,9 +106,14 @@
       "quarter": "Q3",
       "type": "quarterly",
       "description": "The Third Angel's Message - Sabbath School Lesson for 1888 Q3",
-      "weeks": 26,
+      "weeks": 16,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1888/q3"
+      "slug": "/lessons/1888/q3",
+      "languages": [
+        "en",
+        "luo",
+        "swa"
+      ]
     },
     {
       "id": 11,
@@ -117,9 +122,14 @@
       "quarter": "Q4",
       "type": "quarterly",
       "description": "Second Epistle of Peter - Sabbath School Lesson for 1888 Q4",
-      "weeks": 26,
+      "weeks": 10,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1888/q4"
+      "slug": "/lessons/1888/q4",
+      "languages": [
+        "en",
+        "luo",
+        "swa"
+      ]
     },
     {
       "id": 12,
