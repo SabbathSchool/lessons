@@ -1,0 +1,23 @@
+name: Content Sync and Update
+
+on:
+  push:
+    branches: [upload]
+
+jobs:
+  sync-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout upload branch
+        uses: actions/checkout@v4
+        with:
+          ref: upload
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run Content Sync and Update Action
+        uses: churnisa/actions/ssl-content-sync@master

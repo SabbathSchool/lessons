@@ -1,0 +1,38 @@
+# SOMO 5
+Novemba 24, 1888
+
+## 2 PETRO 1:16-21
+
+1. Katika waraka wake wa pili, Petro anasema alikuwa amewajulisha watu nini hapo awali? 2 Petro 1:16.
+2. Ni kwa uhakika gani Petro angeweza kuzungumza juu ya utukufu wa kuja kwa Kristo? Ibid.
+3. Ni lini alikuwa shahidi wa umajesty wa Kristo kama utakavyodhihirishwa wakati wa kuja kwake mara ya pili? Mistari 17, 18.
+4. Toa maelezo ya tukio hili. Mt. 17:1-5; Marko 9:2-8; Luka 9:28-36.
+5. Yesu alikuwa amesema nini hapo awali ambayo pia inaonyesha kwamba kugeuka sura kulikuwa mfano wa kuja kwa pili kwa Kristo? Mt. 16:28; Marko 9:1.
+6. Je, inawezekana kuwa na ushahidi mzuri zaidi kuliko ule uliotolewa kwa Petro, Yakobo, na Yohana? 2 Petro 1:19.
+7. Neno la unabii linatufanyia ofisi gani? Ibid. Zab. 119:105.
+8. Litaendelea kutuangazia mpaka lini ili kutuonyesha njia? 2 Petro 1:19, sehemu ya mwisho.
+9. Tunaishi katika kipindi gani, kwamba nuru inahitajika? Rum. 13:12; Isa. 60:2.
+10. Ni nini kimeleta giza hili la usiku? Rum. 1:21.
+11. Nyota ya asubuhi ni nani? Ufu. 22:16; Yohana 8:12.
+12. Je, unabii wowote unaweza kutafsiriwa kwa maarifa yasiyo na msaada ya mtu yeyote? 2 Petro 1:20.
+13. Kwa nini hapana? Mstari 21.
+14. Nuru ya unabii ina uhusiano gani na nyota ya asubuhi, nuru ya ulimwengu? 1 Petro 1:10, 11.
+15. Kwa nini ulimwengu wote hauwezi kuona nuru hii? 1 Kor. 2:14; 2 Kor. 4:3, 4.
+16. Ni msaada gani lazima tuwe nao ili kuelewa? 1 Kor. 2:9, 10.
+17. Tukiwa na msaada wa Roho, tunapaswa kufanyaje katika mafunzo yetu? Mstari 13, sehemu ya mwisho.
+
+## MAELEZO
+
+Kwa kawaida inafikiriwa kwamba mtu aliyekuwa shahidi wa jicho wa tukio lolote ndiye mtu anayestahili zaidi kutoa ushahidi kulihusu. Na kwa hakika ni bora kuliko ushahidi unaopatikana kwa kuambiwa na mtu mwingine. Kwa hiyo Petro anatuahakikishia kwamba hakuwa amedanganywa na hadithi zilizotengenezwa kwa ujanja alipowafahamisha juu ya uweza na kuja kwa Bwana wetu Yesu Kristo, kwa sababu yeye mwenyewe alikuwa shahidi wa jicho wa ukuu wake. Kisha anarejelea tukio la kugeuka sura, kwa namna inayoonyesha kuwa hilo ndilo alilolikuwa akifikiri kama kuonyesha nguvu na utukufu wa Kristo katika kuja kwake mara ya pili. Na hii inapatana na kile Mwokozi wetu alisema alipotabiri kugeuka sura.
+
+"Kristo, aliye uzima wetu, atakapoonekana," kutakuwa na makundi mawili ya wenye haki watakaoonekana pamoja naye katika utukufu - wale waliolala, na wale walio hai na wanaosalia mpaka kuja kwa Bwana. Wafu watafufuliwa, na walio hai watabadilishwa, na hivyo pamoja watatukuzwa. Ndivyo ilivyokuwa wakati Kristo alipogeuka sura. Eliya alikuwepo kama mwakilishi wa wale watakaobadilishwa bila kuona mauti, na Musa, kama mwakilishi wa wale wanaolala katika Yesu, na ambao Mungu atawaleta pamoja naye kutoka kwa wafu. Kwamba Musa alikuwa amefufuliwa kutoka kwa wafu alipoonekana na Eliya juu ya mlima, inathibitishwa (1) na ukweli kwamba kama hakuwa amefufuliwa kutoka kwa wafu asingeweza kuwa hapo, kwani "wafu hawajui kitu chochote." Mhu. 9:5. Tazama pia Mhu. 9:6, 10; Zab. 6:5; 115:17; 146:3, 4; Isa. 38:10, 11, 18, 19, n.k. (2) Yuda anasema kwamba Mikaeli (Kristo) alishindana na Shetani kuhusu mwili wa Musa. Yuda 9. Shetani ana nguvu ya mauti (Ebr. 2:14) na hufunga ndani ya gereza lake (kaburi) wote anaoweza, akidai kwamba ni mateka wake halali (tazama Isa. 14:12-17); na ingawa Kristo ameleta funguo za kaburi, Shetani hakubali kwa hiari yeyote kutoka katika nguvu zake. Haiwezekani kuwa na kitu chochote ambacho kingesababisha ugomvi kati ya Kristo na Shetani kuhusu mwili wa Musa, isipokuwa suala la ufufuo wake. (3) Ikiwa Musa hakuwa amefufuliwa kutoka kwa wafu, kugeuka sura hakungekuwa kile ambacho Kristo na Petro walikitangaza kuwa - mfano wa kuja kwa pili kwa Kristo.
+
+Lakini licha ya ukweli kwamba Petro alikuwa amekuwa shahidi wa jicho wa "uweza na kuja" kwa Kristo, na angeweza kushuhudia kutoka kwa maarifa ya kibinafsi, anasema, "Tena tunalo neno la unabii lililo imara zaidi, ambalo mwafanya vema mkiliangalia, kama taa ing'aayo mahali penye giza, mpaka kutakapopambazuka, na nyota ya asubuhi kuchomoza mioyoni mwenu." Toleo la Revised Version linatoa mstari huu kama ifuatavyo: "Tunalo neno la unabii lililotengenezwa kuwa imara zaidi"; lakini hatuwezi kukubali tafsiri hii. Alford anasema kwamba tafsiri hii ni kwa msingi,-
+
+"Kwamba kiyashirio huashiria kile kilichotangulia kama sababu yake, kama vile kama ingesemwa Kwa hiyo, au Sasa, au Tangu sasa tunayo, n.k.; yaani, 'kwa sababu ya sauti hii kutoka Mbinguni ambayo tumesikia, tunashikilia kwa nguvu zaidi, au tunakihesabu [kumiliki] kwa hakika zaidi neno la kinabii, kama sasa likiwa limeanza kutimizwa katika masikio yetu wenyewe.' Pingamizi kubwa kwa mtazamo kama huo ni kukosekana kwa viungo vyovyote vya kiunganishi kama vile vinavyotolewa hapo juu. Ni kweli kwamba mtume angeweza kuviacha [kama alivyofanya kwa hakika, na, kwa kudhani, kwa makusudi]; lakini hata ukidhania hivyo, ni kinyume zaidi na mtazamo huo, kwamba ikiwa hivyo ndivyo nguvu ya kulinganisha, wazo haliendelelezwi kabisa katika mistari inayofuata."—New Testament for English Readers.
+
+Inaweza kuongezwa zaidi kwamba hakuna kitu kinachoweza kufanya neno la unabii kuwa imara zaidi kuliko lilivyokuwa wakati lilipotoka mara ya kwanza kutoka kwa midomo ya watu watakatifu ambao Mungu aliwavuvia. Maana inaonekana imetolewa kikamilifu katika toleo la kawaida, kwamba neno la hakika la unabii ni la hakika zaidi kuliko maono yoyote. Macho yetu yanaweza kudanganya, lakini neno la Mungu "linaishi na kudumu milele."
+
+Unabii ni nuru inayotoka moja kwa moja kwa Mungu, ambaye mwenyewe ni nuru. Kwake "hakuna giza kabisa." 1 Yohana 1:5. Mbinguni, ambako mapenzi ya Mungu yanatekelezwa kikamilifu, kote ni nuru. Katika Yerusalemu Mpya, wakazi "hawahitaji taa, wala mwanga wa jua; kwani Bwana Mungu huwaangazia." Ufu. 22:5. Na wakati mapenzi ya Mungu yatakapotimizwa duniani kama ilivyo mbinguni, dunia nzima itaangazwa na utukufu wa Mungu. "Mataifa yao waliookolewa watatembea katika nuru" inayotoka katika mji wa Mungu. Ufu. 21:23, 24. Lakini dhambi imemtenga mwanadamu na Mungu, hivyo giza sasa linafunika dunia. Unabii unakuja kama taa ya mwongozo kuwaongoza watu kwenye chanzo cha nuru. Kama ilivyo kwa miali kutoka kwenye taa ya mbali, nuru ya kinabii inaweza kwanza kuwa dhaifu; lakini kadri tunavyokaribia chanzo cha nuru, nuru itazidi kuwa angavu; na hivyo kwa wale wanaosikiliza, inaweza kusemwa kweli kwamba njia yao ni "kama nuru ing'aayo, inayong'aa zaidi na zaidi mpaka siku kamili." Mith. 4:18.
+
+"Hakuna unabii wa maandiko ulio wa tafsiri ya mtu binafsi." Hii inamaanisha kwamba Maandiko ni tafsiri yake yenyewe. Kwa kila unabii uliomo katika Biblia, ufunguo unapatikana pia huko, na kwa hiyo kila unabii ni wa tafsiri ya umma - tafsiri iko wazi kwa mtu mmoja kama ilivyo kwa mwingine. Wakati mtu yeyote anatoa mtazamo wowote kama ufafanuzi wa unabii fulani, mtu mnyenyekevu zaidi ana haki ya kupinga ufafanuzi wake, haijalishi anaweza kuwa na ujuzi kiasi gani. Ikiwa hawezi kuleta maandiko kwa mamlaka kwa tafsiri yake, lazima ikataliwe, au angalau iwekwe kwenye kusimamishwa hadi mtu mwenye hekima zaidi ataweza kupata sababu ya Biblia kwa nadharia hiyo. Toleo la Peshito Syriac linatoa mstari hivi: "Hakuna unabii ambao ni ufafanuzi wa maandishi yake wenyewe." Wazo ni sawa na lile lililoelezwa hapo juu. Hakuna mtu anayeweza kusoma unabii na kusema kwa nguvu zake mwenyewe zisizo na msaada, kutokana na kusoma kwake, linamaanisha nini. Lazima atafute ufafanuzi kwenye kifungu kingine, pengine katika sura ile ile (kama ilivyo katika Daniel 7), lakini bado tofauti na unabii wenyewe. Mambo ya kiroho lazima yalinganishwe na mambo ya kiroho.
