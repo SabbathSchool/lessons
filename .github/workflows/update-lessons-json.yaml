@@ -2,7 +2,6 @@ name: Content Sync and Update
 
 on:
   push:
-    branches: ["*"]
 
 jobs:
   sync-and-update:
