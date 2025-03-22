@@ -145,7 +145,10 @@
       "description": "Old Testament History - Sabbath School Lesson for 1889 Q1-Q2",
       "weeks": 26,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1889/h1"
+      "slug": "/lessons/1889/h1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 13,
@@ -156,7 +159,10 @@
       "description": "Tithes and Offerings - Sabbath School Lesson for 1889 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1889/q1"
+      "slug": "/lessons/1889/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 14,
@@ -167,7 +173,10 @@
       "description": "Letter to the Hebrews - Sabbath School Lesson for 1889 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1889/q2"
+      "slug": "/lessons/1889/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 15,
@@ -178,7 +187,10 @@
       "description": "Letter to the Hebrews - Sabbath School Lesson for 1890 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1890/q1"
+      "slug": "/lessons/1890/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 16,
@@ -189,7 +201,10 @@
       "description": "Letter to the Hebrews - Sabbath School Lesson for 1890 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1890/q2"
+      "slug": "/lessons/1890/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 17,
@@ -200,7 +215,10 @@
       "description": "Old Testament History - Sabbath School Lesson for 1890 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1890/q3"
+      "slug": "/lessons/1890/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 18,
@@ -211,7 +229,10 @@
       "description": "Old Testament History - Sabbath School Lesson for 1890 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1890/q4"
+      "slug": "/lessons/1890/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 19,
@@ -222,7 +243,10 @@
       "description": "Book of James - Sabbath School Lesson for 1891 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1891/q1"
+      "slug": "/lessons/1891/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 20,
@@ -233,7 +257,10 @@
       "description": "Epistle to the Philippians - Sabbath School Lesson for 1891 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1891/q2"
+      "slug": "/lessons/1891/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 21,
@@ -255,7 +282,10 @@
       "description": "Gospel by Mark - Sabbath School Lesson for 1891 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1891/q4"
+      "slug": "/lessons/1891/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 23,
@@ -266,7 +296,10 @@
       "description": "Lessons From the Old Testament - Sabbath School Lesson for 1892 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1892/q1"
+      "slug": "/lessons/1892/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 24,
@@ -277,7 +310,10 @@
       "description": "Lessons From the Old Testament - Sabbath School Lesson for 1892 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1892/q2"
+      "slug": "/lessons/1892/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 25,
@@ -288,7 +324,10 @@
       "description": "Lessons from the Acts of the Apostles - Sabbath School Lesson for 1892 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1892/q3"
+      "slug": "/lessons/1892/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 26,
@@ -299,7 +338,10 @@
       "description": "Lessons from the Acts of the Apostles - Sabbath School Lesson for 1892 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1892/q4"
+      "slug": "/lessons/1892/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 27,
@@ -310,7 +352,10 @@
       "description": "The Word and Spirit - Sabbath School Lesson for 1893 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1893/q1"
+      "slug": "/lessons/1893/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 28,
@@ -321,7 +366,10 @@
       "description": "Coming of the Lord - Sabbath School Lesson for 1893 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1893/q2"
+      "slug": "/lessons/1893/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 29,
@@ -330,9 +378,12 @@
       "quarter": "Q3",
       "type": "quarterly",
       "description": "First Epistle of Peter - Sabbath School Lesson for 1893 Quarter 3",
-      "weeks": 13,
+      "weeks": 14,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1893/q3"
+      "slug": "/lessons/1893/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 30,
@@ -343,7 +394,10 @@
       "description": "First Epistle of John - Sabbath School Lesson for 1893 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1893/q4"
+      "slug": "/lessons/1893/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 31,
@@ -354,7 +408,10 @@
       "description": "A Study of the Book of Luke - Sabbath School Lesson for 1894 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1894/q1"
+      "slug": "/lessons/1894/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 32,
@@ -365,7 +422,10 @@
       "description": "A Study of the Book of Luke - Sabbath School Lesson for 1894 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1894/q2"
+      "slug": "/lessons/1894/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 33,
@@ -376,7 +436,10 @@
       "description": "A Study of the Book of Luke - Sabbath School Lesson for 1894 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1894/q3"
+      "slug": "/lessons/1894/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 34,
@@ -387,7 +450,10 @@
       "description": "A Study of the Book of Luke - Sabbath School Lesson for 1894 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1894/q4"
+      "slug": "/lessons/1894/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 35,
@@ -398,7 +464,10 @@
       "description": "The Sanctuary of the Bible - Sabbath School Lesson for 1895 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1895/q1"
+      "slug": "/lessons/1895/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 36,
@@ -409,7 +478,10 @@
       "description": "Book of Daniel - Sabbath School Lesson for 1895 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1895/q2"
+      "slug": "/lessons/1895/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 37,
@@ -420,7 +492,10 @@
       "description": "Sabbath and Tithing - Sabbath School Lesson for 1895 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1895/q3"
+      "slug": "/lessons/1895/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 38,
@@ -431,7 +506,10 @@
       "description": "Religious Liberty - Sabbath School Lesson for 1895 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1895/q4"
+      "slug": "/lessons/1895/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 39,
@@ -442,7 +520,10 @@
       "description": "The Great Three-fold Message of Revelation Fourteen - Sabbath School Lesson for 1896 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1896/q1"
+      "slug": "/lessons/1896/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 40,
@@ -453,7 +534,10 @@
       "description": "Life in Christ and the Saints' Inheritance - Sabbath School Lesson for 1896 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1896/q2"
+      "slug": "/lessons/1896/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 41,
@@ -464,7 +548,10 @@
       "description": "Gospel by John - Sabbath School Lesson for 1896 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1896/q3"
+      "slug": "/lessons/1896/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 42,
@@ -475,7 +562,10 @@
       "description": "Gospel by John - Sabbath School Lesson for 1896 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1896/q4"
+      "slug": "/lessons/1896/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 43,
@@ -486,7 +576,10 @@
       "description": "Gospel by John - Sabbath School Lesson for 1897 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1897/q1"
+      "slug": "/lessons/1897/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 44,
@@ -497,7 +590,10 @@
       "description": "Gospel by John - Sabbath School Lesson for 1897 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1897/q2"
+      "slug": "/lessons/1897/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 45,
@@ -508,7 +604,10 @@
       "description": "Acts of the Apostles - Sabbath School Lesson for 1897 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1897/q3"
+      "slug": "/lessons/1897/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 46,
@@ -517,9 +616,12 @@
       "quarter": "Q4",
       "type": "quarterly",
       "description": "Acts of the Apostles - Sabbath School Lesson for 1897 Quarter 4",
-      "weeks": 13,
+      "weeks": 12,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1897/q4"
+      "slug": "/lessons/1897/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 47,
@@ -530,7 +632,10 @@
       "description": "Acts of the Apostles - Sabbath School Lesson for 1898 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1898/q1"
+      "slug": "/lessons/1898/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 48,
@@ -541,7 +646,10 @@
       "description": "Acts of the Apostles - Sabbath School Lesson for 1898 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1898/q2"
+      "slug": "/lessons/1898/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 49,
@@ -552,7 +660,10 @@
       "description": "Book of Genesis - Sabbath School Lesson for 1898 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1898/q3"
+      "slug": "/lessons/1898/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 50,
@@ -561,9 +672,12 @@
       "quarter": "Q4",
       "type": "quarterly",
       "description": "Book of Genesis - Sabbath School Lesson for 1898 Quarter 4",
-      "weeks": 13,
+      "weeks": 14,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1898/q4"
+      "slug": "/lessons/1898/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 51,
@@ -572,9 +686,12 @@
       "quarter": "Q1",
       "type": "quarterly",
       "description": "Life of Christ - Sabbath School Lesson for 1899 Quarter 1",
-      "weeks": 13,
+      "weeks": 12,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1899/q1"
+      "slug": "/lessons/1899/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 52,
@@ -585,7 +702,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1899 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1899/q2"
+      "slug": "/lessons/1899/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 53,
@@ -594,9 +714,12 @@
       "quarter": "Q3",
       "type": "quarterly",
       "description": "Life of Christ - Sabbath School Lesson for 1899 Quarter 3",
-      "weeks": 13,
+      "weeks": 14,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1899/q3"
+      "slug": "/lessons/1899/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 54,
@@ -607,7 +730,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1899 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1899/q4"
+      "slug": "/lessons/1899/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 55,
@@ -618,7 +744,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1900 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1900/q1"
+      "slug": "/lessons/1900/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 56,
@@ -629,7 +758,10 @@
       "description": "Life of Christ & Sermon on the Mount - Sabbath School Lesson for 1900 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1900/q2"
+      "slug": "/lessons/1900/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 57,
@@ -640,7 +772,10 @@
       "description": "Book of Galatians - Sabbath School Lesson for 1900 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1900/q3"
+      "slug": "/lessons/1900/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 58,
@@ -651,7 +786,10 @@
       "description": "Book of Galatians - Sabbath School Lesson for 1900 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1900/q4"
+      "slug": "/lessons/1900/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 59,
@@ -662,7 +800,10 @@
       "description": "Galatians and Malachi - Sabbath School Lesson for 1901 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1901/q1"
+      "slug": "/lessons/1901/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 60,
@@ -673,7 +814,10 @@
       "description": "The Sanctuary - Sabbath School Lesson for 1901 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1901/q2"
+      "slug": "/lessons/1901/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 61,
@@ -684,7 +828,10 @@
       "description": "The Sanctuary - Sabbath School Lesson for 1901 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1901/q3"
+      "slug": "/lessons/1901/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 62,
@@ -695,7 +842,10 @@
       "description": "Parables of Jesus - Sabbath School Lesson for 1901 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1901/q4"
+      "slug": "/lessons/1901/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 63,
