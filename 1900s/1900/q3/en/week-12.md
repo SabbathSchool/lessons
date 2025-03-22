@@ -1,0 +1,13 @@
+# LESSON 12 - REVIEW
+
+**September 22, 1900**
+
+(Galatians 1 and 2)
+
+WE have now passed through two chapters. If they have been studied as they should be, it will be a delight to go back and revel in some of their richness. If there is any portion that does not stand clear and distinct in your mind, pay special attention to it. Do not go to guessing what it means, but fix the eyes of your mind upon it, through the Spirit, until it reveals its secrets to you. If an object is so far from you that its outlines are wholly indistinct, it is much more sensible and satisfactory to view it through a telescope, which will enable us to see it as it is, than to guess and wonder about it. Faith is the divine telescope which enables us to see the unseen. Faith comes by the Word. If we believe that the Word is light and life, we shall be willing patiently to gaze into its depths until our eyes can take in all its fulness.
+
+In this week, read these two chapters carefully and thoughtfully not less than twenty times. Some will be able to read (not repeat) them through without the book. Such will find the most profit; for in the Bible we learn most from that which we already know best. Go carefully over every detail, and then take a general view of the whole. Study until with a single thought you can see the whole of the two chapters, just as with a single glance, if you have cultivated observation, you can see all the doors and windows of a house,—just as a woman at a single glance can take in all the details of another's dress.
+
+Read again in their order all the lessons that we have had, with the suggestions, especially all the hints on study, and consider them inserted here. Concentrate your mind on the text, just as the one who would take a photograph of a portion of the heavens, fixes his eye upon a certain point, and holds the sensitized plate steady until the fathomless star-depths have left the impression of some of their treasures. There is nothing in the world like Bible study to strengthen the mind and develop power of concentration. Study the text, give yourself wholly to it, tarry long by it, and gaze into it; pray earnestly to God for light; and yield yourself and every thought to Him.
+
+Since quite full questions on the text have accompanied every lesson, and these bring out every important feature, it is not thought necessary to ask additional questions in this review lesson. If you can give intelligent answers to all the questions in the preceding lessons, you will be able to make more of your own, and many more will suggest themselves to you; if you can not answer them, then your time can be fully employed on them now, without any new ones.
