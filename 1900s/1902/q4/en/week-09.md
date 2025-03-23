@@ -1,0 +1,38 @@
+# Lesson 9 — The Interpretation of the Vision
+
+November 29, 1902
+
+"And it came to pass, when I, even I Daniel, had seen the vision, that I sought to understand it; and, behold, there stood before me as the appearance of a man. And I heard a man's voice between the banks of Ulai, which called, and said, Gabriel, make this man to understand the vision. So he came near where I stood; and when he came, I was affrighted, and fell upon my face; but he said unto me, Understand, O son of man; for the vision belongeth to the time of the end. Now as he was speaking with me, I fell into a deep sleep with my face toward the ground; but he touched me, and set me upright. And he said, Behold, I will make thee know what shall be in the latter time of the indignation; for it belongeth to the appointed time of the end. The ram which thou sawest that had the two horns, they are the kings of Media and Persia. And the rough he-goat is the king of Greece; and the great horn that is between his eyes is the first king. And as for that which was broken, in the place whereof four stood up, four kingdoms shall stand up out of the nation, but not with his power. And in the latter time of their kingdom, when the transgressors are come to the full, a king of fierce countenance, and understanding dark sentences, shall stand up. And his power shall be mighty, but not by his own power; and he shall destroy wonderfully, and shall prosper and do his pleasure; and he shall destroy the mighty ones and the holy people. And through his policy he shall cause craft to prosper in his hands; and he shall magnify himself in his heart, and in their security shall he destroy many; he shall also stand up against the Prince of princes; but he shall be broken without hand. And the vision of the evenings and mornings which hath been told is true; but shut thou up the vision; for it belongeth to many days to come. And I Daniel fainted, and was sick certain days; then I rose up, and did the king's business; and I was astonished at the vision, but none understood it." Dan. 8:15-27, R.V.
+
+## Questions on the Text
+
+1. After seeing the vision what did Daniel seek to learn?
+2. Who then stood before him? What did he hear?
+3. What command was issued?
+4. What effect did his presence have upon Daniel?
+5. What was the first statement made concerning the vision?
+6. What effect did his speaking have upon Daniel?
+7. What did the interpreter of the vision then do? What did he promise to make known? At what time did he locate the matter?
+8. What interpretation was given to the ram of the vision?
+9. What interpretation was given to the he-goat?
+10. What was the significance of the great horn of the goat?
+11. What interpretation was given to the four horns which succeeded the great horn? What is said of their power?
+12. How is the next king described? When would he stand up?
+13. How is his power described? How is his conduct described?
+14. How will he cause his wrong course to appear right?
+15. What mention is made of his self-exaltation? What further statement is made concerning his relation to others?
+16. What marks the climax of his rebellious course? How will he come to his end?
+17. What was said about the days mentioned in the vision? What instruction was given about the vision? Why?
+18. What effect did the vision have upon the health of the prophet Daniel? What effect did it have upon his mind? Was the vision understood?
+
+## Notes
+
+The vision of the eighth chapter was given only two years after the vision of the seventh chapter, and stands in close relation to it. In the vision of the seventh chapter the whole period of time covered by Babylon, both ancient and modern, is dealt with, and by the aid of later prophecies it appears that the pagan principles of ancient Babylon are revived under Christian forms and names in modern Babylon, and are taught as the truth in the place of the genuine gospel of salvation. This connection between ancient and modern Babylon having been established in the vision of the seventh chapter and the additional visions of John covering the same period, ancient Babylon now drops out of view, and the whole attention is directed to the outworking of its principles in modern Babylon. Enough particulars are given to locate with definiteness the territory and the time of the little horn, and these specifications are so explicitly interpreted in this lesson that all doubt is removed in their application. In the field of view of this vision we have the kings of Media and Persia, the king or kingship of Greece (margin, "Javan"), with particular mention of "the first king," Alexander the Great, and the "four kingdoms" into which his kingdom was divided soon after his death. "Then, 301 B.C., twenty-two years after the death of Alexander the Great, when all his house, whether relatives, or posterity, had perished, the empire conquered by 'the prince of Grecia' was divided among themselves, by Ptolemy, Seleucus, Lysimachus, and Cassander, 'toward the four winds of heaven,' as follows: In the north, Lysimachus [had] Thrace, Bithynia, and some smaller provinces of Asia Minor. [In the] east Seleucus [had] Syria and all the country to the river Indus. [In the] south Ptolemy [had] Egypt, Libya, Arabia, and Palestine. [In the] west Cassander [had] Macedon and Greece." ("Great Empires of Prophecy," page 199.)
+
+The kingdom of Javan included Macedonia as well as Greece. Alexander the Great was the son of Philip II, the king of Macedon, and "at twenty years of age succeeded Philip as king of Macedon and head of Greece, B.C. 336." Thus it was from Macedon that "the prince of Grecia" went forth to conquer Medo-Persia, and when the great horn was broken and the kingdom was divided into four kingdoms, symbolized by the four horns, it was out of the Macedonian horn that there "came forth a little horn, which waxed exceeding great, toward the south, and toward the east, and toward the glorious land."
+
+The conquest of Macedonia marked the world-wide supremacy of Rome. "This victory, which destroyed the kingdom of Macedonia, and added that country finally to the Roman Empire, was gained in the battle of Pydna, June 22, 168 B.C. 'Thus perished the empire of Alexander the Great, which had subdued and Hellenized the East; one hundred and forty-four years after his death. . . . Polybius dates from the battle of Pydna the full establishment of the empire of Rome. It was, in fact, the last battle in which a civilized state confronted Rome in the field on a footing of equality with her as a great power.'" ("Great Empires of Prophecy," pages 243, 244.)
+
+A comparison of the prophecies of the seventh and eighth chapters of Daniel and other prophecies with the record of history makes it clear that the "king of fierce countenance, and understanding dark sentences," who arises "in the latter time" of the four kingdoms which succeeded the kingdom of Alexander, is the same power as is represented by the fourth beast of the seventh chapter, including the ten horns and the little horn. This is Rome. And the little horn of the eighth chapter represents Rome in both of its phases,—Rome pagan and Rome papal, the former a kind of picture of the latter; "for what were the Caesars, king and priest of the Roman world, but types of that more terrible power, temporal and spiritual, that was to center in the chair of the popes?" (J. A. Wylie, LL.D., author of "The History of Protestantism.")
+
+The offerings for this quarter go to the most needy fields.

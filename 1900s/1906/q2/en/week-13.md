@@ -1,0 +1,34 @@
+# Lesson 13 - Knowing the True God. 1 John 5:16-21.
+
+JUNE 30, 1906.
+
+## Questions
+
+### I. Praying for Sinners. Verses 16, 17.
+
+1. What instruction is given for the benefit of those who sin not unto death?
+2. What is said concerning a sin that is unto death?
+3. How is righteousness defined?
+4. What statement is made concerning a kind of sin?
+
+### II. The Summing Up of the Christian's Knowledge. Verses 18-21.
+
+5. Who does not sin?
+6. What is his experience?
+7. What contrast is drawn between believers and the world?
+8. What is known of the Son of God?
+9. What has He given?
+10. For what purpose?
+11. In whom are the believers?
+12. Who and what is He?
+13. What closing admonition is given?
+
+## Notes
+
+1. Verses 16, 17.—It is evident from many scriptures that the prayers of the righteous avail in behalf of the sinner who has not entirely cut himself off from God (Job 42:7, 8), and this intercession brings a blessing to him who prays (verse 10). Thus a soul is saved from death (James 5:20). Sin ends in death (James 1:15) unless repentance has been granted to life (Acts 11:18); but "it is the Holy Spirit that draws men to Christ;" and so when this means of grace is refused, there is no way by which the sinner may be reached. "There is a terrible danger—a danger not sufficiently understood—in delaying to yield to the pleading voice of God's Holy Spirit, in choosing to live in sin; for such this delay really is." "Every act of transgression, every neglect or rejection of the grace of Christ, is reacting upon yourself; it is hardening the heart, depraving the will, benumbing the understanding, and not only making you less inclined to yield, but less capable of yielding, to the tender pleading of God's Holy Spirit." There is a sin which is not pardoned (Matt. 12:31, 32) here or hereafter. "What constitutes the sin against the Holy Ghost?—It is wilfully attributing to Satan the work of the Holy Spirit. . . . It is through the medium of His Spirit that God works upon the human heart; and when men wilfully reject the Spirit, and declare it to be from Satan, they cut off the channel by which God can communicate with them. . . . For a time persons who have committed this sin may appear to be children of God; but when circumstances arise to develop character, and show what manner of spirit they are of, it will be found that they are on the enemy's ground, standing under his black banner." The Lord is righteous (Ps. 119:137), and His commandments are righteousness (verse 172). Anything out of harmony with His character, as expressed by His law, is unrighteousness or sin, but it is by faith that our hearts are purified (Acts 15:9) and that we attain to righteousness (Rom. 9:30-32); thus it is that whatever is not done through faith in the merit of Christ is sin (Rom. 14:23). Christ's petition (John 17:15) and the statement of Scripture (2 Thess. 3:3) both show that it is God who keeps us from "the evil one" (both texts are so translated in the Revised Version), "but He can do nothing for us without our cooperation." It is so arranged in the plan of salvation that its great object can not be consummated without human cooperation. "All the power is of God, and all the glory is to redound to God, and yet all the responsibility rests with the human agent." Satan was permitted to tempt Christ (Matt. 4:1), but according to the prophecy (Gen. 3:15) He did not touch any vital part. So with the Christian. Angels will give strength to us (Heb. 1:14), "but the ministry of angels will not insure us against sorrow and trial. Angels ministered to Jesus; but their presence did not make His life one of ease, nor free Him from conflict and temptation."
+
+2. Verses 19-21.—"The whole world lieth in the evil one," says the Revised Version; but Christians have been delivered (Col. 1:13).
+
+The Christian experience set forth in this epistle is a very positive one. Fifteen times occurs the statement "we know," or "know we," or "we have known," and by other expressions it is clearly shown that positive knowledge concerning the things of God is the privilege of the Christian (1 Cor. 2:12). One does not need to bow down to a visible image in order to be an idolater (Eph. 5:5). "It is as easy to make an idol of false doctrines and theories as to fashion an idol of wood or stone. By misrepresenting the attributes of God, Satan leads men to conceive of him in a false character. With many, a philosophical idea is enthroned in the place of Jehovah; while the living God, as He is revealed in His work, in Christ, and in the works of creation, is worshiped by but few. Thousands deify nature, while they deny the God of nature. Though in a different form, idolatry exists in the Christian world to-day as verily as it existed among ancient Israel in the days of Elijah. The god of many professedly wise men, of philosophers, poets, politicians, journalists,—the god of polished, fashionable circles, of many colleges and universities, even of some theological institutions,—is little better than Baal, the sun-god of Phoenicia."
+
+Prayerfully consider the unentered fields.
