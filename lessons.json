@@ -856,7 +856,10 @@
       "description": "Parables of Jesus - Sabbath School Lesson for 1902 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1902/q1"
+      "slug": "/lessons/1902/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 64,
@@ -867,7 +870,10 @@
       "description": "Studies in the Gospel Message - Sabbath School Lesson for 1902 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1902/q2"
+      "slug": "/lessons/1902/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 65,
@@ -878,7 +884,10 @@
       "description": "Studies in the Gospel Message - Sabbath School Lesson for 1902 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1902/q3"
+      "slug": "/lessons/1902/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 66,
@@ -889,7 +898,10 @@
       "description": "Studies in the Gospel Message - Sabbath School Lesson for 1902 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1902/q4"
+      "slug": "/lessons/1902/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 67,
@@ -900,7 +912,10 @@
       "description": "Studies in the Psalms - Sabbath School Lesson for 1903 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1903/q1"
+      "slug": "/lessons/1903/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 68,
@@ -911,7 +926,10 @@
       "description": "First and Second Thessalonians - Sabbath School Lesson for 1903 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1903/q2"
+      "slug": "/lessons/1903/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 69,
@@ -922,7 +940,10 @@
       "description": "Ephesians - Sabbath School Lesson for 1903 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1903/q3"
+      "slug": "/lessons/1903/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 70,
@@ -933,7 +954,10 @@
       "description": "God's Kingdom in this World - Sabbath School Lesson for 1903 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1903/q4"
+      "slug": "/lessons/1903/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 71,
@@ -944,7 +968,10 @@
       "description": "The Prophecies of Daniel - Sabbath School Lesson for 1904 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1904/q1"
+      "slug": "/lessons/1904/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 72,
@@ -955,7 +982,10 @@
       "description": "Outline Studies in the Revelation - Sabbath School Lesson for 1904 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1904/q2"
+      "slug": "/lessons/1904/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 73,
@@ -966,7 +996,10 @@
       "description": "Outline Studies in the Revelation - Sabbath School Lesson for 1904 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1904/q3"
+      "slug": "/lessons/1904/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 74,
@@ -975,9 +1008,12 @@
       "quarter": "Q4",
       "type": "quarterly",
       "description": "The Great Threefold Message - Sabbath School Lesson for 1904 Quarter 4",
-      "weeks": 13,
+      "weeks": 14,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1904/q4"
+      "slug": "/lessons/1904/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 75,
@@ -986,9 +1022,12 @@
       "quarter": "Q1",
       "type": "quarterly",
       "description": "Religious Liberty, Health, and Temperance - Sabbath School Lesson for 1905 Quarter 1",
-      "weeks": 13,
+      "weeks": 12,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1905/q1"
+      "slug": "/lessons/1905/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 76,
@@ -999,7 +1038,10 @@
       "description": "Topical Studies on the Message - Sabbath School Lesson for 1905 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1905/q2"
+      "slug": "/lessons/1905/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 77,
@@ -1008,9 +1050,12 @@
       "quarter": "Q3",
       "type": "quarterly",
       "description": "Tithes and Offerings - Sabbath School Lesson for 1905 Quarter 3",
-      "weeks": 13,
+      "weeks": 14,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1905/q3"
+      "slug": "/lessons/1905/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 78,
@@ -1021,7 +1066,10 @@
       "description": "A Study of the Book of Esther - Sabbath School Lesson for 1905 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1905/q4"
+      "slug": "/lessons/1905/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 79,
@@ -1032,7 +1080,10 @@
       "description": "Topical Studies - Sabbath School Lesson for 1906 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1906/q1"
+      "slug": "/lessons/1906/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 80,
@@ -1043,7 +1094,10 @@
       "description": "First Epistle of John - Sabbath School Lesson for 1906 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1906/q2"
+      "slug": "/lessons/1906/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 81,
@@ -1054,7 +1108,10 @@
       "description": "Practical Religion in the Home - Sabbath School Lesson for 1906 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1906/q3"
+      "slug": "/lessons/1906/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 82,
@@ -1065,7 +1122,10 @@
       "description": "Agencies of the Plan of Salvation - Sabbath School Lesson for 1906 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1906/q4"
+      "slug": "/lessons/1906/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 83,
@@ -1076,7 +1136,10 @@
       "description": "A Study of the Book of Ezra - Sabbath School Lesson for 1907 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1907/q1"
+      "slug": "/lessons/1907/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 84,
@@ -1087,7 +1150,10 @@
       "description": "Studies on Bible Election - Sabbath School Lesson for 1907 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1907/q2"
+      "slug": "/lessons/1907/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 85,
@@ -1098,7 +1164,10 @@
       "description": "God's Everlasting Covenant - Sabbath School Lesson for 1907 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1907/q3"
+      "slug": "/lessons/1907/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 86,
@@ -1109,7 +1178,10 @@
       "description": "A Synopsis of Present Truth - Sabbath School Lesson for 1907 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1907/q4"
+      "slug": "/lessons/1907/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 87,
@@ -1120,7 +1192,10 @@
       "description": "A Synopsis of Present Truth - Sabbath School Lesson for 1908 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1908/q1"
+      "slug": "/lessons/1908/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 88,
@@ -1129,9 +1204,12 @@
       "quarter": "Q2",
       "type": "quarterly",
       "description": "Great Reform Movements - Sabbath School Lesson for 1908 Quarter 2",
-      "weeks": 13,
+      "weeks": 12,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1908/q2"
+      "slug": "/lessons/1908/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 89,
@@ -1142,7 +1220,10 @@
       "description": "Book of Nehemiah - Sabbath School Lesson for 1908 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1908/q3"
+      "slug": "/lessons/1908/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 90,
@@ -1153,7 +1234,10 @@
       "description": "Epistle to the Ephesians - Sabbath School Lesson for 1908 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1908/q4"
+      "slug": "/lessons/1908/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 91,
@@ -1164,7 +1248,10 @@
       "description": "Epistle to the Philippians - Sabbath School Lesson for 1909 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1909/q1"
+      "slug": "/lessons/1909/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 92,
@@ -1175,7 +1262,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1909 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1909/q2"
+      "slug": "/lessons/1909/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 93,
@@ -1186,7 +1276,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1909 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1909/q3"
+      "slug": "/lessons/1909/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 94,
@@ -1197,7 +1290,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1909 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1909/q4"
+      "slug": "/lessons/1909/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 95,
@@ -1208,7 +1304,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1910 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1910/q1"
+      "slug": "/lessons/1910/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 96,
@@ -1219,7 +1318,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1910 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1910/q2"
+      "slug": "/lessons/1910/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 97,
@@ -1230,7 +1332,10 @@
       "description": "Life of Christ - Sabbath School Lesson for 1910 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1910/q3"
+      "slug": "/lessons/1910/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 98,
@@ -1239,9 +1344,12 @@
       "quarter": "Q4",
       "type": "quarterly",
       "description": "Life of Christ - Sabbath School Lesson for 1910 Quarter 4",
-      "weeks": 13,
+      "weeks": 14,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1910/q4"
+      "slug": "/lessons/1910/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 99,
