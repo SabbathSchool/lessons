@@ -1,7 +1,7 @@
 # LESSON 1
 **January 7, 1888**
 
-## CREAT1ON
+## CREATION
 
 **S1DE LIGHTS** - "Great Controversy," Vol. 1, Chaps. 2 and 8; "History of the Sabbath," Chap. 1.
 
