@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Full page background for printing -->
+  <rect width="800" height="1000" fill="#ffffff"/>
+  
+  <!-- Decorative border -->
+  <rect x="30" y="30" width="740" height="940" stroke="#8b4513" stroke-width="3" fill="none"/>
+  <rect x="40" y="40" width="720" height="920" stroke="#8b4513" stroke-width="1" fill="none"/>
+  
+  <!-- Corner ornaments -->
+  <path d="M30,30 L80,30 L80,45 Q55,45 55,70 L40,70 L40,55 Q40,30 30,30 Z" fill="#8b4513"/>
+  <path d="M770,30 L720,30 L720,45 Q745,45 745,70 L760,70 L760,55 Q760,30 770,30 Z" fill="#8b4513"/>
+  <path d="M30,970 L80,970 L80,955 Q55,955 55,930 L40,930 L40,945 Q40,970 30,970 Z" fill="#8b4513"/>
+  <path d="M770,970 L720,970 L720,955 Q745,955 745,930 L760,930 L760,945 Q760,970 770,970 Z" fill="#8b4513"/>
+  
+  <!-- Title -->
+  <text x="400" y="100" font-family="Georgia, serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#3c1815">ABOUT THESE LESSONS</text>
+  
+  <!-- Decorative divider with cross -->
+  <line x1="200" y1="120" x2="370" y2="120" stroke="#8b4513" stroke-width="2"/>
+  <path d="M395,110 L405,110 M400,105 L400,125" stroke="#8b4513" stroke-width="3"/>
+  <line x1="430" y1="120" x2="600" y2="120" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- Synopsis text box with subtle gradient -->
+  <defs>
+    <linearGradient id="parchmentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="100%" stop-color="#f9f5e9"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="150" width="600" height="580" rx="5" ry="5" fill="url(#parchmentGradient)" stroke="#d4c7a5" stroke-width="1"/>
+  
+  <!-- Synopsis text -->
+  <text x="130" y="190" font-family="Georgia, serif" font-size="18" fill="#3c1815">
+    <tspan x="130" y="190">These Sabbath School lessons on "Topical Studies on the Message"</tspan>
+    <tspan x="130" y="220">explore fundamental Bible truths about man's nature, death,</tspan>
+    <tspan x="130" y="250">resurrection, and other vital doctrines. Originally prepared in 1905,</tspan>
+    <tspan x="130" y="280">they offer timeless insights into these important topics:</tspan>
+  </text>
+  
+  <!-- Bullet points with cross bullets -->
+  <path d="M127,325 L133,325 M130,322 L130,328" stroke="#8b4513" stroke-width="2"/>
+  <text x="150" y="330" font-family="Georgia, serif" font-size="18" fill="#3c1815">The nature of man and his mortality</text>
+  
+  <path d="M127,365 L133,365 M130,362 L130,368" stroke="#8b4513" stroke-width="2"/>
+  <text x="150" y="370" font-family="Georgia, serif" font-size="18" fill="#3c1815">The biblical teaching about death and resurrection</text>
+  
+  <path d="M127,405 L133,405 M130,402 L130,408" stroke="#8b4513" stroke-width="2"/>
+  <text x="150" y="410" font-family="Georgia, serif" font-size="18" fill="#3c1815">The destiny of the wicked and eternal life</text>
+  
+  <path d="M127,445 L133,445 M130,442 L130,448" stroke="#8b4513" stroke-width="2"/>
+  <text x="150" y="450" font-family="Georgia, serif" font-size="18" fill="#3c1815">The ministration of good angels and the work of fallen angels</text>
+  
+  <path d="M127,485 L133,485 M130,482 L130,488" stroke="#8b4513" stroke-width="2"/>
+  <text x="150" y="490" font-family="Georgia, serif" font-size="18" fill="#3c1815">Spiritualism and its dangers</text>
+  
+  <path d="M127,525 L133,525 M130,522 L130,528" stroke="#8b4513" stroke-width="2"/>
+  <text x="150" y="530" font-family="Georgia, serif" font-size="18" fill="#3c1815">The Holy Spirit and gifts of the Spirit, including prophecy</text>
+  
+  <path d="M127,565 L133,565 M130,562 L130,568" stroke="#8b4513" stroke-width="2"/>
+  <text x="150" y="570" font-family="Georgia, serif" font-size="18" fill="#3c1815">Baptism and the Lord's Supper</text>
+  
+  <!-- Additional description -->
+  <text x="130" y="610" font-family="Georgia, serif" font-size="18" fill="#3c1815">
+    <tspan x="130" y="610">Each lesson contains carefully crafted questions that lead the</tspan>
+    <tspan x="130" y="640" font-family="Georgia, serif" font-size="18">student through biblical texts, revealing God's truth on these</tspan>
+    <tspan x="130" y="670" font-family="Georgia, serif" font-size="18">essential doctrines. Accompanying notes provide context and</tspan>
+    <tspan x="130" y="700" font-family="Georgia, serif" font-size="18">spiritual applications relevant for today's believers.</tspan>
+  </text>
+  
+  <!-- Quote with resurrection theme frame -->
+  <rect x="150" y="730" width="500" height="100" rx="5" ry="5" fill="#f5f1e6"/>
+  <path d="M150,730 L650,730 L650,830 L150,830 Z" stroke="#8b4513" stroke-width="1" fill="none"/>
+  <path d="M155,735 L645,735 L645,825 L155,825 Z" stroke="#8b4513" stroke-width="0.5" fill="none"/>
+  
+  <!-- Small cross at top of quote -->
+  <path d="M397,730 L403,730 M400,725 L400,735" stroke="#8b4513" stroke-width="1.5"/>
+  
+  <text x="400" y="760" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle" fill="#3c1815">"Study to shew thyself approved unto God,</text>
+  <text x="400" y="790" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle" fill="#3c1815">a workman that needeth not to be ashamed,</text>
+  <text x="400" y="820" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle" fill="#3c1815">rightly dividing the word of truth."</text>
+  <text x="530" y="850" font-family="Georgia, serif" font-size="16" text-anchor="end" fill="#3c1815">2 Timothy 2:15</text>
+  
+  <!-- Footer -->
+  <text x="400" y="885" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#3c1815">GOSPEL SOUNDERS</text>
+  <text x="400" y="915" font-family="Georgia, serif" font-size="16" text-anchor="middle" fill="#3c1815">Second Quarter, 2025</text>
+  <text x="400" y="945" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#5a4130">www.gospelsoundersministry.org</text>
+</svg>
