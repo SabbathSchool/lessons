@@ -1,16 +1,8 @@
 # Lesson 7 - The Fallen Angels and Their Work
 
-## Notes
-
-1. Satan was one of the covering cherubs, created for this very position, and stood next to Christ in position and power. He was the leader of the heavenly choir ("Spirit of Prophecy," Vol. 1, page 28). He allowed pride to enter into his heart, and, becoming jealous of Christ, and dissatisfied with the position given him by the Creator, he sought to exalt himself above God. It is impossible to explain or fully understand how sin entered into his heart; this is the mystery of sin. But the fact remains nevertheless. Having whispered his disaffection among the angelic host, he succeeded in leading almost one-third of the loyal angels into rebellion (Rev. 12:4), who with him were cast out of heaven ("Spirit of Prophecy," vol. 1, page 22). These angels, under the leadership of that master mind who led them into ruin, are all engaged in deceiving souls. As the end grows nearer, they become more active in their warfare, till all the world, except a remnant whose names are in the book of life, comes at last under their control.
-
-2. Note that Satan began his work of rebellion against God in this earth by questioning what Jehovah has said, and creating doubt in the mind as to the faithfulness of His Word. His method had in no way changed. Every suggestion, no matter from what source it may come, which tends to in any way weaken faith in God's Word, is inspired by Satan, who well knows that his attacks are vain so long as we hold fast to the Scriptures of truth.
-
 May 13, 1905
 
 ## Questions
-
-17. Through whom is victory assured over the hosts of darkness? 1 Cor. 15:57; John 16:33.
 
 1. What controversy did the prophet see take place in heaven? Rev. 12:7-9.
 2. For what reason were some of the angels expelled from heaven? 2 Peter 2:4; Jude 6.
@@ -28,3 +20,10 @@ May 13, 1905
 14. What are we bidden to do? 1 John 4:1.
 15. By what are we to test the spirits? Isa. 8:20; Matt. 7:15-20.
 16. What will be the final end of Satan and his evil host? Matt. 25:41; Eze. 28:18, 19; Heb. 2:14.
+17. Through whom is victory assured over the hosts of darkness? 1 Cor. 15:57; John 16:33.
+
+## Notes
+
+1. Satan was one of the covering cherubs, created for this very position, and stood next to Christ in position and power. He was the leader of the heavenly choir ("Spirit of Prophecy," Vol. 1, page 28). He allowed pride to enter into his heart, and, becoming jealous of Christ, and dissatisfied with the position given him by the Creator, he sought to exalt himself above God. It is impossible to explain or fully understand how sin entered into his heart; this is the mystery of sin. But the fact remains nevertheless. Having whispered his disaffection among the angelic host, he succeeded in leading almost one-third of the loyal angels into rebellion (Rev. 12:4), who with him were cast out of heaven ("Spirit of Prophecy," vol. 1, page 22). These angels, under the leadership of that master mind who led them into ruin, are all engaged in deceiving souls. As the end grows nearer, they become more active in their warfare, till all the world, except a remnant whose names are in the book of life, comes at last under their control.
+
+2. Note that Satan began his work of rebellion against God in this earth by questioning what Jehovah has said, and creating doubt in the mind as to the faithfulness of His Word. His method had in no way changed. Every suggestion, no matter from what source it may come, which tends to in any way weaken faith in God's Word, is inspired by Satan, who well knows that his attacks are vain so long as we hold fast to the Scriptures of truth.
