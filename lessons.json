@@ -1358,9 +1358,12 @@
       "quarter": "Q1",
       "type": "quarterly",
       "description": "The Book of Acts - Sabbath School Lesson for 1911 Quarter 1",
-      "weeks": 13,
+      "weeks": 12,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1911/q1"
+      "slug": "/lessons/1911/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 100,
@@ -1371,7 +1374,10 @@
       "description": "The Book of Acts - Sabbath School Lesson for 1911 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1911/q2"
+      "slug": "/lessons/1911/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 101,
@@ -1380,9 +1386,12 @@
       "quarter": "Q3",
       "type": "quarterly",
       "description": "Lessons on the Book of Acts - Sabbath School Lesson for 1911 Quarter 3",
-      "weeks": 13,
+      "weeks": 14,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1911/q3"
+      "slug": "/lessons/1911/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 102,
@@ -1393,7 +1402,10 @@
       "description": "Lessons on the Book of Acts - Sabbath School Lesson for 1911 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1911/q4"
+      "slug": "/lessons/1911/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 103,
@@ -1404,7 +1416,10 @@
       "description": "Topical Studies on the Message - Sabbath School Lesson for 1912 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1912/q1"
+      "slug": "/lessons/1912/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 104,
@@ -1415,7 +1430,10 @@
       "description": "Topical Studies on the Message - Sabbath School Lesson for 1912 Quarter 2",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1912/q2"
+      "slug": "/lessons/1912/q2",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 105,
@@ -1426,7 +1444,10 @@
       "description": "Topical Studies on the Message - Sabbath School Lesson for 1912 Quarter 3",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1912/q3"
+      "slug": "/lessons/1912/q3",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 106,
@@ -1437,7 +1458,10 @@
       "description": "Topical Studies on the Message - Sabbath School Lesson for 1912 Quarter 4",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1912/q4"
+      "slug": "/lessons/1912/q4",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 107,
@@ -1448,7 +1472,10 @@
       "description": "The Mediation of Christ - Sabbath School Lesson for 1913 Quarter 1",
       "weeks": 13,
       "image": "/placeholder.svg?height=300&width=400",
-      "slug": "/lessons/1913/q1"
+      "slug": "/lessons/1913/q1",
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": 108,
