@@ -1,0 +1,3934 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sabbath School Lessons</title>
+    <style>
+/* Main styling for Sabbath School Lessons */
+body {
+    font-family: Georgia, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #3c1815;
+    margin: 0;
+    padding: 0;
+    counter-reset: counter;
+}
+
+@page sectionbreak {
+    counter-reset: counter;
+}
+.sectionbreak {
+    page: sectionbreak;
+    page-break-after: always;
+    page-break-before: always;
+    counter-reset: page 0;
+}
+.sectionbreaknone {
+    counter-reset: page 0;
+    counter-reset: page;
+    counter-reset: counter;
+    display:block;
+}
+
+@page {
+    size: letter;
+    margin: 0; /*0 for coverpages. Then set for the other sections separately*/
+    /*margin: 0.75in;*/
+}
+
+@page :nth(1) {
+    margin: 0;
+    padding: 0px;
+    @bottom-center { content: ""; }
+    @bottom-left { content: ""; }
+    @bottom-right { content: ""; }
+}
+
+/* Frontmatter pages with counter explicitly reset to 1 */
+@page frontmatter {
+    margin: 0.75in;
+    @bottom-center {
+        content: counter(page, lower-roman);
+        font-family: Georgia, serif;
+        font-size: 12pt;
+        color: #5a4130;
+    }
+    @bottom-left {
+        content: "ROBO YA TATU, 2025"; /*Needs to be dynamically changed*/
+        font-family: Georgia, serif;
+        font-size: 10pt;
+        color: #5a4130;
+    }
+    @bottom-right {
+        content: "Maisha ya Kristo"; /*Needs to be dynamically changed*/
+        font-family: Georgia, serif;
+        font-size: 10pt;
+        color: #5a4130;
+    }
+}
+
+@page frontmatter:first {
+    margin: 0;
+    @bottom-center { content: ""; }
+    @bottom-left { content: ""; }
+    @bottom-right { content: ""; }
+}
+
+/* Mainmatter pages with counter explicitly reset to 1 */
+@page mainmatter {
+    margin: 0.75in;
+    @bottom-center {
+        content: counter(page);
+        font-family: Georgia, serif;
+        font-size: 12pt;
+        color: #5a4130;
+    }
+    @bottom-left {
+        content: "ROBO YA TATU, 2025";
+        font-family: Georgia, serif;
+        font-size: 10pt;
+        color: #5a4130;
+    }
+    @bottom-right {
+        content: "Maisha ya Kristo";
+        font-family: Georgia, serif;
+        font-size: 10pt;
+        color: #5a4130;
+    }
+}
+
+@page :last {
+    margin: 0;
+    @bottom-center { content: ""; }
+    @bottom-left { content: ""; }
+    @bottom-right { content: ""; }
+}
+
+/* Explicitly define counter reset points in the document flow */
+.frontmatter-container {
+    page: frontmatter;
+    counter-reset: page 1;
+}
+
+.mainmatter-container {
+    page: mainmatter;
+    counter-reset: page 1;
+}
+
+/* Cover page styling - Full page with no margins */
+.cover-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    page-break-after: always;
+    margin: 0;
+    padding: 0;
+}
+
+.cover-page svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Fix for blank page after cover */
+.blank-page {
+    height: 100vh;
+    width: 100%;
+    page-break-after: always;
+}
+
+/* Front matter styling */
+.front-matter {
+    page: frontmatter;
+    counter-reset: page 1;
+    margin-top: 2em;
+}
+
+.front-matter h1 {
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #7d2b2b;
+}
+
+.front-matter h2 {
+    font-size: 18pt;
+    margin-top: 1.5em;
+    color: #5a4130;
+}
+
+.front-matter p {
+    margin-bottom: 1em;
+}
+
+/* Table of Contents styling */
+.toc-title {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #3c1815;
+}
+
+.toc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+.toc-table tr.header {
+    font-weight: bold;
+    border-bottom: 2px solid #8b4513;
+}
+
+.toc-table td {
+    padding: 8px 5px;
+    vertical-align: top;
+}
+
+.toc-table tr:not(.header) {
+    border-bottom: 1px dotted #d4c7a5;
+}
+
+.toc-table a {
+    color: #3c1815;
+    text-decoration: none;
+}
+
+/* Lesson Header styling */
+.lesson-header {
+    background-color: #f5f1e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #8b4513;
+    position: relative;
+    height: 100px;
+}
+
+.lesson-circle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #e0d5c0;
+    border: 2px solid #8b4513;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3c1815;
+}
+
+.lesson-title {
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    font-size: 24pt;
+    font-weight: bold;
+    color: #3c1815;
+}
+
+.lesson-date {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    font-size: 12pt;
+    font-style: italic;
+    color: #5a4130;
+}
+
+.corner {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #8b4513;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.preliminary-note {
+    font-style: italic;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    background-color: #f9f7f1;
+    border-left: 3px solid #8b4513;
+    page-break-inside: avoid;
+    page-break-before: avoid;
+}
+
+.questions-section {
+    display:block;
+    border: 1px solid #8b4513;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    page-break-before: auto;
+    page-break-inside: auto; /* Allow breaks within paragraphs */
+    orphans: 1; /* Allow at least one question to appear with header */
+    widows: 1; /* Allow at least one question at the bottom of a page */
+}
+
+.questions-section .question:first-of-type {
+    page-break-before: avoid; /* Keep first question with header */
+    page-break-inside: avoid; /* Keep first question intact */
+    page-break-after: auto; /* Allow a page break after first question */
+}
+
+/* The clearfix shouldn't force breaks */
+.clearfix {
+    clear: both;
+    page-break-before: auto;
+    page-break-after: auto;
+}
+
+.questions-header {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8b4513;
+    padding-bottom: 5px;
+}
+
+.question {
+    margin-bottom: 3px;
+    position: relative;
+    clear: both;
+    page-break-inside: avoid;
+}
+
+.question-number {
+    font-weight: bold;
+    float: left;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.question-number.one-digit {
+    width: 20px;
+}
+
+.question-number.two-digit {
+    width: 30px;
+}
+
+.question-text {
+    margin-left: 30px; /* Minimum margin for one-digit numbers */
+    text-align: left;
+    position: relative;
+    break-inside: auto;
+    page-break-inside: auto;
+}
+
+/* For two-digit question numbers */
+.two-digit + .question-text {
+    margin-left: 40px; /* Increased margin for two-digit numbers */
+}
+
+.scripture-ref {
+    float: right;
+    color: #5a4130;
+    font-style: italic;
+    margin-left: 10px;
+    text-align: right;
+    page-break-before: avoid; /*keep with question*/
+}
+
+.scripture-ref p {
+    margin: 0;  
+    padding: 0; 
+}
+
+.answer {
+    margin-top: 1px;
+    color: #5a4130;
+    clear: right; /* Ensure answer appears below the scripture reference */
+}
+
+.notes-section {
+    background-color: #f9f7f1;
+    border: 1px solid #8b4513;
+    padding: 20px;
+}
+
+.notes-header {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+    page-break-after: avoid;
+}
+
+.notes-content p:first-letter {
+    font-variant: small-caps;
+}
+
+.notes-content p {
+    text-indent: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Keep first paragraph with header */
+.notes-content p:first-child {
+    page-break-before: avoid; /* Keep with header */
+}
+
+/* Allow breaks within other paragraphs */
+.notes-content p {
+    page-break-inside: auto; /* Allow breaks within paragraphs */
+    orphans: 1; /* At least 1 lines at top of page */
+    widows: 1; /* At least 1 lines at bottom of page */
+    text-align: justify;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Back matter styling */
+@page :last {
+    margin: 0;
+    @bottom-center { content: ""; }
+    @bottom-left { content: ""; }
+    @bottom-right { content: ""; }
+}
+
+/* Back cover styling */
+.back-cover-page {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    page: :last;
+    
+}
+
+@page :last {
+    margin: 0;
+    @bottom-center { content: ""; }
+    @bottom-left { content: ""; }
+    @bottom-right { content: ""; }
+}
+.back-cover-page svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Georgia, serif;
+    font-size: 12pt;
+}
+
+table, th, td {
+    border: 1px solid #8b4513;
+}
+
+thead {
+    background-color: #f5f1e6;
+}
+
+th {
+    color: #3c1815;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px 12px;
+}
+
+td {
+    padding: 8px 12px;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f7f1;
+}
+
+/* Special styling for price tables */
+table.price-table td:nth-child(2) {
+    text-align: center;
+    width: 80px;
+}
+
+/* Table caption styling */
+table caption {
+    font-style: italic;
+    margin-bottom: 8px;
+    color: #5a4130;
+    text-align: left;
+    caption-side: top;
+}
+
+.toc-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.toc-header, .toc-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.toc-header-cell, .toc-cell {
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+    display: inline-block;
+}
+
+.toc-header-cell {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.toc-cell-number {
+    width: 40px;
+    text-align: center;
+}
+
+.toc-cell-title {
+    flex: 1;
+}
+
+.toc-cell-date {
+    width: 100px;
+    text-align: center;
+}
+
+.toc-cell-page {
+    width: 40px;
+    text-align: right;
+}
+
+/* Style for the link */
+.toc-link {
+    display: block; /* Make the <a> tag a block element to cover the entire row */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from the row */
+}
+
+/* Highlight the row when hovered */
+.toc-link:hover .toc-row {
+    background-color: #f0f0f0;
+}
+
+/* Style the link inside the cells (optional) */
+.toc-cell a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.toc-cell a:hover {
+    text-decoration: underline;
+}
+
+.sectionbreaknone {
+    page-break-after: always;
+}
+
+.additional-section {
+    border: 1px solid #6a4e23; /* Darker border color for additional section */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0e5d8; /* Lighter background color for differentiation */
+    page-break-before: auto;
+    border-radius: 8px;
+}
+
+/* Header styling for additional sections */
+.additional-header {
+    font-size: 18pt;
+    font-weight: bold;
+    color: #4b3b2f; /* Darker brown for the header text */
+    margin-bottom: 10px;
+    border-bottom: 3px solid #6a4e23; /* A stronger border below the header */
+    padding-bottom: 5px;
+    text-align: left;
+    font-family: 'Georgia', serif; /* Different font family for header */
+}
+
+/* Content styling for the additional sections */
+.additional-content {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #4b3b2f; /* Darker brown text */
+    text-align: justify; /* Justified text for a clean look */
+    margin-top: 10px;
+    font-family: 'Georgia', serif; /* Different font family for content */
+}
+
+/* Optional: First paragraph inside the additional content */
+.additional-content p:first-child {
+    margin-top: 0;
+}
+
+/* Style for hyperlinks in additional sections */
+.additional-content a {
+    color: #4b3b2f; /* Dark brown for links */
+    text-decoration: underline;
+}
+
+.additional-content a:hover {
+    color: #6a4e23; /* Change to a lighter brown when hovering */
+    text-decoration: none;
+}
+
+/* Optional: Add specific spacing between paragraphs for clarity */
+.additional-content p {
+    margin-bottom: 1em;
+}
+
+/* Optional: Style for lists inside the additional section */
+.additional-content ul,
+.additional-content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.additional-content li {
+    margin-bottom: 0.5em;
+}
+
+.full-page-image-container {
+    width: 100%;
+    height: 11in;
+    /*display: flex; 
+    align-items: center;
+    justify-content: center;*/
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    page: 
+
+}
+
+@media print {
+    .lesson-title {
+        font-size: 20pt;
+    }
+
+    .full-page-image-container {
+        width: 100%;
+        height: height: 11in;
+        display: block; /* Ensure it’s block-level for printing */
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .full-page-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; /* Adjust image fitting for printing */
+    }
+}
+
+/* Cover page starts on page 1 */
+@page :nth(1) {
+    /* Cover page specific styling can go here */
+}
+
+/* Front matter starts on page 3 */
+@page :nth(3) {
+    counter-reset: page 1;  /* Reset page counter for Front matter */
+}
+
+/* Table of contents starts on page 5 */
+@page :nth(5) {
+    /* Table of contents specific styling can go here */
+}
+
+/* Main content starts on page 7 */
+@page :nth(7) {
+    counter-reset: page 1;  /* Reset page counter for Main content */
+}
+
+/* Back cover starts on page 10 */
+@page :nth(10) {
+    /* Back cover specific styling can go here */
+}
+</style>
+</head>
+<body>
+    
+                        <div class="cover-page">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100">
+  <!-- Sky background using original color tones -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="70%">
+      <stop offset="0%" stop-color="#3c1815"/>
+      <stop offset="40%" stop-color="#5a4130"/>
+      <stop offset="70%" stop-color="#8b4513"/>
+      <stop offset="100%" stop-color="#d4c7a5"/>
+    </linearGradient>
+    
+    <!-- Mountain vegetation gradients -->
+    <linearGradient id="mountainGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3c1815"/>
+      <stop offset="40%" stop-color="#4a2a18"/>
+      <stop offset="70%" stop-color="#5a4130"/>
+      <stop offset="100%" stop-color="#6b5842"/>
+    </linearGradient>
+    
+    <linearGradient id="mountainGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3c1815"/>
+      <stop offset="50%" stop-color="#4d3523"/>
+      <stop offset="70%" stop-color="#5e5231"/>
+      <stop offset="100%" stop-color="#726343"/>
+    </linearGradient>
+    
+    <!-- Border gradient from second SVG -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c28955"/>
+      <stop offset="50%" stop-color="#8b4513"/>
+      <stop offset="100%" stop-color="#5a3212"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="850" height="1100" fill="url(#skyGradient)"/>
+  
+  <!-- Stars in the night sky with warm tint -->
+  <g fill="#ffeacf" opacity="0.8">
+    <circle cx="100" cy="100" r="1.5"/>
+    <circle cx="200" cy="150" r="2"/>
+    <circle cx="300" cy="80" r="1"/>
+    <circle cx="400" cy="120" r="1.5"/>
+    <circle cx="500" cy="90" r="1"/>
+    <circle cx="600" cy="160" r="2"/>
+    <circle cx="700" cy="130" r="1.5"/>
+    <circle cx="750" cy="70" r="1"/>
+    <circle cx="150" cy="200" r="1"/>
+    <circle cx="250" cy="220" r="1.5"/>
+    <circle cx="350" cy="180" r="1"/>
+    <circle cx="450" cy="230" r="2"/>
+    <circle cx="550" cy="190" r="1"/>
+    <circle cx="650" cy="210" r="1.5"/>
+  </g>
+  
+  <!-- Bethlehem star -->
+  <g transform="translate(425, 200)">
+    <path d="M0,-50 L13,-15 L50,-15 L20,5 L30,40 L0,20 L-30,40 L-20,5 L-50,-15 L-13,-15 Z" fill="#ffd700"/>
+    <!-- Star rays -->
+    <g stroke="#ffeacf" stroke-width="3" opacity="0.6">
+      <line x1="0" y1="-80" x2="0" y2="-60"/>
+      <line x1="20" y1="-76" x2="15" y2="-57"/>
+      <line x1="40" y1="-66" x2="30" y2="-50"/>
+      <line x1="57" y1="-50" x2="43" y2="-38"/>
+      <line x1="66" y1="-30" x2="50" y2="-23"/>
+      <line x1="-20" y1="-76" x2="-15" y2="-57"/>
+      <line x1="-40" y1="-66" x2="-30" y2="-50"/>
+      <line x1="-57" y1="-50" x2="-43" y2="-38"/>
+      <line x1="-66" y1="-30" x2="-50" y2="-23"/>
+    </g>
+  </g>
+  
+  <!-- Smoother silhouette landscape with gradients for vegetation -->
+  <path d="M0,600 C50,590 100,580 150,550 C200,540 250,560 300,580 C350,570 375,530 425,500 C475,530 500,570 550,580 C600,560 650,540 700,550 C750,580 800,590 850,600 L850,1100 L0,1100 Z" fill="url(#mountainGradient1)"/>
+  
+  <!-- Additional smoother mountain layer with different gradient -->
+  <path d="M0,650 C75,630 150,610 225,620 C300,615 375,640 425,610 C475,640 525,620 600,630 C675,620 775,640 850,650 L850,1100 L0,1100 Z" fill="url(#mountainGradient2)" opacity="0.7"/>
+  
+  <!-- Three crosses on a hill -->
+  <g transform="translate(425, 450)">
+    <!-- Main cross -->
+    <rect x="-12" y="-100" width="24" height="200" fill="#f5f1e6"/>
+    <rect x="-75" y="-20" width="150" height="24" fill="#f5f1e6"/>
+    <!-- Left cross -->
+    <g transform="translate(-120, 20) rotate(10)">
+      <rect x="-8" y="-70" width="16" height="140" fill="#f5f1e6"/>
+      <rect x="-50" y="-15" width="100" height="16" fill="#f5f1e6"/>
+    </g>
+    <!-- Right cross -->
+    <g transform="translate(120, 20) rotate(-10)">
+      <rect x="-8" y="-70" width="16" height="140" fill="#f5f1e6"/>
+      <rect x="-50" y="-15" width="100" height="16" fill="#f5f1e6"/>
+    </g>
+  </g>
+  
+  <!-- Title container with subtle border from second design -->
+  <rect x="125" y="650" width="600" height="350" rx="20" ry="20" fill="#f5f1e6" opacity="0.9" stroke="url(#borderGradient)" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="425" y="730" font-family="Georgia, serif" font-size="56" font-weight="bold" text-anchor="middle" fill="#3c1815">MAISHA</text>
+  <text x="425" y="800" font-family="Georgia, serif" font-size="56" font-weight="bold" text-anchor="middle" fill="#3c1815">YA KRISTO</text>
+  
+  <!-- Divider -->
+  <line x1="225" y1="840" x2="625" y2="840" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- Subtitle - using Helvetica from second design -->
+  <text x="425" y="880" font-family="Helvetica, Arial, sans-serif" font-size="24" text-anchor="middle" fill="#5a4130" letter-spacing="1">MASOMO YA SHULE YA SABATO</text>
+  <text x="425" y="920" font-family="Helvetica, Arial, sans-serif" font-size="24" text-anchor="middle" fill="#5a4130" letter-spacing="1">KWA MADARASA YA WATU WAZIMA</text>
+  
+  <!-- Quarter information - styled like second design -->
+  <line x1="225" y1="940" x2="625" y2="940" stroke="#8b4513" stroke-width="1"/>
+  <text x="425" y="965" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#3c1815">ROBO YA TATU, 2025</text>
+  <text x="425" y="990" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#5a4130">Julai - Septemba 2025</text>
+  
+  <!-- Publisher info with modern layout from second design -->
+  <text x="425" y="1020" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#f5f1e6">Kwa msingi wa masomo ya awali yaliyochapishwa na</text>
+  <text x="425" y="1040" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#f5f1e6">PACIFIC PRESS PUBLISHING CO., 1899</text>
+  
+  <!-- Footer attribution - styled like second design -->
+  <line x1="300" y1="1055" x2="550" y2="1055" stroke="#8b4513" stroke-width="1" opacity="0.7"/>
+  <text x="425" y="1070" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#f5f1e6">GOSPEL SOUNDERS</text>
+  <text x="425" y="1090" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#f5f1e6">Kuhifadhi Ukweli kwa Kizazi Kipya</text>
+</svg>
+                        </div>
+                        <!-- Cover page: starts at page 1 --><!-- Cover page: estimated 1 pages --><div class="blank-page" style="page-break-after: always; height: 100vh;"></div><!-- Added blank page to ensure Front matter starts on odd page 3 --><div class="frontmatter-container">
+        <div class="front-matter">
+            <h1>MASOMO YA SHULE YA SABATO JUU YA MAISHA YA KRISTO</h1>
+<p><em>Kwa Madarasa ya Wazee</em></p>
+<p><strong>ROBO YA KWANZA, 1899</strong></p>
+<p><strong>NAMBA</strong>: 15<br />
+<strong>BEI</strong>: SENTI 20 KWA MWAKA<br />
+<strong>NAKALA MOJA</strong>: SENTI 5</p>
+<p>ILIINGIA KATIKA OFISI YA POSTA HUKO OAKLAND, CAL.</p>
+<p>Oakland, Cal. - Januari, 1899</p>
+<p>IMECHAPISHWA KWA ROBO MWAKA NA PACIFIC PRESS PUBLISHING COMPANY HUKO OAKLAND, CAL. KWA MUUNGANO WA KIMATAIFA WA SHULE YA SABATO WA WAADVENTISTA WA SIKU YA SABA</p>
+<p><img alt="Ramani ya Palestina Ikionyesha Maeneo Yaliyotajwa Katika Maisha ya Kristo" src="map_placeholder.jpg" /></p>
+<h2>UTANGULIZI</h2>
+<p>Tangu siku za Ibrahimu, ahadi za Mungu kwa wanadamu zimekuwa zikitolewa kwa "Uzao wa Ibrahimu." Kumbukumbu zinatuambia kuwa ahadi hazikutolewa kwa wazao—au wazao wa asili wa Ibrahimu—lakini kwa, na kupitia, Uzao mmoja, ambaye ni Kristo. Gal. 3:16, 29. Wakati katika mstari wa kimwili Kristo alikuwa wa kuhesabiwa kama "uzao" wa Ibrahimu, katika Uungu wake alikuwa kabla ya Ibrahimu (Yohana 8:58), na kwa hiyo alikuwa Bwana na Mwokozi wake, sawa kama alivyo kwetu. Lakini ukweli kwamba Kristo alikuwa azaliwe katika mwili wa uzao wa Ibrahimu, na hivyo kuwa mmiliki wa "nchi ya ahadi", ilimfanya azaliwe katika nchi hiyo, ambako ndiko kutakakowafikia mataifa yote baraka zilizoahidiwa kwa uzao wa Ibrahimu. Gal. 3:7-9, 13, 14.</p>
+<p>Matukio ya maisha ya Kristo kwa hiyo yamefungwa katika nchi ya "Kanaani," pia inayojulikana kama Palestina. Tukiruhusu majina haya kutumika kwa eneo zima lililoshikiliwa na makabila kumi na mawili ya Israeli, inajumuisha eneo la nchi lenye ukubwa wa karibu maili za mraba 12,000, au eneo lenye ukubwa sawa na Massachusetts na Connecticut zikiwa zimeunganishwa. Hata hivyo, tukiifunga Palestina kwa nchi iliyoko kati ya Bahari ya Mediterania na Mto Yordani, kati ya Mlima Lebanoni kaskazini, na jangwa kusini, kama inavyofanywa mara nyingi, tunaipunguza hadi takriban maili za mraba 6,600 kwa ukubwa, au hadi eneo dogo kuliko jimbo la Massachusetts kwa maili za mraba 1,200.</p>
+<p>Katika upana mdogo wa eneo hili ndipo kazi ya dunia ya Kristo ilifanyika. Kuzoea kila eneo la ukanda huu mdogo haipaswi kuwa kazi kubwa, lakini hata hivyo itahitaji utafiti wa subira. Lakini hii haipaswi kuwa lengo kuu katika kujifunza maisha ya Kristo. Kila mwanafunzi wa maisha Yake anapaswa kumjifunza Kristo Mwenyewe—tabia Yake, mwenendo Wake wa utulivu, mbinu Zake za kufanya kazi kwa ajili ya kuinua ubinadamu, na uvumilivu Wake chini ya mapigo ya mateso. Ni kwa njia hii pekee ndipo Mwanafunzi wa masomo yafuatayo anaweza kutumaini kufaidika.</p>
+<p>Jifunze vizuri maandiko yanayoambatana na masomo. Yajifunze nyumbani muda wote wa juma, na maisha ya Kristo yatang'aa kwa mwangaza mpya katika akili zako. Yote hayaonekani kuwa na uhusiano wa moja kwa moja na somo, lakini yatakuwa ya msaada sana kwa wote wanaotaka kuchimba kwa hazina zilizofichwa. Mpango wa kuweka maandiko haya pembeni ya ukurasa ni mpya, ambao tunaamini utakuwa wa kuridhisha na wenye manufaa kwa wanafunzi. Jambo jingine jipya katika toleo hili la FUNZO LA ROBO MWAKA ni uchapishaji wa ramani ya nchi na maeneo yanayotajwa katika maandiko ya somo. Tunaamini kwamba kipengele hiki kitaongeza thamani kwa ROBO MWAKA, na kitakubaliwa sana na shule zetu.</p>
+<p>MICHANGO YA ZIADA wakati wa robo mwaka ya sasa itatumika katika maeneo yenye mahitaji zaidi. Tumeambiwa na rais wa Bodi ya Misheni ya Nje kwamba India, Japani, na Afrika zitahitaji michango yetu zaidi katika mwaka wa 1899. Kwa hiyo maeneo haya yanaweza kusomwa na watu wetu.</p>
+            <div style="page-break-after: always;"></div>
+        </div>
+        </div><!-- Front matter: starts at page 3 --><!-- Front matter: estimated 2 pages --><div class="frontmatter-container">
+        <div class="toc-title">YALIYOMO</div>
+        <table class="toc-table">
+            <tr class="header">
+                <td style="width: 40px; padding: 5px;">Somo</td>
+                <td style="padding: 5px;">Kichwa</td>
+                <td style="width: 100px; padding: 5px;">Tarehe</td>
+                <td style="width: 40px; padding: 5px; text-align: right;">Ukurasa</td>
+            </tr>
+            
+                <tr>
+                    <td style="width: 40px; padding: 5px;">1</td>
+                    <td style=""><a href="#lesson-1">KUZALIWA KWA KRISTO</a></td>
+                    <td style="">5 Julai, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">1</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">2</td>
+                    <td style=""><a href="#lesson-2">KUTEMBELEWA KWA WACHUNGAJI, NA KUWASILISHWA KWA KRISTO HEKALUNI</a></td>
+                    <td style="">12 Julai, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">2</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">3</td>
+                    <td style=""><a href="#lesson-3">ZIARA YA WATU WENYE HEKIMA, NA KUKIMBIA KWENDA MISRI</a></td>
+                    <td style="">19 Julai, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">3</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">4</td>
+                    <td style=""><a href="#lesson-4">KURUDI NAZARETI, NA KUTEMBELEA YERUSALEMU</a></td>
+                    <td style="">26 Julai, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">4</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">5</td>
+                    <td style=""><a href="#lesson-5">HUDUMA YA YOHANA MBATIZAJI</a></td>
+                    <td style="">2 Agosti, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">5</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">6</td>
+                    <td style=""><a href="#lesson-6">UBATIZO WA YESU</a></td>
+                    <td style="">9 Agosti, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">6</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">7</td>
+                    <td style=""><a href="#lesson-7">MAJARIBU YA YESU</a></td>
+                    <td style="">16 Agosti, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">7</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">8</td>
+                    <td style=""><a href="#lesson-8">WITO WA WANAFUNZI WA KWANZA</a></td>
+                    <td style="">23 Agosti, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">8</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">9</td>
+                    <td style=""><a href="#lesson-9">MUUJIZA WA KWANZA</a></td>
+                    <td style="">30 Agosti, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">9</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">10</td>
+                    <td style=""><a href="#lesson-10">UTAKASO WA HEKALU</a></td>
+                    <td style="">6 Septemba, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">10</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">11</td>
+                    <td style=""><a href="#lesson-11">USHUHUDA WA MWISHO WA MBATIZAJI KUHUSU KRISTO</a></td>
+                    <td style="">13 Septemba, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">11</td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 40px; padding: 5px;">12</td>
+                    <td style=""><a href="#lesson-12">MAZUNGUMZO NA MWANAMKE WA SAMARIA</a></td>
+                    <td style="">20 Septemba, 2025</td>
+                    <td style="width: 40px; padding: 5px; text-align: right;">12</td>
+                </tr>
+                
+        </table>
+        <div class="sectionbreaknone"></div>
+        </div><!-- Table of contents: starts at page 5 --><!-- Table of contents: estimated 1 pages --><div class="blank-page" style="page-break-after: always; height: 100vh;"></div><!-- Added blank page to ensure Main content starts on odd page 7 --><div class="mainmatter-container"><div id="lesson-1">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">1</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 45px">KUZALIWA KWA KRISTO</div>
+                    <div class="lesson-date">5 Julai, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Nazareti na Bethlehemu, K.K. 5</strong></p>
+<p><em>(Matt. 1:1-25; Luka 1:26-35; 2:1-7)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Kristo anatambulishwaje kwa mwanafunzi wa Agano Jipya? <span class="scripture-ref">Matt. 1:1. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Kuzaliwa kwa Kristo kulitokea vipi? <span class="scripture-ref">Isa. 7:14. Mstari 18.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Nani alikuwa amemtembelea Maria hapo awali? <span class="scripture-ref">Luka 1:26, 27.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Kwa jina gani aliagizwa kumwita huyu Mwana aliyeahidiwa? <span class="scripture-ref">Mstari 31.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Kama mzao wa Daudi, Yesu angepokea nini? <span class="scripture-ref">Mstari 32.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Kwa jina gani lingine Yesu angeitwa? Lina maana gani? <span class="scripture-ref">Matt. 1:23.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Alipojifunza hali halisi ya mambo, Yusufu alifikiria kufanya nini? <span class="scripture-ref">Mstari 19. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Alipokuwa katika hali hiyo ya akili, nani alimtokea Yusufu? na vipi? <span class="scripture-ref">Mstari 20.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Kwa maneno gani malaika alimhakikishia Yusufu? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Kwa nini jina la mtoto likuwa lazima liwe Yesu? <span class="scripture-ref">Mstari 21.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Katika hayo yote, ni unabii gani ulitimizwa? <span class="scripture-ref">Mistari 22, 23.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Neno hili kutoka kwa Mungu lilikuwa na athari gani kwa akili ya Yusufu? <span class="scripture-ref">Mstari 24.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Muda mfupi baada ya mambo haya, ni amri gani ilitolewa na mtawala wa Kirumi? <span class="scripture-ref">Luka 2:1. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Yusufu na Maria walikwenda wapi kujiandikisha? <span class="scripture-ref">Mistari 3, 4.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Nini kilitokea mara tu baada ya kuwasili kwao Bethlehemu? <span class="scripture-ref">Mistari 6, 7. *Angalia dokezo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Ni mahali gani hafifu pa kupumzika palipopangiwa Yesu? Mstari 7. Kwa nini hivi? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 43, 44.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Kwa kuwa Kristo alipaswa kudhihirishwa duniani kama "Uzao ulioahidiwa" wa Ibrahimu (Gal. 3:16), ilikuwa muhimu kabisa, katika kutoa historia ya maisha Yake, kwa wainjilisti kwanza kufuatilia asili Yake kwa upande wa kimwili, kurudi nyuma hadi kwa Ibrahimu, na hivyo kuthibitisha utambulisho Wake kama Masihi. Mathayo, kwa hiyo, anaanza na Ibrahimu, na kufuatilia ukoo chini kupitia Daudi hadi Yusufu, baba anayeheshimiwa wa Kristo. Matt. 1:1-16. Kwa hili anajaribu kuthibitisha kwamba Yesu ni mrithi wa agano la milele lililofanywa na Ibrahimu, na kufanywa upya kwa Daudi. Mwa. 17:7; 2 Sam. 7:12-17; Isa. 9:6, 7. Kwa lengo hili anaonyesha kwamba Yesu alisimama katika uhusiano wa kifamilia na Yusufu kiasi cha kuwa na madai ya yote yaliyomilikiwa naye kama mzao wa moja kwa moja wa Ibrahimu. Luka, hata hivyo, anawasilisha mstari wa ukoo wa Maria, akigeuza mpangilio uliofuatwa na Mathayo, na kufuatilia ukoo wake kutoka kwa Heli, baba yake, kurudi nyuma kupitia Daudi na Ibrahimu, hadi Adamu, ambaye alikuwa mwana wa Mungu. Luka 3:23-38. Rekodi hii inasema kwamba Kristo alikuwa "anadhaniwa" kuwa mwana wa Yusufu, lakini alikuwa, kwa kweli, mwana, yaani, mjukuu wa upande wa mama, wa Heli, mwana wa Matathi, n.k. Itazingatiwa kwamba ukoo wote wawili unaungana katika Ibrahimu, ikifanya iwe hakika mara mbili kwamba Kristo alikuwa "Uzao" ulioahidiwa wa baba huyo.</p>
+</li>
+<li>
+<p>Inaonekana kwamba talaka ilipatikaana kwa urahisi wakati huo. Fomu ya hati hiyo miongoni mwa Wayahudi iliitwa "Gett," na iliandikwa kwenye ngozi ya mnyama na mwandishi wa Kiyahudi, mbele ya mmoja au zaidi ya marabi, na ilikuwa isiwe na zaidi ya mistari kumi na miwili. Haikusadikiwa kuwa inaeleza sababu kwa nini talaka ilitangazwa, lakini tu kusema kwamba mwanamke aliachiliwa kutoka kwa wajibu wote kwa muunganiko wake wa awali, na alikuwa huru kuolewa na yeyote ampendaye.</p>
+</li>
+<li>
+<p>Neno "kulipa ushuru" katika maandiko linatokana na neno lenye maana ya kujiandikisha au kujiorodhesha. Katika uandikishaji kama huo ilikuwa muhimu kwa kila mtu kuripoti kwa uandikishaji katika mji wa ukoo wake. Yusufu na Maria wakiwa wote wazao wa moja kwa moja wa Daudi, walilazimika kwenda kwenye "mji wa Daudi" kujiandikisha, kufuatana na amri ya mtawala wa Kirumi, ambao walikuwa raia wake.</p>
+</li>
+<li>
+<p>"Na ikawa hivyo" kwamba Kristo alizaliwa Bethlehemu ya Yudea, katika kutimiza unabii, wakati mama yake alikuwa mkazi wa Nazareti katika Galilaya. Huu ni mfano mmoja tu kati ya wengi wa jinsi amri za mataifa au wafalme zimekuwa hatua za kutimiza maneno ya kinabii. Si kwamba Mungu aliwafanya wafalme kutoa amri kama hizo, lakini Yeye, akiona "mwisho kutoka mwanzo," angeweza kueleza kikamilifu mapema matokeo ya amri hizi.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-2">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">2</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 18px;top: 40px">KUTEMBELEWA KWA WACHUNGAJI, NA KUWASILISHWA KWA KRISTO HEKALUNI</div>
+                    <div class="lesson-date">12 Julai, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Bethlehemu na Yerusalemu, K.K. 5</strong></p>
+<p><em>(Luka 2:8-38)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Ni akina nani walikuwa katika mashamba karibu na Bethlehemu? na walikuwa wanafanya nini wakati Yesu alizaliwa? <span class="scripture-ref">Luka 2:8.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Bwana alijidhihirisha vipi mbele ya wachungaji? <span class="scripture-ref">Mstari 9.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Katika maono waliyopewa, hali yao ya akili ilikuwa vipi? na ni ujumbe gani wa faraja ulitolewa kwao? <span class="scripture-ref">Mistari 10, 11.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Kwa ishara gani wachungaji wangemtambua Yesu? <span class="scripture-ref">Mstari 12.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Mara tu baada ya tangazo hilo, ni maonyesho gani yalifanyika? <span class="scripture-ref">Mistari 13, 14.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Baada ya kuondoka kwa malaika, wachungaji walikwenda wapi? <span class="scripture-ref">Mistari 15, 16.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Baada ya kumpata Mwokozi, wachungaji walifanya nini? <span class="scripture-ref">Mstari 17.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Maneno ya wachungaji yalikuwa na athari gani kwa wale walioyasikia? <span class="scripture-ref">Mstari 18.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Mama wa Yesu aliyachukuliaje mambo yaliyokuwa yakitokea karibu naye? <span class="scripture-ref">Mstari 19.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Ni kwa roho gani wachungaji walirudi kutoka ziara yao? <span class="scripture-ref">Mstari 20.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Ili kutimiza sheria ya Musa, wazazi wa Yesu walimchukua wapi siku arobaini baada ya kuzaliwa kwake? <span class="scripture-ref">Mstari 22.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Sheria hii iliwahitaji wazazi kutoa nini kama dhabihu katika matukio kama hayo? <span class="scripture-ref">Mistari 23, 24. *Angalia dokezo.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Wakati huduma hii ilikuwa ikifanyika, nani alikuja hekaluni? na kupitia ushawishi gani alikwenda huko? <span class="scripture-ref">Mistari 25-27.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Mtu huyu alikuwa akisubiri nini? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Akimchukua mtoto Yesu mikononi mwake, Simeoni alisema nini kumhusu? <span class="scripture-ref">Mistari 28-32.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Katika kuwabariki wazazi, ni unabii gani alidiriki kutoa kuhusu mtoto? <span class="scripture-ref">Mistari 34, 35.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">17.</span>
+                    <div class="question-text">
+                        Simeoni alipokoma kutabiri, nani mwingine alijitokeza kwenye tukio? <span class="scripture-ref">Mistari 36, 37.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">18.</span>
+                    <div class="question-text">
+                        Alipomwona Yesu, alianza kufanya nini? <span class="scripture-ref">Mstari 38.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 47-57.</p>
+                    </div>
+                </div>
+                
+                <div class="additional-section">
+                    <div class="additional-header">DOKEZO</div>
+                    <div class="additional-content">
+                        <p>Kulikuwa na sababu mbili kwa nini wazazi wa Yesu walimchukua Yerusalemu wakati huu. Sheria ya Musa ilitaka dhabihu kutolewa na kila mama, mwishoni mwa siku zake za utakaso. Alipokuwa katika hali inayoruhusu, hii ilikuwa iwe mwanakondoo wa mwaka wa kwanza kwa ajili ya sadaka ya kuteketezwa, na njiwa mdogo au hua kwa ajili ya sadaka ya dhambi. Lakini wakati wazazi walikuwa maskini sana kuleta mwanakondoo, sheria ilitosheka na jozi ya hua, au njiwa wawili. Ukweli kwamba wazazi wa Kristo walitoa ya mwisho tu inaonyesha kuwa walikuwa katika umaskini mkubwa. Tena, sheria ilihitaji kwamba mwana mzaliwa wa kwanza akombolewa kwa kiasi maalum, na sharti hili lazima litimizwe na wazazi wa Bwana wetu, kwa kuwa alikuwa mzaliwa wa kwanza wa Maria.</p>
+                    </div>
+                </div>
+                
+            
+        </div>
+        </div><div id="lesson-3">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">3</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 40px">ZIARA YA WATU WENYE HEKIMA, NA KUKIMBIA KWENDA MISRI</div>
+                    <div class="lesson-date">19 Julai, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Bethlehemu na Yerusalemu, K.K. 4</strong></p>
+<p><em>(Matt. 2:1-18)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Ni nani walikuja kutoka Mashariki hadi Yerusalemu, muda mfupi baada ya kuzaliwa kwa Kristo? <span class="scripture-ref">Matt. 2:1. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Walimuuliza nani? na kwa nini? <span class="scripture-ref">Mstari 2.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Swali lao lilikuwa na athari gani kwa mfalme na watu? <span class="scripture-ref">Mstari 3.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Katika shida yao, ni hatua gani ilichukuliwa na mfalme? <span class="scripture-ref">Mstari 4. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Mfalme alijifunza nini kutoka kwa makuhani na waandishi? <span class="scripture-ref">Mstari 5.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Ni sababu gani makuhani walitoa kwa taarifa hii? <span class="scripture-ref">*Angalia dokezo 3.* Mistari 5, 6.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Baada ya kujifunza mengi kutoka kwa makuhani wa Kiyahudi, mfalme alitaka kujua nini kutoka kwa watu wenye hekima? <span class="scripture-ref">Mstari 7. *Angalia dokezo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Ni maagizo gani aliwapa watu hawa? <span class="scripture-ref">Mstari 8.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Walipotoka kwenda kumtafuta Yesu, ni msaada gani wa kirafiki ulitolewa kwao tena? <span class="scripture-ref">Mstari 9.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Walijisikiaje nyota inapoonekana tena? <span class="scripture-ref">Mstari 10.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Baada ya kumpata Mwokozi, watu hawa walifanya nini? <span class="scripture-ref">Mstari 11.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Je, watu wenye hekima walifuata maagizo ya Herode? Kama hapana, kwa nini? <span class="scripture-ref">Mstari 12.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Baada ya kuondoka kwa wageni hawa wa Mashariki, ni maagizo gani Mungu alimpa Yusufu? <span class="scripture-ref">Mstari 13. *Angalia dokezo 5.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Wangebaki Misri hadi lini? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Yusufu alifaidi nini kufichwa kwake kutoka Bethlehemu? <span class="scripture-ref">Mstari 14.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Mwokozi aliwekwa Misri kwa muda gani? <span class="scripture-ref">Mstari 15.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">17.</span>
+                    <div class="question-text">
+                        Kwa nini Bwana alitumwa Misri, badala ya mahali pengine? <span class="scripture-ref">*Angalia dokezo 6.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">18.</span>
+                    <div class="question-text">
+                        Herode alipoona kuwa "alichezewa kama mtoto" (ujumbe wa neno la asili) na watu wenye hekima, alijiskiaje na kutenda vipi? <span class="scripture-ref">Mstari 16.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">19.</span>
+                    <div class="question-text">
+                        Katika kutekeleza amri hii, ni andiko gani lilitimizwa? <span class="scripture-ref">Mistari 17, 18.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 59-65.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>"Neno ambalo Mathayo anawaelezea wageni hawa wa Mashariki si wazi na halina maana kama inavyoonekana katika tafsiri yetu. Anawaita Magi kutoka Mashariki. Mahali pa kuzaliwa na nyumbani kwa asili ya ibada ya kimaji ilikuwa katika Uajemi. Na huko Magi walikuwa na nafasi na nguvu kama Wakaldayo walivyokuwa na Babeli, Hierophants katika Misri, Makuhani wa Druid katika Gaul, na Mabrahmini kama walionayo bado katika India. Waliunda kabila au kasta, makuhani kwa ofisi, wakuu kwa cheo. Walikuwa wawekaji wa takriban maarifa yote au sayansi iliyokuwepo katika nchi ambayo waliishi... Elimu ya kifalme ilikuwa mikononi mwao; walijaza ofisi zote kuu za serikali; waliunda baraza la juu la ufalme. Kama ilivyotumika awali kwa kasta hii ya makuhani ya Kimedi, neno Magi lilikuwa la heshima na hadhi."—Hanna's Life of Christ.</p>
+<p>Suetonius, Tacitus, na Josephus kila mmoja anaeleza imani imara miongoni mwa watu wa Mashariki kwamba mmoja aliyezaliwa katika Yudea angeinuka na kutawala dunia. Hii inaweza kuwa imeenezwa na Wayahudi wageni, kutoka unabii wao, na kushikilia kwa nguvu wale waliotaka kiongozi wa kiroho. Angalia "Desire of Ages," uk. 59.</p>
+</li>
+<li>
+<p>Ni ajabu kwamba dalili ya kwanza ya ujio wa Masihi iliyopokelewa na wale waliodai kumtafuta kama Mfalme wao, lazima apewe kupitia wageni kutoka nchi ya mbali, ambao walikiri imani tofauti kabisa. Si ajabu kwamba walikuwa wanasumbuliwa wakati wazo lilishinikizwa kwao kwamba walikuwa wamepuuza Neno kuhusu wakati na mahali pa ujio wa Mwokozi, kwamba Mungu asingewapa njia za ziada za maarifa kama hayo, lakini alitafuta wadhamini wa ile kweli miongoni mwa Mataifa. Hivyo Mungu amefanya daima, na atafanya bado kwa wale wanaokuwa wazembe katika kweli tayari waliyopewa.</p>
+</li>
+<li>
+<p>Ingawa makuhani walikuwa wamezama sana katika mambo ya kidunia kiasi cha kupoteza mwelekeo wa wakati wa ujio wa Masihi, waligeukia haraka unabii wao uliopuuzwa, na kuthibitisha mahali pa kuzaliwa mfalme wao aliyetangazwa kwa muda mrefu.</p>
+</li>
+<li>
+<p>Herode alitafuta kutoka kwa watu wenye hekima habari kuhusu ni kwa muda gani tangu nyota ilionekana kwanza nao, dhahiri kwa lengo ambalo alilifuata hivi karibuni. Amri yake ya kuwaua watoto wa Bethlehemu ilihusu wote chini ya miaka miwili, "kulingana na wakati ambao alikuwa ameuliza kwa bidii kwa watu wenye hekima." Matt. 2:16. Labda ilikuwa muda mrefu tangu walipogundua nyota hiyo ya ajabu, na walikuwa wanajifunza umuhimu wake.</p>
+</li>
+<li>
+<p>Mungu angeweza, kwa muujiza, kumhifadhi Kristo kutoka kwa uovu wa Herode bila kuondolewa kutoka Yudea. Lakini katika matendo yake yote kwa niaba ya wanadamu, ushirikiano wao unatafutwa, ili wawe na uwajibikaji, na kwa hiyo nia katika kile kinachofanywa kwa ajili yao. Wazazi wa Yesu kwa hiyo walipewa jukumu la kumtunza mtoto Mwokozi. Safari iliyochukuliwa ilikuwa takriban maili sitini kusini kutoka Bethlehemu.</p>
+</li>
+<li>
+<p>Kwamba unabii "upate kutimizwa." Unabii ulisema, "Wakati Israeli alipokuwa mtoto, ndipo nilimpenda, na kumwita Mwanangu kutoka Misri." Hosea 11:1. "Israeli" ina maana mkuu wa Mungu. Kama Mwana wa Mungu, Kristo alikuwa, na ndiye, "Mkuu wa Mungu" kwa maana kamili. Kama "Uzao" wa Ibrahimu, alikuwa mtoto; na kama Mfano mkuu wa Israeli, lazima aende Misri, na kuitwa tena kuishi kwa muda katika nchi ya ahadi, kama alivyofanya Ibrahimu na watoto wake katika mwili. Hakuna kilichoachwa katika maisha ya Kristo ambacho kingelenga kumhusisha na nyumba ya Ibrahimu, na kuthibitisha kuwa yeye ndiye "Uzao" ulioahidiwa ambao kupitia kwake ahadi zingetimizwa kwa Israeli.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-4">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">4</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 40px">KURUDI NAZARETI, NA KUTEMBELEA YERUSALEMU</div>
+                    <div class="lesson-date">26 Julai, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>K.K. 4 hadi B.K. 8</strong></p>
+<p><em>(Matt. 2:19-23; Luka 2:39-52)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Lini na wapi Bwana alimtokea Yusufu tena? <span class="scripture-ref">Matt. 2:19. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Bwana alimwambia nini Yusufu wakati huo? <span class="scripture-ref">Mstari 20.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Alipofika mipakani mwa Palestina, Yusufu alisikia nani alikuwa akitawala Yudea mahali pa Herode? <span class="scripture-ref">Mstari 22.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Katika hofu yake ya Arkelao, na kuchanganyikiwa kuhusu njia ya kuchukua, aliangazwa tena vipi? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Katika sehemu ipi ya Palestina familia ilikwenda ndipo? <span class="scripture-ref">Mstari 23. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Ni nini kilitakiwa kutimizwa kwa kurejea Nazareti? <span class="scripture-ref">*Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Baada ya kurudi Nazareti, ni nini kimeandikwa kuhusu mtoto Yesu? <span class="scripture-ref">Luka 2:40. *Angalia dokezo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Ilikuwa desturi gani ya kila mwaka ya wazazi wa Yesu? <span class="scripture-ref">Mstari 41.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Katika umri gani imeandikwa kwamba Kristo alienda kwa mara ya kwanza na wazazi wake kuhudhuria sikukuu ya kila mwaka? <span class="scripture-ref">Mstari 42. *Angalia dokezo 5.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Wazazi walipoanza kurudi nyumbani kutoka kwa sikukuu, Yesu alifanya nini? <span class="scripture-ref">Mstari 43.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Ni nini kilisababisha kupuuza kwa dhahiri kwa wazazi kwa mtoto Yesu? <span class="scripture-ref">Mstari 44.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Walipomkosa wakati wa machweo, walimtafuta wapi? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Walipokosa kumpata katika msafara, walifanya nini kisha? <span class="scripture-ref">Mstari 45. *Angalia dokezo 6.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Baada ya kutafuta kwa wasiwasi huko Yerusalemu, walimgundua wapi hatimaye? <span class="scripture-ref">Mstari 46.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Maneno ya Yesu yalionekana kuwa na athari gani kwa wale waliokuwa karibu naye? <span class="scripture-ref">Mstari 47.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Wazazi wake waliathiriwa vipi kwa kuona hilo? <span class="scripture-ref">Mstari 48.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">17.</span>
+                    <div class="question-text">
+                        Kwa maneno gani mama alimkemea? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">18.</span>
+                    <div class="question-text">
+                        Alipokea jibu gani? <span class="scripture-ref">Mstari 49.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">19.</span>
+                    <div class="question-text">
+                        Wazazi walipokeaje maneno haya ya Yesu? <span class="scripture-ref">Mstari 50.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">20.</span>
+                    <div class="question-text">
+                        Licha ya jibu la Yesu kwa tukio hili, aliwachukuliaje matakwa ya wazazi wake? <span class="scripture-ref">Mstari 51. *Angalia dokezo 7.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">21.</span>
+                    <div class="question-text">
+                        Kuna rekodi gani zaidi ya maisha ya mwanzoni ya Yesu? <span class="scripture-ref">Mstari 52.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 66-96.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Wengine wameweka kifo cha Herode Mkuu katika B.K. 2. Hiyo ingefanya kukaa kwa Mwokozi Misri iwe miaka sita. Hii haionekani kuwa ya kweli. Katika tanbihi kwenye ukurasa 54 wa "Life of Christ" ya Hanna, anasema: "Imefanywa kuwa ya uhakika kwamba Herode lazima alikufa kati ya tarehe 13 Machi na tarehe 4 Aprili 750 A.U.C. [baada ya kuundwa mji, yaani, wa Rumi]." "Hale's Chronology," toleo 1, uk. 85, 96, inatoa hoja imara kwa niaba ya tarehe hiyo. Hii ingefanya tarehe ya kifo cha Herode iwe katika sehemu ya mapema ya K.K. 4, na ingefanya kukaa Misri kujumuisha kipindi cha majuma machache tu kama mengi.</p>
+</li>
+<li>
+<p>Ilikuwa asili kwa wazazi wa Kristo kugeukia, kwa tukio hili, kwa nyumbani ya zamani ya Maria miongoni mwa vilima vya Galilaya. Ikizungukwa na vilima vinavyoonekana, kijiji kidogo cha Nazareti kilikuwa kimetengwa kutoka ulimwenguni. Mahali palikuwa hafifu kihistoria kiasi kwamba hakuna kutajwa kwake kunatokea katika Agano la Kale. Hata Mgalilaya alihisi kuwa na haki kuuliza, "Je, kitu chochote kizuri kinaweza kutoka Nazareti?" Yohana 1:46; 21:2. Ilikuwa maili sabini kaskazini mwa Yerusalemu, na sita magharibi mwa Mlima Tabori.</p>
+</li>
+<li>
+<p>Neno "Mnazareti" lilikuwa neno la dharau. Jina Mnazareti lilitokana na Kiebrania netser, lenye maana ya chipukizi au tawi, na liliashiria kutokuwa na umuhimu. "Jina linapewa kinabii kwa Masihi (Isa. 11:1) — 'Patakuwa na chipukizi litakalotoka kwenye shina la Yese, na tawi kutoka mizizi yake litazaa matunda.' Kama vile Daudi alitokea kwa familia ya unyenyekevu ya Yese, ndivyo Masihi, Daudi wa pili, atainuka kutoka katika unyenyekevu mkubwa. Ukweli kwamba Yesu alikua huko Nazareti ulikuwa sababu ya kutosha kwake kudharauliwa. Hakuwa tawi juu ya kilele cha mti mkubwa; si mwana anayetambulika na kuheshimiwa wa nyumba ya kifalme ya Daudi, sasa iliyoanguka, bali chipukizi kisichokuwa na maana kutoka mizizi ya Yese; Mnazareti, wa mji mdogo unaojitokeza."—Vincent.</p>
+<p>"Kila wakati watu waliposema kuhusu Yesu kama Mnazareti, ama kwa kujua au bila kujua walitamka moja ya majina ya Masihi aliyetabiriwa, jina linaloonekana kutoka katika ukoo wake wa kifalme na hali yake ya unyenyekevu."—Smith.</p>
+</li>
+<li>
+<p>"Mtoto alikua, na kuongezeka nguvu katika roho, akijazwa hekima." Hii ni kumbukumbu ya miaka kumi na miwili ya kwanza ya maisha ya Kristo. Inaeleza mengi kwa ujumla, lakini hakuna katika maelezo. Zaidi ya pazia la maisha ya mtoto ya utii, upole, yenye jua, hatuwezi kujitokeza kwa udadisi wa bure.</p>
+</li>
+<li>
+<p>Kulingana na hesabu ya Kiyahudi, umri wa miaka kumi na miwili ulikuwa wakati mvulana alipotoka utotoni kuingia ujana, na kuchukua jina la "mwana wa Bwana." Katika umri huo alifikiriwa kuanza kuhudhuria sikukuu za kila mwaka. Katika hatua hiyo pia alipewa shule ya marabi, wakati alipokusudiwa kwa ofisi ya kuhani, ili kuanza maagizo muhimu kumweka sawa kwa nafasi hiyo. Angalia "Desire of Ages," uk. 75.</p>
+</li>
+<li>
+<p>Ni usiku gani wa wasiwasi lazima uliwasumbua Yusufu na Maria! Jukumu la Bwana kwao lilikuwa, baada ya miaka kumi na miwili ya kuangalia mara kwa mara, limepuuzwa, na sasa walikuwa wamekosa ushirika wa mtoto. Siku nzima ilikuwa imepita katika kutembelea, bila kutambua kwamba hakuwa katika msafara wao. Siku nyingine ilitumiwa kurudi Yerusalemu, na angalau moja zaidi katika kutafuta bure kupitia mji, na miongoni mwa wale ambao walikuwa wameungana nao wakati wa sikukuu. Mwishowe katika siku ya tatu alionekana katika sehemu ya nje ya hekalu iliyotumika kama chumba cha darasa, ambapo marabi waliwafundisha vijana mfumo wa urabi. Angalia "Desire of Ages," uk. 78.</p>
+</li>
+<li>
+<p>Akijua kwamba wakati kamili wa huduma yake ya umma kuanza bado haujafika, Yesu aliwatii wazazi wake kwa miaka kumi na nane zaidi, akifanya kabisa kusidhihirisha uungu wake, lakini akiishi kwa kawaida nyumbani kiasi kwamba hata ndugu zake katika miaka yote hiyo hawakuona alama ya wito wake. Yohana 7:5. Alijulikana kidogo kiasi kwamba Nathanaeli, akiishi lakini maili chache mbali, katika Kana, hakuwahi kusikia habari zake mpaka Filipo alipomwonyesha kama Masihi. Yohana 1:45. Ni somo la uvumilivu la furaha, upole! Huu ulikuwa kweli kujifanya kuwa tupu. Katika maisha yetu ya kila siku, tuangalie kwa Yesu wa Nazareti kwa mfano, pamoja na kuteseka kwa msalaba.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-5">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">5</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 45px">HUDUMA YA YOHANA MBATIZAJI</div>
+                    <div class="lesson-date">2 Agosti, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Katika Jangwa Karibu na Yordani, Majira ya Kuchipua ya B.K. 27</strong></p>
+<p><em>(Matt. 3:1-12; Luka 3:1-18)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Wakati Yesu alikuwa bado na wazazi wake huko Nazareti, nani alianza kuhubiri katika jangwa la Yudea? <span class="scripture-ref">Matt. 3:1.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Ni ujumbe gani ulikuwa mzigo wa Yohana? <span class="scripture-ref">Mstari 2. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Kwa nini Yohana alithibitisha mamlaka ya misheni yake? <span class="scripture-ref">Mstari 3.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Ni tangazo gani alilijumuisha ambalo lililofaa kuwachochea watu wote? <span class="scripture-ref">Luka 3:5, 6.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Ni nani alikuwa mtawala wa Kirumi wakati huo? <span class="scripture-ref">Luka 3:1.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Ni akina nani walikuwa makuhani wakuu katika taifa la Kiyahudi? <span class="scripture-ref">Mstari 2. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Mtangulizi wa Kristo alikuwa amevaa mavazi gani? <span class="scripture-ref">Matt. 3:4.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Chakula chake kilikuwa cha aina gani? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Ni akina nani walivutiwa na kuonekana na kuhubiri kwa Yohana? <span class="scripture-ref">Mstari 5.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Baada ya kukiri dhambi, watu pia walijisalimisha kwenye nini? <span class="scripture-ref">Mstari 6.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Viongozi wa watu waliuchukuliaje ujumbe wa Yohana? <span class="scripture-ref">Luka 7:29, 30.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Kwa mtazamo wa mwelekeo wao, ni kwa maneno gani makali Yohana aliwaambia? <span class="scripture-ref">Matt. 3:7.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Ni dawa gani aliipendekeza kwa hali yao ya kukata tamaa? <span class="scripture-ref">Mstari 8.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Hawa Mafarisayo walikuwa wakifikiria nini? <span class="scripture-ref">Mstari 9.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Yohana aliwaambia Mungu alikuwa na uwezo wa kumwainulia Ibrahimu uzao kutoka wapi? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Ni onyo gani basi aliendelea kuwapa? <span class="scripture-ref">Mstari 10.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">17.</span>
+                    <div class="question-text">
+                        Watu walijibu vipi kwa hili? <span class="scripture-ref">Luka 3:10.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">18.</span>
+                    <div class="question-text">
+                        Kazi aliyowapa Yohana ilikuwa ya aina gani? <span class="scripture-ref">Mstari 11.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">19.</span>
+                    <div class="question-text">
+                        Watoza ushuru waliuliza swali gani kuhusu wajibu wao? <span class="scripture-ref">Mstari 12.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">20.</span>
+                    <div class="question-text">
+                        Walipokea jibu gani lenye vitendo? <span class="scripture-ref">Mstari 13. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">21.</span>
+                    <div class="question-text">
+                        Yohana aliwapa askari ushauri gani waliouliza kuhusu kazi yao? <span class="scripture-ref">Mstari 14.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">22.</span>
+                    <div class="question-text">
+                        Watu walijikuta katika hali gani ya akili kwa sababu ya maneno ya Yohana? <span class="scripture-ref">Mstari 15.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 97-108.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>"Umekaribia;" yaani, umekuja karibu. Huu ulikuwa mtangazaji wa kiongozi anayetarajiwa kuwachukua kutoka katika kutangatanga kwao katika jangwa la dhambi. Angalia dokezo 6 la somo 3. Wale ambao Mbatizaji alihubiri kwao walikuwa kama mifano yao ya zamani, wakiwa Misri—nje ya ufalme wa Mungu, katika huduma ya mfalme mwingine. Kwa hiyo ujumbe kwao katika jangwa ulikuwa kuwa tayari kusaidia utawala bora ambao ulikuwa karibu, na hivyo kuingia katika ufalme wa mbingu.</p>
+</li>
+<li>
+<p>Wakati huu mtawala wa Kirumi alidai na kutumia haki ya kuteua na kuwateua makuhani wakuu wa Kiyahudi, kama alivyochagua. Wote waliohudumu katika ofisi hii lazima wamfurahishe mtawala. Anasi, ingawa alikuwa mtu mwenye hekima na ungeweza kumnunua, hakuwa na uwezo wa kushikilia ofisi bila kero. Aliteuliwa na Kyrenio, gavana wa kifalme wa Syria, katika B.K. 7 (Luka 2:2), alilazimika kujiuzulu mwanzoni mwa utawala wa Tiberio Kaisari, B.K. 14. Aliweza, hata hivyo, kuihakikishia ofisi kwa zamu kwa watoto wake watano wa kiume, na kwa mkwe wake, Kayafa, ambaye aliungana naye hadi na baada ya wakati wa kusulubiwa kwa Kristo. Matendo 4:6. Angalia "Desire of Ages," uk. 30.</p>
+</li>
+<li>
+<p>Watoza ushuru—wale wenye ofisi za umma, hasa wakusanya ushuru. Wakifanya kazi hii chini ya uteuzi wa, na kwa nia ya, Serikali ya Kirumi, kundi hili lilikuwa chukizo na kudharauliwa machoni mwa wananchi wao, si tu kama wasaliti, lakini watoaji wa faida kubwa kutokana na kuangushwa kwa kitaifa. Walipokea, kama wengine wote, jibu lilofaa hasa kwa mahitaji yao.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-6">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">6</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 45px">UBATIZO WA YESU</div>
+                    <div class="lesson-date">9 Agosti, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Katika Kivuko cha Yordani Karibu na Yeriko, Majira ya Pukutiko ya B.K. 27</strong></p>
+<p><em>(Luka 3:16-23; Matt. 3:13-17; Yohana 1:28-34)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Wakati watu walikuwa wakisita katika uamuzi wao kuhusu nabii huyu wa ajabu alikuwa nani, alisema nini kuhusu Yule ambaye angefuata? <span class="scripture-ref">Luka 3:16; Matt. 3:11.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Ni ubatizo gani wa ziada alisema ungetolewa kwa wanadamu? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Kwa nini anamsawiri Kristo akiwatakasa watu wake? <span class="scripture-ref">Luka 3:17; Matt. 3:12.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Alisema nini kingetendeka kwa wale ambao hawajasalimisha kwa kusafishwa huku? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Tukio hili lilitokea wapi? <span class="scripture-ref">Yohana 1:28. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Baada ya kubatiza watu wote katika siku fulani, nani alikuja mbele na kumwomba Yohana ambatize? <span class="scripture-ref">Matt. 3:13. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Mbatizaji alijisikiaje kuhusu kutekeleza ombi? <span class="scripture-ref">Mstari 14.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Yesu alisema nini kumshawishi Yohana kubadili mawazo yake? <span class="scripture-ref">Mstari 15.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Yohana alifanya nini kisha? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Yesu akitoka majini, alifanya nini mara moja? <span class="scripture-ref">Luka 3:21.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Wakati katika mtazamo huu, ni tukio gani la ajabu lilitokea? <span class="scripture-ref">Mstari 22. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Kuhusiana na tukio hili, ni nini kilisikika, kama kikitoka mbinguni? <span class="scripture-ref">Mstari 22; Matt. 3:17.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Yesu alikuwa na umri gani wakati huo? <span class="scripture-ref">Luka 3:23.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Kwa sababu gani Yohana alisema alikuwa ametumwa kubatiza? <span class="scripture-ref">Yohana 1:31.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Yohana alijuaje kwa hakika kwamba Yule ambaye alimbatiza alikuwa Masihi aliyetazamiwa? <span class="scripture-ref">Yohana 1:33.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 109-113.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Bethabara ilikuwa ng'ambo ya Yordani, yaani, kwenye kingo za mashariki mwa mto huo, inadhaniwa kuwa takriban mkabala na Yeriko. Haitambuliki kwa uhakika. Angalia "Smith's Bible Dictionary."</p>
+</li>
+<li>
+<p>Hili lilikuwa ni tabia ya Mwokozi katika kazi yake yote. Unyenyekevu wake katika tukio hili ni mfano wa kudumu kwa kila Mkristo anayekiri. Kama alivyokuwa anajitenga na mnyenyekevu, katika kitendo hiki cha kwanza cha umma cha maisha yake, ndivyo wote wanaweza kuwa hivyo, na kuonyesha ustahili wao wa kuhesabiwa kuwa wafuasi wake.</p>
+</li>
+<li>
+<p>Kamwe hapo awali jibu kama hilo la maombi halikupatikana. Umbo lililchukuliwa na Roho Mtakatifu katika tukio hili kwa hakika ni la kuashiria. Ilikuwa katika umbo zuri na mwendo mpole wa njiwa, ishara inayofaa ya upole na upendo. Ilimtambulisha kama mpole na mnyenyekevu, Mwokozi mwenye upendo. Roho huyo ni yuleyule leo, na anapoweza, anamtambulisha mpokeaji kama mtu wa amani na "mpole, na rahisi kuombwa, amejaa rehema na matunda mema, bila upendeleo, na bila unafiki." Yakobo 3:17.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-7">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">7</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 45px">MAJARIBU YA YESU</div>
+                    <div class="lesson-date">16 Agosti, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Katika Jangwa la Yudea, B.K. 27</strong></p>
+<p><em>(Matt. 4:1-11; Marko 1:12, 13; Luka 4:1-13)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Mara tu baada ya ubatizo wake, Roho alimwongoza Yesu wapi? <span class="scripture-ref">Matt. 4:1. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Ilikuwa ni lengo gani la kumpeleka huko? <span class="scripture-ref">*Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Ni akina nani walikuwa washirika wake huko? <span class="scripture-ref">Marko 1:13.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Yesu alifunga kwa muda gani kabla ya kuhisi maumivu ya njaa? <span class="scripture-ref">Matt. 4:2. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Shetani alipomkaribia Kristo katika njaa yake kali, ni kwa maneno gani alimwachia? <span class="scripture-ref">Mstari 3. *Angalia dokezo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Kristo alijibu vipi mashambulizi ya Shetani? <span class="scripture-ref">Mstari 4.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Kisha kulitendekwa nini kwa Mwokozi? <span class="scripture-ref">Mstari 5.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Shetani alimwomba Kristo afanye nini? <span class="scripture-ref">Mstari 6.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Alitoa sababu gani kwa kuomba jaribio hili? <span class="scripture-ref">*Angalia dokezo 5.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Kristo alikikabilije taarifa hii inayopendeza? <span class="scripture-ref">Mstari 7. *Angalia dokezo 6.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Mwokozi alichukuliwa wapi baadaye? <span class="scripture-ref">Mstari 8.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Kutoka mahali hapo pa faida, Kristo alionyeshwa nini? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Shetani alisema vitu hivi vilikuwa vya nani? <span class="scripture-ref">Luka 4:6.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Kwa masharti gani Shetani aliahidi haya yote kwa Kristo? <span class="scripture-ref">Matt. 4:9.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Jibu gani lilitolewa kwa ombi hili, na lilikuwa na athari gani? <span class="scripture-ref">Mistari 10, 11. *Angalia dokezo 7.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Ni nani kisha alikuja kumhudumia Mwokozi? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 114-131.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Kila harakati za Kristo zilidhibitiwa na Roho, ambaye alikuwa "amejaa." Yohana 1:16. Alipatikana na Roho Mtakatifu. Luka 1:35. Roho hakupewa kwake kwa kipimo. Yohana 3:34. Roho Mtakatifu alikuwa chanzo cha nguvu yake. Matendo 10:38. Kupitia huyu alikuwa bila doa. Ebr. 9:14. Kwa hiyo huo alitoa maagizo kwa mitume wake kuhusu kazi yao, baada ya kufufuka kwake. Matendo 1:2.</p>
+</li>
+<li>
+<p>Lengo lazima lilikuwa la aina mbili: (1) Ilimbidi apitie majaribu kwa njia ya moja kwa moja na yenye nguvu zaidi, ili aweze kufikia kina cha mateso ya kibinadamu katika mstari huo, na hivyo kujua jinsi ya kuwaonea huruma wale ambao alikuja kuwaokoa. (2) Siku hizi pia zilikuwa kumtumikia kama majira ya kutafakari na maandalizi kwa kazi kubwa iliyokuwa mbele yake. Ilikuwa pia kuwa majira ya ushindi, si tu juu ya Shetani katika mashambulizi yake ya moja kwa moja, lakini pia ushindi juu ya mwili, kwa ushirika wa kumeza, unaojenga na Mungu—somo kwa wote ambao wamepewa majukumu katika kazi ya wokovu.</p>
+</li>
+<li>
+<p>Labda alikuwa amechukuliwa sana na sala zake mbele ya adui anayedumu, kwamba hakuhisi hitaji la chakula. Itazingatiwa kwamba Marko na Luka wote wanaashiria kwamba Mwokozi alikuwa akijaribiwa katika kila hatua ya siku arobaini za kufunga. Inaweza kuwa kwamba wakati huo swali lilikuwa likizungushwa, kutoka upande wake wa kibinadamu, kama kweli alikuwa na ulinzi wa Mungu, wakati aliachiwa katika mahali pa ukiwa. Hii inashauri kwa mashambulizi ya Shetani baada ya Kristo akawa anahisi njaa.</p>
+</li>
+<li>
+<p>Siku arobaini kabla, wakati wa ubatizo wake, sauti kutoka mbinguni ilisema, "Wewe ni Mwanangu mpendwa." Sasa, katika upweke wa jangwa, na wanyama pori tu kama washirika, akiwa na rangi ya kuvutia na amechujiuka kutoka kufunga kwa muda mrefu, na maumivu ya njaa yakimtafuna, imani yake itasimama kwenye Neno hilo lililosemwa kwake siku chache awali? Shetani anaishika fursa kuashiria shaka ya ukweli wa taarifa hiyo, akitumaini kwa hiyo kusababisha kushindwa kwa mpango wa wokovu. Kushuku kungekuwa ni kuthibitisha kutokuwa Mwana wake. Kama mpango huu hauendelei, Kristo anaweza kujaribu kuthibitisha Uujana wake kwa kutii maagizo ya Shetani, na hivyo kujitoa kutoka kwa nguvu ya kutunza ya Mungu. Anajisikia kuwa na uhakika kwamba katika moja au nyingine ya mistari hii Kristo atashindwa. Angalia "Desire of Ages," uk. 119.</p>
+</li>
+<li>
+<p>Shetani kwa kweli alisema kwa Kristo: Sasa Umechukua kutegemea Neno la Mungu kwa msaada na ulinzi, wacha mimi, na wote hawa waabudu katika ua chini, tuwaone Mungu akikutunza, unapojitupa kwenye anga; kisha wote wataamini wewe ni Masihi. Je, Mungu hajasema, Atawapa malaika wake agizo juu yako, kukubeba mikononi mwao, kuhifadhi wewe kutoka kudondoka dhidi ya mawe? Sasa amini sehemu hii ya Neno, kama unategemea sana juu yake.</p>
+</li>
+<li>
+<p>Kristo hajaribu katika kesi hii kuhojiana juu ya jambo hilo. Hiyo ingekuwa ni kushuka chini kwenye kiwango cha mtesaji wake. Alitoa kwa utulivu, "Usimjaribu Bwana Mungu wako." Ni kitu kimoja kumwamini wakati tunafanya mapenzi yake, kingine kumjaribu wakati tunachukua kwa kiburi mwenendo Hajatuelekeza. Mungu anaweza kuniokoa kutoka nafasi hii, na bado ninamwamini.</p>
+</li>
+<li>
+<p>Maneno haya, yaliyosemwa kwa njia ya amri kwa Shetani, wakati alipojidhihirisha wazi wazi, yalimpa ushahidi aliodai kutafuta kwa kutokuwa na nia nafsi. Ndani yao ilionekana nguvu ambayo alijifanya anashuku ilikuwa pamoja na Kristo. Athari ya nguvu yao ilihisiwa haraka na Shetani, na alijikunja mbali bila mashambulizi mengine dhidi ya Mwana wa Mungu. Angalia "Desire of Ages," uk. 130.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-8">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">8</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 45px">WITO WA WANAFUNZI WA KWANZA</div>
+                    <div class="lesson-date">23 Agosti, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Katika Bethabara, B.K. 27</strong></p>
+<p><em>(Yohana 1:29-51)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Kristo alipojidhihirisha tena katika mahali pa ubatizo wa Yohana, Mbatizaji alitoa mshangao gani kumhusu? <span class="scripture-ref">Yohana 1:29.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Kwa maneno gani yaliyotamkwa awali anawaita watu waangalie? <span class="scripture-ref">Mistari 30, 31.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Mbatizaji alikuwa na uhakika vipi juu ya utambulisho wa Kristo? <span class="scripture-ref">Mistari 32-34.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Ni akina nani walikuwa wamesimama pamoja na Yohana siku iliyofuata? <span class="scripture-ref">Mstari 35.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Yesu alipotokea mbele ya macho, Yohana alimtangaza vipi kwa wanafunzi wawili? <span class="scripture-ref">Mstari 36.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Wanafunzi wa Yohana walifanya nini mara moja? <span class="scripture-ref">Mstari 37.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Walitambulishwa vipi kwa Yesu? <span class="scripture-ref">Mstari 38.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Ni swali gani walichomuuliza lililoonekana kama halina umuhimu? <span class="scripture-ref">*Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Jibu gani lilirudishwa na Kristo? <span class="scripture-ref">Mstari 39. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Wanafunzi waliendelea kwa muda gani na mahojiano yao na Bwana? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Ni nani walikuwa wanafunzi wawili waliopewa upendeleo huo? <span class="scripture-ref">Mstari 40.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Baada ya kujifunza makao ya Kristo, Andrea alifanya nini kwanza? <span class="scripture-ref">Mstari 41. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Simoni alipoletwa kwa Yesu, Bwana alisema nini kwanza kwake? <span class="scripture-ref">Mstari 42. *Angalia dokezo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Siku iliyofuata, akiwa njiani kwenda Galilaya, Kristo alimpata nani njiani? na alimwambia nini? <span class="scripture-ref">Mstari 43.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Filipo alikuwa wa utaifa gani? <span class="scripture-ref">Mstari 44.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Filipo alimpata nani haraka? na alimbeba ujumbe gani? <span class="scripture-ref">Mstari 45.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">17.</span>
+                    <div class="question-text">
+                        Nathanaeli alitoa jibu gani kwa kauli hii? <span class="scripture-ref">Mstari 46.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">18.</span>
+                    <div class="question-text">
+                        Filipo alilishughulikiaje pingamizi hili? <span class="scripture-ref">*Angalia dokezo 2 la somo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">19.</span>
+                    <div class="question-text">
+                        Wakati Nathanaeli alikuwa bado anakuja, ni maoni gani kumhusu Kristo alitoa mbele ya kusikia kwake? <span class="scripture-ref">Mstari 47.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">20.</span>
+                    <div class="question-text">
+                        Katika mshangao wake, Nathanaeli alitoa jibu gani? <span class="scripture-ref">Mstari 48.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">21.</span>
+                    <div class="question-text">
+                        Yesu alitoa jibu gani? <span class="scripture-ref">*Angalia dokezo 5.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">22.</span>
+                    <div class="question-text">
+                        Baada ya kusikia hili, ni maneno gani ya kujiamini yalitoka katika midomo ya Nathanaeli? <span class="scripture-ref">Mstari 49.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">23.</span>
+                    <div class="question-text">
+                        Kristo alisema angeona nini bado? <span class="scripture-ref">Mistari 50, 51.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 132-143.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Lakini swali halikuulizwa kwa kukosa mawazo mengine. Wahojiaji wawili walitaka zaidi ya neno la kupita na Kiumbe alyegundulika sasa, na hivyo walitamani kutumia muda naye katika faragha ya nyumbani kwake. Yeye, akielewa matakwa yao, alifungua njia kwa mahojiano ya muda mrefu.</p>
+</li>
+<li>
+<p>Mahali walipokwenda palikuwa nyumba fulani ambayo ilikuwa imefunguliwa kwa Kristo kwa kukaa siku chache, kwa ukarimu wa wageni. Jinsi gani misheni ya Kristo ilifunguka kwa ajabu. Hakufanya maonyesho; hakuna hotuba za umma zilizotolewa naye. Lakini alipotembelea kwa utulivu mbele ya watu, wanafunzi wake wa kwanza walivutiwa kwake kwa maneno ya utulivu ya mwingine.</p>
+</li>
+<li>
+<p>"Masihi" maana yake mtiwa mafuta, na ulitumika kuhusiana na yeyote aliyetiwa mafuta na mafuta matakatifu. Kristo alikuwa mfano wa upako wote wa Kiebrania, na kwa hiyo alikuwa "faraja" ambayo kila Mwisraeli wa kweli alitazamia. Luka 2:25. Neno "faraja" lililotumika hapa limetoka kutoka asili moja kama "Mfariji" katika Yohana 14:16; 15:26, n.k., na ina maana ya kuita kando kwa ajili ya msaada. Kwa maneno mengine, faraja ya Kiyahudi ilikuwa katika kuita kando yao msaada ambao dhabihu zao za damu ziliashiria.</p>
+</li>
+<li>
+<p>"Yona" katika Kiebrania ina maana ya njiwa. Kama vile Yesu alikuwa anafahamu Simoni, alimwita "mwana wa njiwa," na kisha kwa utabiri wa kiungu kama maendeleo ya baadaye ya Petro yangekuwa, aliongeza, "Wewe utaitwa Kefa," yaani, jiwe. Itazingatiwa kwamba mabadiliko haya ya jina kwa mitume aliye na shauku walipewa wakati wa mkutano wa kwanza wa Petro na Bwana wake, na kabla maneno mengine hayajapita kati yao. Jina "Petro," ambalo kwacho mwanafunzi huyu anajulikana zaidi, ni sawa na Kiaramiki na Kiyunani na Kefa, au jiwe.</p>
+</li>
+<li>
+<p>"Chini ya mtini." Mahali palipochaguliwa kwa kutafakari na kuomba na wenye uchaji wa Israeli. Nathanaeli alikuwa katika sala chini ya mtini, akitafakari juu ya ukweli wenyewe aliokuwa amesikia huko Bethabara, akisikiliza maneno ya Mbatizaji, na kujiuliza, kama wengi wengine, wakati na mahali ambapo Masihi angetokea. Alikuja kwa Kristo akishuku, lakini kwa moyo usio na hila. Maneno ya Kristo kwake yalionekana yenye busara ya kiungu kiasi kwamba hakuweza kusaidia kuamini kwamba Mmoja alikuwa mbele yake ambaye alijua mawazo yake hasa. Aliathiriwa sana na hili kwamba tamaa ya moyo wake ilikuwa imekuwa kitu anachoona kwa macho yake, na shaka yake ilipisha njia kwa imani ya dhati. Inadhaniwa na wengine kwamba, kwa kuwa jina Nathanaeli halipatikani katika orodha ya mitume kumi na wawili, alikuwa anafanana na Bartholomayo, ambaye daima anatajwa karibu na Filipo.</p>
+<p>Hawa watano walikuwa wanafunzi wa kwanza wa Kristo. Aliita mmoja wao moja kwa moja; wawili walichochewa kuunganisha maslahi yao na Yake kwa maneno ya Yohana; mmoja wao alijiunga na kundi hilo kwa maombi ya ndugu; na mwingine, kwa ushawishi wa rafiki. Kazi yote ilifanyika kwa kazi ya moja kwa moja, ya mtu binafsi, juhudi ambazo Mungu anabariki zaidi ya zote nyingine kwa wokovu wa wanadamu.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-9">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">9</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 45px">MUUJIZA WA KWANZA</div>
+                    <div class="lesson-date">30 Agosti, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Kana ya Galilaya, B.K. 27</strong></p>
+<p><em>(Yohana 2:1-11)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Siku ya tatu baada ya matukio ya mwisho yaliyosomwa, nini kilitokea huko Kana ya Galilaya? <span class="scripture-ref">Yohana 2:1.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Nani anatajwa kuwa yupo harusini? <span class="scripture-ref">Mstari 2. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Ni nini kilisababisha kuharibu furaha ya tukio? <span class="scripture-ref">Mstari 3. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Nani aliombwa msaada? na na nani? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Katika kujibu, Yesu alimwambia vipi mama yake? <span class="scripture-ref">Mstari 4. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Kristo alitoa sababu gani kwa kuzuia kwa mama yake? <span class="scripture-ref">*Angalia dokezo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Licha ya maneno haya ya Kristo kwa mama yake, aliamuru nini watumishi wafanye? <span class="scripture-ref">Mstari 5.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Ni aina gani ya vyombo, na vingapi, vilikuwa vimesimama karibu? <span class="scripture-ref">Mstari 6. *Angalia dokezo 5.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Kristo alitoa amri gani kwa watumishi? <span class="scripture-ref">Mstari 7.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Baada ya kujaza mitungi, aliwaambia wafanye nini? <span class="scripture-ref">Mstari 8.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Je, msimamizi wa sherehe alijua divai mpya ilitoka wapi? <span class="scripture-ref">Mstari 9.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Baada ya kuonja divai, msimamizi wa sherehe alifanya nini? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Alimpongeza vipi bwana arusi kuhusu upatikanaji wa divai? <span class="scripture-ref">Mstari 10. *Angalia dokezo 6.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Mwandishi wa injili anaiita kazi ya Kristo ni nini? <span class="scripture-ref">Mstari 11.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Ilikuwa na athari gani kwa wanafunzi Wake? <span class="scripture-ref">*Angalia dokezo 7.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Yesu alikwenda wapi baadaye? na nani walikwenda naye? <span class="scripture-ref">Mstari 12.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 144-153.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Kana, "mahali penye mianzi," paliitwa hivyo kutokana na misitu minene iliyopo asili katika ujirani wake wa karibu, palikuwa juu ya kilima ambacho kinainuka kutoka tambarare ya El Battauf. Panasadikiwa kuwa maili tisa kaskazini mwa Nazareti, nyumbani kwa Yesu, ambayo ilikuwa lengo la kwanza la safari. Wakiwa wamefika huko, na kukuta hakuna mtu wa kuwapokea, Yesu na wanafunzi wake walikubali mwaliko wa kuhudhuria harusi, ambayo kutokana na hali za kuhudhuria inaonekana ilikuwa ya ndugu fulani wa Kristo, kulingana na sehemu iliyoonekana ambayo mama yake alichukua kuhusiana nayo.</p>
+</li>
+<li>
+<p>Maji matamu ya zabibu yalihesabiwa kama ni muhimu sana katika harusi ya Kiyahudi, wakati yale yaliyochacha yalikatazwa. Mith. 20:1. Angalia pia "Desire of Ages," uk. 145, 149. Haijulikani harusi ilikuwa imekwenda kwa muda gani kabla divai haikuwepo, lakini kushindwa kama huko kulikuwa ni aibu kwa wale wanaofanya karamu, na hivyo hali mbaya hiyo wakati huo ilikuwa ya kuhuzunika.</p>
+</li>
+<li>
+<p>Haiiti tena "mama," lakini anatumia msemo wa kawaida wa Kiebrania, ni muundo wa kawaida wa kuongea kwa wanawake wote. Anataka aelewe kwamba haimtawali tena, lakini kwamba Yeye yuko chini ya uongozi wa Baba yake tu juu. Kuingilia kwake katika kazi yake, kwa misingi ya uhusiano wake wa kimwili, kulikataliwa. Kulikuwa na hatari yake kusahau uhusiano wake uliobadilika kwake. Wakati anwani sasa inaonekana kali, haikuchukuliwa hivyo wakati huo, kama itakavyoonekana na maneno yake ya mwisho ya upendo kwake, alipofariki msalabani. Yohana 19:26. Angalia "Desire of Ages," uk. 146.</p>
+</li>
+<li>
+<p>Saa haiko Yangu ambayo nitukuzwe; wakati bado haujafika kwangu kutukuzwa. Mungu anaamua saa Yangu na kazi; lazima sasa nimtukuze Yeye pekee. Angalia "Desire of Ages," uk. 146, 147.</p>
+</li>
+<li>
+<p>Tahadhari za kiafya za Agano la Kale zilikuwa zimeharibiwa na Wayahudi wa siku hiyo kiasi kwamba kabla ya kila mlo kila mtu lazima aoshe mikono yake. Hakuna mtu alikuja kutoka sokoni na kupuuza kuoshwa kulikoandikwa. Kila mgeni lazima awe na miguu imeoshwa wakati wa kufika, na aache viatu vyake nje ya mlango. Kwa madhumuni haya, na uoshaji usio na idadi mwingine, mitungi mikubwa ya mawe ilikuwa kandokando ya mlango. Katika mahali hapa palikuwa na sita ya hizi, kila mmoja akishikilia takriban galoni kumi. Hii ni makadirio ya chini ya uwezo wao iliyofanywa na mwandishi yeyote. Kuzijaza zote kwa divai ikionyesha ukarimu wa kufurika, ambayo ni tabia ya Bwana katika kujibu maombi yetu kwa baraka za kiroho.</p>
+</li>
+<li>
+<p>Huu ulikuwa muujiza mkubwa. Kama alivyosema Milton, "Maji yanayofahamu yalimwona Mungu wao na kuona aibu." Tofauti kati ya muujiza huu na utendaji wa kawaida wa asili ilikuwa tu katika suala la muda uliochukuliwa kupata matokeo. Katika utendaji, mmoja ni muujiza kama nyingine, kwa kuwa inahitaji nguvu ya Mungu kutimiza matokeo katika kesi yoyote. Muujiza haukuvunja utaratibu wa sheria za asili, lakini uliuharakisha tu.</p>
+</li>
+<li>
+<p>Bila shaka, kama vile wageni walivyotoa maoni juu ya ubora wa divai iliyowekwa mbele yao, maswali yaliulizwa kuhusu ilichukuliwa wapi. Watumishi, bila shaka, walieleza utaratibu wote. Yesu alitafutwa. Akitarajia hili, katika unyenyekevu wake mkubwa alijiondoa, na tendo hili kwa upande wake lilitoa nafasi kwa wanafunzi wake kumtangaza kama Mwana wa Mungu—Masihi. Kwa haraka habari ya tukio zilisambaa mpaka zilifika hata Yudea, na hivyo Kristo alitafuta upweke kwa siku chache.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-10">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">10</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 45px">UTAKASO WA HEKALU</div>
+                    <div class="lesson-date">6 Septemba, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Yerusalemu, Majira ya Kuchipua ya B.K. 28</strong></p>
+<p><em>(Yohana 2:13-25; 3:1-8)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Baada ya kuondoka Kapernaumu, rekodi inaonyesha Mwokozi aliyekwenda wapi? na kwa nini? <span class="scripture-ref">Yohana 2:13. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Alipofika hekaluni, Mwokozi alikuta nini huko? <span class="scripture-ref">Mstari 14.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Alifanya nini mara moja? <span class="scripture-ref">Mstari 15. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Alitamka maneno gani pamoja na maonyesho yake ya kutisha? <span class="scripture-ref">Mstari 16.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Baada ya kuona juhudi za Mwokozi, ni andiko gani lilikuja katika fikra za wanafunzi? <span class="scripture-ref">Mstari 17. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Baada ya kuona maonyesho ya mamlaka ya Mwokozi, Wayahudi walimtaka afanye nini kama ushahidi wa haki yake kufanya kama alivyofanya? <span class="scripture-ref">Mstari 18.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Mwokozi alitoa jibu gani? <span class="scripture-ref">Mstari 19.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Wayahudi walilijibu vipi? <span class="scripture-ref">Mstari 20.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Lakini Bwana alikuwa na marejeo kwa nini? <span class="scripture-ref">Mistari 21, 22.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Baada ya kuona miujiza mingi ya Yesu, watu wengi kwenye Pasaka waliathirika vipi? <span class="scripture-ref">Mstari 23.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Lakini je, Yesu aliwaaminini watu hawa? na kama sivyo, kwa nini? <span class="scripture-ref">Mistari 23-25. *Angalia dokezo 4.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Ni mtu gani maarufu huko Yerusalemu alikuja usiku kuzungumza na Yesu? <span class="scripture-ref">Yohana 3:1, 2.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Ni jambo gani la kwanza ambalo Mwokozi alijaribu kumvutia? <span class="scripture-ref">Mstari 3.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Ni kwa swali gani Nikodemo alielezea mshangao wake kwa taarifa hii? <span class="scripture-ref">Mstari 4.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Yesu alimwelezaje suala hili kwa Nikodemo? <span class="scripture-ref">Mistari 5-8.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 154-166.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Wayahudi walitambua aina mbili za Pasaka. Ya kwanza ilizingatiwa katika jangwa, katika safari kutoka Misri hadi Palestina, na kwa muda fulani baadaye. Baada ya kujenga hekalu, hata hivyo, muundo wa sherehe ulibadilishwa kwa kiasi. Kwa kulinganisha Kumb. 16:1-6 na Hes. 28:16-25 na Kutoka, sura 12, 13, itaonekana kwamba maagizo yanayohusiana nayo yaliongezwa katika maandiko ya baadaye ambayo hayakuwa katika ya awali, na ambayo yalikuwa si rahisi kufanywa katika jangwa. Katika sherehe za baadaye za ibada hiyo divai ilitumika, lakini haikuwa imeagizwa katika Torati. Hata hivyo, inatajwa katika Agano Jipya. Luka 22:17-20; 1 Kor. 10:16. Wimbo ambao Mwokozi alifunga huduma ya Pasaka ya mwisho haukuhitajika na maagizo ya awali. Wimbo, ulioitwa Hallel, ulikuwa umejumuishwa na Zaburi 113-118, mbili za kwanza zikiimbwa mwanzoni mwa mlo, na nyingine mwishoni.</p>
+</li>
+<li>
+<p>Huu ulikuwa utakaso wa kwanza wa hekalu, katika sehemu ya mapema ya huduma ya Kristo. Utakaso wa hekalu ulirudiwa katika Pasaka ya mwisho ambayo alihudhuria, miaka mitatu baadaye.</p>
+</li>
+<li>
+<p>Katika kila Pasaka kila mwanamume, awe tajiri au maskini, lazima alete nusu shekeli kwa patakatifu, kama ushuru mtakatifu kutumika kwa gharama za huduma ya maskani. Kut. 30:11-16. Lakini pesa za nchi mbalimbali, za shaba au shaba nyekundu, zikibeba ishara za kipagani na maandishi, hazikuruhusiwa hekaluni. Waabudu wanaokuja kutoka nchi hizo walilazimishwa kubadilisha sarafu zao za kipagani kwa kipande cha fedha cha kawaida cha patakatifu, na hawa wabadilishaji wa pesa walifanya huduma hii kwa ajili yao, wakitoza kiwango kikubwa kwa upendeleo huo. Hii ilisababisha majadiliano mengi juu ya thamani za pesa, na, pamoja na mlio wa kondoo na ng'ombe, fujo la sauti ilifanya ua wa hekalu kuwa tukio la machafuko mengi. Wanafunzi walikuwa wameona hapo awali uchafuzi wa nyumba ya sala, lakini labda walikuwa hawajasimama kufikiri kuwa ni kosa, kwa kuwa mpangilio huu ulikuwa umezoeleka kwa miaka mingi. Lakini kuona katika kitendo cha Kristo utimilifu wa unabii, imani yao kwake ilitiwa nguvu sana. Angalia "Desire of Ages," uk. 155.</p>
+</li>
+<li>
+<p>Yaani, Yesu hakupokea yeyote kati ya hawa katika mzunguko wa wafuasi wake wa kibinafsi. Hakuna mtu kutoka karibu na Yerusalemu, kwa kweli, alikuwa na upendeleo kama huo. Hakuchagua waandishi, wala marabi, wala watu wa hadhi kubwa kutoka eneo hilo. Kwa upande mwingine, wanafunzi wake, ambao alijitoa kwao hadi mwisho wa maisha yake, kwa kuondoa Yuda mmoja, walikuwa Wagalilaya. Akijua kile kilichokuwa ndani ya watu wote, alijua ni nani wa kuchagua kwa ajili ya matokeo mazuri ya kazi yake ya duniani.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-11">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">11</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 40px">USHUHUDA WA MWISHO WA MBATIZAJI KUHUSU KRISTO</div>
+                    <div class="lesson-date">13 Septemba, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Sehemu Mbalimbali za Yudea, B.K. 28</strong></p>
+<p><em>(Yohana 3:14-36; 4:1-6)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Katika mazungumzo yake na Nikodemo, kwa mfano gani wa kawaida Mwokozi alifunua misheni yake duniani? <span class="scripture-ref">Yohana 3:14, 15.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Ni motisha gani ilimpa Kristo kwa kazi kama hiyo? <span class="scripture-ref">Mistari 16, 17.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Ni kwa nini watu wanaepuka hukumu kutoka kwa dhambi? <span class="scripture-ref">Mstari 18.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Ni nini kinathibitisha hukumu ya mwanadamu? <span class="scripture-ref">Mistari 19-21.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Baada ya kumaliza mazungumzo haya, Kristo na wanafunzi wake walikwenda wapi? na walifanya nini? <span class="scripture-ref">Mstari 22.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Yohana Mbatizaji alikuwa akifanya kazi wapi wakati huo? <span class="scripture-ref">Mstari 23. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Wakati wa mzozo uliotokea kati ya wanafunzi wa Yohana na baadhi ya Wayahudi, ni ripoti gani ililetwa kwa Yohana kumhusu Yesu? <span class="scripture-ref">Mstari 26.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Ni kwa jibu gani lenye ukarimu Yohana alifunua ukuu wake? <span class="scripture-ref">Mistari 27-30.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Yohana alisema asili ya ushuhuda wa Kristo ingekuwa vipi? na kwa nini? <span class="scripture-ref">Mistari 31-33.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Katika ushuhuda wake kwa ulimwengu, Kristo alikuwa akiongea maneno ya nani? na kwa sababu gani? <span class="scripture-ref">Mstari 34.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Yesu alipojua kuwa ripoti hii ilikuwa imepelekwa kwa Yohana, alifanya nini wakati huo? <span class="scripture-ref">Yohana 4:1.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Alipitia njia gani kujaribu safari? <span class="scripture-ref">Mstari 4. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Katika mji gani wa nchi hiyo alisimama? <span class="scripture-ref">Mstari 5. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Katika uchovu wake mchana, wapi Yesu alitafuta kupumzika? <span class="scripture-ref">Mstari 6.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Yesu alipoketi hapo, nani alitokea kisimani? <span class="scripture-ref">Mstari 7.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Ili kujishughulisha katika mazungumzo, ni fadhila gani Mwokozi alimwomba? 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 167-182.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Eneo la Aenoni kwa sasa halijulikani kwa hakika. Inakubaliwa sana kuwa ilikuwa magharibi mwa Yordani, na wengine wanafikiri karibu maili nane kusini mwa Scythopolis. Jina lenyewe ni tafsiri ya Kiyunani ya neno la Kikaldayo linalomaanisha "chemchemi." Angalia ramani.</p>
+</li>
+<li>
+<p>Karibu mwaka 925 K.K. Omri, mfalme wa sita wa Israeli, alijenga mji wa Samaria ndani ya kabila la Efraimu, na akauita kwa Shemer, mtu ambaye alimununulia eneo hilo. 1 Wafalme 16:24, 25. Ulifanywa kuwa mji mkuu wa makabila kumi, na jina la mji lilitolewa kwa ufalme wenyewe.</p>
+</li>
+<li>
+<p>"Sikari" haitajwi popote katika Biblia isipokuwa katika Yohana 4:5. Inaaminiwa sana kuwa inarejelea mji muhimu wa Shekemu. Ipo katika bonde liliyotunzwa, likiwa na Gerizimu kusini, na Ebali kaskazini, na inasemekana kuwa peponi ya Nchi Takatifu.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div><div id="lesson-12">
+        <div class="lesson">
+            <div class="lesson-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="lesson-circle">12</div>
+                <div class="lesson-title-container">
+                    <div class="lesson-title" style="font-size: 24px;top: 40px">MAZUNGUMZO NA MWANAMKE WA SAMARIA</div>
+                    <div class="lesson-date">20 Septemba, 2025</div>
+                </div>
+            </div>
+            
+                <div class="preliminary-note">
+                    <p><strong>Shekemu, B.K. 28</strong></p>
+<p><em>(Yohana 4:7-42)</em></p>
+                </div>
+                
+            
+            <div class="questions-section">
+                <div class="questions-header">MASWALI</div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">1.</span>
+                    <div class="question-text">
+                        Mwokozi alimwomba fadhila gani mwanamke wa Samaria, kwenye kisima cha Sikari? <span class="scripture-ref">Yohana 4:7.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">2.</span>
+                    <div class="question-text">
+                        Kwa maneno gani mwanamke alionekana kukataa ombi la Yesu? <span class="scripture-ref">Mstari 9. *Angalia dokezo 1.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">3.</span>
+                    <div class="question-text">
+                        Mwokozi alitoa jibu gani ili kuepuka mgogoro wa kitaifa? <span class="scripture-ref">Mstari 10.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">4.</span>
+                    <div class="question-text">
+                        Bila kujua zawadi ya Mungu, mwanamke alijibu vipi? <span class="scripture-ref">Mistari 11, 12.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">5.</span>
+                    <div class="question-text">
+                        Mwokozi alikabilije pingamizi hili? <span class="scripture-ref">Mistari 13, 14.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">6.</span>
+                    <div class="question-text">
+                        Je, mwanamke alifahamu maana ya Kristo katika kutumia mfano huu? <span class="scripture-ref">Mstari 15.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">7.</span>
+                    <div class="question-text">
+                        Bila kumlaumu mwanamke kwa maisha yake ya kutokuwa huru lakini akiwa na nia ya kumfanya aungame kwa hiari, Yesu alimwomba afanye nini? <span class="scripture-ref">Mstari 16.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">8.</span>
+                    <div class="question-text">
+                        Alisema nini kwa ombi hili? <span class="scripture-ref">Mstari 17.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number one-digit">9.</span>
+                    <div class="question-text">
+                        Mwokozi alianzaje kujifunua kwake? <span class="scripture-ref">Mistari 17, 18.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">10.</span>
+                    <div class="question-text">
+                        Kwa maneno haya mwanamke aliona nini kwa udhaifu katika Kristo? na ni swali gani alimwuliza kama matokeo? <span class="scripture-ref">Mistari 19, 20.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">11.</span>
+                    <div class="question-text">
+                        Bwana alimfunulia vipi matokeo ya kuja kwake duniani? <span class="scripture-ref">Mistari 21-24. *Angalia dokezo 2.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">12.</span>
+                    <div class="question-text">
+                        Akisikia haya, mwanamke alimwambia nini kuhusu alichokijua kumhusu Masihi anayetarajiwa? <span class="scripture-ref">Mstari 25.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">13.</span>
+                    <div class="question-text">
+                        Ni maneno gani wazi Bwana alimwambia? <span class="scripture-ref">Mstari 26.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">14.</span>
+                    <div class="question-text">
+                        Wanafunzi waliporudi kutoka mjini na chakula, waliathirika vipi kumwona Yesu akizungumza na mwanamke? <span class="scripture-ref">Mstari 27. *Angalia dokezo 3.*.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">15.</span>
+                    <div class="question-text">
+                        Mwanamke alifanya na kusema nini? na matokeo gani? <span class="scripture-ref">Mistari 28-30.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">16.</span>
+                    <div class="question-text">
+                        Wakati alikuwa ameenda, wanafunzi walitaka Yesu afanye nini? <span class="scripture-ref">Mstari 31.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">17.</span>
+                    <div class="question-text">
+                        Jibu lake lilikuwa lipi? <span class="scripture-ref">Mstari 32.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">18.</span>
+                    <div class="question-text">
+                        Katika kujibu maswali yao ya binafsi kuhusu hali hiyo, aliwaambia nini? <span class="scripture-ref">Mistari 34-38.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">19.</span>
+                    <div class="question-text">
+                        Maneno ya mwanamke yalikuwa na athari gani kwa Wasamaria? <span class="scripture-ref">Mistari 39, 40.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">20.</span>
+                    <div class="question-text">
+                        Ni hitimisho gani la furaha walilofikia, wale ambao walitoka kwenda kumsikiliza Kristo? <span class="scripture-ref">Mistari 41, 42.</span>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">21.</span>
+                    <div class="question-text">
+                        Toa hali kuu zinazohusiana na kuzaliwa kwa Kristo. 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">22.</span>
+                    <div class="question-text">
+                        Eleza ulichojifunza kuhusu utoto wake. 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">23.</span>
+                    <div class="question-text">
+                        Eleza kwa ufupi hadithi ya ubatizo wake na majaribu yake jangwani. 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="question">
+                    <span class="question-number two-digit">24.</span>
+                    <div class="question-text">
+                        Simulia matukio makuu katika huduma yake kama ulivyosoma. 
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            
+            
+                <div class="additional-section">
+                    <div class="additional-header">KUSOMA</div>
+                    <div class="additional-content">
+                        <p>"Desire of Ages," uk. 183-195.</p>
+                    </div>
+                </div>
+                
+            
+                <div class="notes-section">
+                    <div class="notes-header">MAELEZO</div>
+                    <div class="notes-content">
+                        <ol>
+<li>
+<p>Hali ya joto ya nchi hiyo ilifanya kinywaji cha maji kuwa na thamani sana kiasi kwamba katika hali za kawaida hakuna mtu angefikiria kukataa. Lakini migogoro ya muda mrefu kwa karne kati ya Wayahudi na Wasamaria ilikuwa imesababisha chuki kali na ya kudumu kati ya maeneo mawili. Kwanza kabisa, Wasamaria walikuwa wameundwa na watu kutoka Babeli, Kutha, Ava, Hamathi, na Sefarwaimu, waliopelekwa huko na mfalme wa Ashuru alipowachukua makabila kumi ya Israeli mateka. Wachache pia, kutoka makabila kumi, walipata njia ya kurudi tena nchi yao ya asili. Kwa sababu fulani, mfalme wa Ashuru alimrudisha mmoja wa makuhani waliotoka uhamishoni kwenye nchi hiyo, ambaye aliwafundisha watu ibada ya Yehova, ambayo waliongeza kwenye ibada yao ya sanamu. 2 Wafalme 17:24-33. Wakati kabila la Yuda liliporudi kutoka uhamishoni, watu hawa walitaka kujiunga nao katika kujenga hekalu huko Yerusalemu, ambako alikataliwa. Wasamaria kwa matokeo walijenga hekalu shindani katika Mlima Gerizimu. Uadui wa milele uliibuka; utakatifu zaidi ulidaiwa kwa Mlima Gerizimu kuliko kwa Yerusalemu; Wasamaria waliwashutumu Wayahudi kwa kuharibu Neno la Mungu. Kwa upande mwingine, Wayahudi waliwaita Wasamaria Wakuthiti, na kukataza uhusiano wowote nao; kumkaribisha mmoja nyumbani ilikuwa kusababisha laana ya Mungu.</p>
+</li>
+<li>
+<p>Angalia jinsi kwa uangalifu Mwokozi alivyoongoza akili ya mwanamke, si tu kukiri kwa hiari uovu wake, lakini kuuliza maswali kwa ajili ya kutia nuru katika akili yake iliyotiwa giza. Hakuharisha lolote, lakini alimruhusu afungue njia kwa mstari wa ukweli aliyetafuta kupokea.</p>
+</li>
+<li>
+<p>Mahusiano ya jinsia kwa wakati huo, hata katika maisha ya kawaida, yalikuwa finyu na yakushuku sana miongoni mwa Wayahudi. Mwanamke asiyefunikwa katika umma alikuwa na aibu. Kwa rabi kuongea na mwanamke hadharani ilikuwa kukosa adabu sana. Talmudi ilikataza hilo, hata ingawa mwanamke alikuwa mke wa rabi mwenyewe. Hakuweza hata kumsalimia kwa heshima. Wanafunzi, hata hivyo, hawakuthubutu kuuliza kitendo cha Bwana wao, hata ingawa mwanamke aliyeongea naye alikuwa mwenye dhambi wa Kisamaria aliyechukiwa. Alivuka mipaka ya desturi iliyowekwa kiasi cha kuonyesha kwa hakika kwamba dini ya kweli haikutambua tofauti za kijamii kati ya jinsia. Katika Kristo wote ni mmoja.</p>
+</li>
+</ol>
+                    </div>
+                </div>
+            
+        </div>
+        </div>
+        <div class="back-matter">
+            <h1>RASILIMALI ZA ZIADA</h1>
+<h2>Vitabu</h2>
+<p>Utataka kufanya rejeo la karibu kila siku kwa "Desire of Ages" kwa angalau miezi kumi na nane ijayo; kwa sababu, wakati huo masomo yetu ya Shule ya Sabato yatakuwa juu ya Maisha ya Kristo na Mitume Wake, na kitabu hiki ni msaada bora zaidi uliochapishwa kwa ajili ya kujifunza kwao.</p>
+<p><strong>Bei</strong>: $3.50, $4.25, $5.00 na $7.00</p>
+<p>Jumuiya yako ya Vitabu inaweza kukupa masharti maalum. Waulize.</p>
+<p><strong>PACIFIC PRESS PUBLISHING CO.</strong><br />
+WACHAPISHAJI<br />
+39 Bond St., New York City<br />
+18 W. 5th St., Kansas City, Mo.<br />
+OAKLAND, CAL.</p>
+<h2>Magazeti</h2>
+<h3>MFALME WAKATI WA ZAMANI</h3>
+<p>Akiwa na panga lake iliyochakaa atasitiri mwaka 1899 kwa Signs of the Times kuingia katika wakati muhimu zaidi katika historia yake. Mgogoro wa dunia uko hapa. Masuala ya milele yako juu yetu. Matendo makuu ya mwisho ya mataifa yanachorwa tayari juu ya upeo wa macho.</p>
+<p>Wahariri na wachangiaji wa Signs of the Times wanachunguza kwa makini hali hiyo, na wanawaweka wasomaji wa gazeti lao wafahamu kikamilifu na iwe ya kisasa kuhusiana nayo.</p>
+<p>Katika mwaka 1899 tutaongeza kwa nguvu zetu za waandishi idadi ya wachangiaji wa kawaida wenye uzoefu mrefu katika uandishi wa habari na ambao ni walinzi waaminifu katika kituo chao cha kazi, tayari kutoa tarumbeta ya onyo kwa sauti hakika. Kipengele hiki peke yake kitaongeza sana thamani ya Signs wakati wa 1899.</p>
+<p>Nakala tano maalum zimepangwa tayari kutoka wakati wa mwaka. Hizi hazipaswi kukoswa na yeyote, na zinapaswa kuwa na usambazaji mpana na wa jumla nje ya orodha yetu ya kawaida ya wasomaji.</p>
+<p>Orodha yetu mpya ya zawadi itatumwa bila malipo kwa maombi. Andika kwa ajili yake kama hujaiona. Kisha tutumie agizo. Kama wewe ni mteja, waonyeshe marafiki zako na kwa hiyo utumie mwanga Mungu anautoa kupitia mjumbe huyu. Watataka Signs na moja ya zawadi. Kama utatusaidia katika kupanua usambazaji wetu, andika pia kwa masharti yetu kwa mawakala.</p>
+<p>SIGNS OF THE TIMES, Oakland, Cal.</p>
+<h2>Vitendo vya Kusoma</h2>
+<p>Njia moja bora ya kusambaza vitabu na magazeti ni kuweka katika vitendo vya kusoma vilivyoning'inizwa katika majengo ya umma kama vituo vya mabasi, hoteli, ofisi za posta, n.k.</p>
+<p>Ili kuhamasisha kazi hii tumekuwa na idadi ya vitendo hivi vimetengenezwa kwa agizo, nakala ambayo inaonyeshwa hapo juu, na tutaviuza kwa bei ya gharama tu- $1.25 malipo yakusanywa, $1.75 malipo yaliyolipwa.</p>
+<p>Orodha ya chini inaweza kukusaidia katika kuchagua vifaa vya kutumia katika vitendo hivi vya kusoma na usambazaji wa jumla.</p>
+<h3>Vitabu Vilivyochaguliwa kwa Matumizi katika Vitendo vya Kusoma na Usambazaji wa Jumla</h3>
+<table>
+<thead>
+<tr>
+<th><strong>MADA</strong></th>
+<th><strong>RASILIMALI</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISHARA ZA NYAKATI ZETU</strong></td>
+<td>Bila Udhuru, ½c, B. S. L. No. 46</td>
+</tr>
+<tr>
+<td></td>
+<td>Siku Kuu ya Bwana, 2½c, B. S. L. No. 65</td>
+</tr>
+<tr>
+<td></td>
+<td>Ujumbe wa Mungu kwa Leo, ½c, B. S. L. No. 81</td>
+</tr>
+<tr>
+<td></td>
+<td>Ukweli kwa Nyakati, 1c, B. S. L. No. 143</td>
+</tr>
+<tr>
+<td></td>
+<td>Mgogoro wa Amerika, 2c, B. S. L. No. 138</td>
+</tr>
+<tr>
+<td></td>
+<td>Swali la Mashariki, 1c, B. S. L. No. 144</td>
+</tr>
+<tr>
+<td></td>
+<td>Mlio wa Vita, 2c, B. S. L. No. 152</td>
+</tr>
+<tr>
+<td></td>
+<td>Maajabu ya Karne ya 19, 2c, B. S. L. No. 155</td>
+</tr>
+<tr>
+<td></td>
+<td>Watangaza wa Kuja Kwake, 1½c, A. G. L. No. 51</td>
+</tr>
+<tr>
+<td></td>
+<td>Ushindi wa Margaret, 1c, A. G. L. No. 53</td>
+</tr>
+<tr>
+<td></td>
+<td>Kuja kwa Bwana Wetu, ½c, A. G. L. No. 40</td>
+</tr>
+<tr>
+<td><strong>ASILI YA MWANADAMU</strong></td>
+<td>Mawazo kwa Watu Wanaowaza, ½c, B. S. L. No. 47</td>
+</tr>
+<tr>
+<td></td>
+<td>Kuteswa Milele na Milele, 1c, B. S. L. No. 111</td>
+</tr>
+<tr>
+<td></td>
+<td>Tajiri na Lazaro, 1c, B. S. L. No. 146</td>
+</tr>
+<tr>
+<td></td>
+<td>Kutokufa kwa Nafsi, 2c, B. S. L. No. 70</td>
+</tr>
+<tr>
+<td></td>
+<td>Je Mwanadamu Hafi? ½c, B. S. L. No. 51</td>
+</tr>
+<tr>
+<td></td>
+<td>Yesu na Ufufuo, ½c, A. G. L. No. 42</td>
+</tr>
+<tr>
+<td></td>
+<td>Mwizi Msalabani, ½c, A. G. L. No. 8</td>
+</tr>
+<tr>
+<td></td>
+<td>Jinsi Esther Alisoma Biblia Yake, ½c, A. G. L. No. 7</td>
+</tr>
+<tr>
+<td><strong>MILENIA</strong></td>
+<td>Siku Kuu ya Bwana, 2½c, B. S. L. No. 65</td>
+</tr>
+<tr>
+<td></td>
+<td>Milenia ya Muda, 1½c, B. S. L. No. 121</td>
+</tr>
+<tr>
+<td></td>
+<td>Zama za Milenia, 1c, B. S. L. No. 136</td>
+</tr>
+<tr>
+<td></td>
+<td>Ushindi wa Margaret, 1c, A. G. L. No. 53</td>
+</tr>
+<tr>
+<td></td>
+<td>Ufalme wa Kristo, 1c, B. S. L. No. 119</td>
+</tr>
+<tr>
+<td></td>
+<td>Kristo kama Nabii, Kuhani, na Mfalme, 1c, B. S. L. No. 127</td>
+</tr>
+<tr>
+<td><strong>UJUMBE WA MALAIKA WA TATU</strong></td>
+<td>Ujumbe wa Mungu kwa Leo, ½c, B. S. L. No. 81</td>
+</tr>
+<tr>
+<td></td>
+<td>Ujumbe Mkuu wa Utatu, 1c, A. G. L. No. 47</td>
+</tr>
+<tr>
+<td><strong>SABATO</strong></td>
+<td>Elihu juu ya Sabato, 1c, B. S. L. No. 42</td>
+</tr>
+<tr>
+<td></td>
+<td>Je Unashika Siku Ipi? ½c, B. S. L. No. 48</td>
+</tr>
+<tr>
+<td></td>
+<td>Kutoka Sabato hadi Jumapili, ½c, B. S. L. No. 95</td>
+</tr>
+<tr>
+<td></td>
+<td>Nani Alibadilisha Sabato? 1½c B. S. L. No. 107</td>
+</tr>
+<tr>
+<td></td>
+<td>Siku ya Saba Ifananayo, 1c, B. S. L. No. 114</td>
+</tr>
+<tr>
+<td></td>
+<td>Sabato ya Agano Jipya, 1c, B. S. L. No. 137</td>
+</tr>
+<tr>
+<td></td>
+<td>Mashtaka ya Rumi, 1c, B. S. L. No. 150</td>
+</tr>
+<tr>
+<td></td>
+<td>Jumapili katika Kiyunani, ½c, B. S. L. No. 154</td>
+</tr>
+<tr>
+<td></td>
+<td>Ya Saba au Moja-Saba, ½c, A. G. L. No. 39</td>
+</tr>
+<tr>
+<td></td>
+<td>Ukweli wa Kihistoria na Matukio, 2c, A. G. L. No. 45</td>
+</tr>
+<tr>
+<td></td>
+<td>Siku ya Sabato, 1c, A. G. L. No. 50</td>
+</tr>
+<tr>
+<td></td>
+<td>Jinsi Sabato Ilivyonijia Mimi, 1½c, W. of T. No. 2</td>
+</tr>
+<tr>
+<td></td>
+<td>Maswali ya Kibinafsi na Majibu, 1½c, W. of T. No. 7</td>
+</tr>
+<tr>
+<td></td>
+<td>Sabato Tatu, A. G. L. No. 58</td>
+</tr>
+</tbody>
+</table>
+<p>PACIFIC PRESS PUBLISHING CO.<br />
+39 Bond St., New York City<br />
+OAKLAND, CAL.<br />
+18 W. 5th St., Kansas City, MO.</p>
+<h2>Machapisho ya Karibuni</h2>
+<h3>Watangaza wa Asubuhi</h3>
+<p>Ndio jina la kitabu ambacho tunaandaa kwa majira ya kusomea magazeti ya 1899.</p>
+<p>Lengo lake lote ni kuamsha watu kwa ukweli kwamba Kristo atakuja hivi karibuni.</p>
+<p>Kuthibitisha hili, mwandishi, Mzee A. O. Tait, anarejea kwa ishara ambazo zinaweza kuonekana kila siku, na ambazo kwa hiyo zitawasihi kila mtu kwa mtazamo.</p>
+<h4>Turuhusu Kusoma Majina ya Sura Chache</h4>
+<p>Sura hizi zinapatikana kwenye maandiko yanayolinganisha siku za mwisho na zile za Nuhu na Loti, na zinajumuisha taarifa za kushangaza kuhusu kina cha uovu na uhalifu ambazo dunia yetu imeangukia ndani.</p>
+<ul>
+<li>UENEZI WA UHALIFU ISHARA YA NYAKATI ZETU</li>
+<li>DUNIA IMEJAA VURUGU</li>
+<li>DHAMBI ZA KIJAMII</li>
+<li>UDANGANYIFU MKUU</li>
+</ul>
+<p>"MMEJIWEKEA AKIBA HAZINA KWA AJILI YA SIKU ZA MWISHO" ni jina la sura iliyotengwa kwa suala la kazi. Sura hii itakuwa na takriban picha thelathini zinazoonyesha matukio katika maduka ya jasho, katika makazi duni, nyumba za wapangaji, n.k.</p>
+<p>Sura moja inayoitwa "Hukumu Imegeuzwa Nyuma" ina yaliyomo ya kutosha yenyewe kuwadanganya wote wanaofikiri kuwa dunia inakuwa bora.</p>
+<p>Nyingi zingine zingeweza kutajwa, kama vile "Mataifa Wamekasirika," "Sauti ya Viumbe," "Ushahidi wa Dunia," n.k., lakini zote zina lengo moja—lile la kuongoza umakini kwa ishara za nyakati zetu.</p>
+<p>Picha ni za asili, na zinaonyesha kwa kushangaza mawazo ya mwandishi.</p>
+<p>Wakati wa kuandika hili (Okt. 1) hatuwezi kusema kitabu kitakuwa kikubwa kiasi gani, wala lini hasa kitakuwa tayari, lakini tunafikiri bei haitazidi $1.50, na kwamba kitachapishwa mapema katika 1899.</p>
+<p>Jambo moja tunaweza kusema, hata hivyo, na hilo ni kwamba "Watangaza wa Asubuhi" itakuja karibu kama kujisaidia wenyewe kama kitabu chochote ambacho tumewahi kuchapisha; kwa sababu ishara ambazo kinazungumzia zinakuwa kila siku zaidi dhahiri.</p>
+<p>Ifikapo wakati notisi hii inakufikia tutajua labda tarehe kamili ya kuchapishwa. Tafadhali andika kwa ajili yake.</p>
+<p>PACIFIC PRESS PUBLISHING CO., Wachapishaji<br />
+OAKLAND, CALIFORNIA</p>
+        </div>
+        <div style="page-break-after: always;"></div></div><!-- Main content: starts at page 7 --><!-- Main content: estimated 2 pages --><div class="blank-page" style="page-break-after: always; height: 100vh;"></div><!-- Added blank page to ensure Back cover starts on even page 10 -->
+            <div class="back-cover-page">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100">
+  <!-- Background using gradient similar to the cover -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f1e6"/>
+      <stop offset="100%" stop-color="#f8f5f0"/>
+    </linearGradient>
+    
+    <!-- Mountain vegetation gradients from cover -->
+    <linearGradient id="mountainGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3c1815"/>
+      <stop offset="40%" stop-color="#4a2a18"/>
+      <stop offset="70%" stop-color="#5a4130"/>
+      <stop offset="100%" stop-color="#6b5842"/>
+    </linearGradient>
+    
+    <linearGradient id="parchmentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="100%" stop-color="#f9f5e9"/>
+    </linearGradient>
+    
+    <!-- Border gradient from cover -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c28955"/>
+      <stop offset="50%" stop-color="#8b4513"/>
+      <stop offset="100%" stop-color="#5a3212"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Full page background -->
+  <rect width="850" height="1100" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative border with corner ornaments matching cover style -->
+  <rect x="50" y="50" width="750" height="1000" rx="5" ry="5" stroke="url(#borderGradient)" stroke-width="2" fill="none"/>
+  
+  <!-- Small mountain silhouette as decorative element at bottom -->
+  <path d="M50,1050 C125,1030 200,1010 275,1020 C350,1015 425,1040 475,1010 C525,1040 575,1020 650,1030 C725,1020 825,1040 850,1050 L850,1100 L50,1100 Z" fill="url(#mountainGradient1)" opacity="0.3"/>
+  
+  <!-- Title with same font as cover -->
+  <text x="425" y="100" font-family="Georgia, serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#3c1815">KUHUSU MASOMO HAYA</text>
+  
+  <!-- Decorative divider with cross matching cover style -->
+  <line x1="225" y1="120" x2="395" y2="120" stroke="#8b4513" stroke-width="2"/>
+  <path d="M420,110 L430,110 M425,105 L425,125" stroke="#8b4513" stroke-width="3"/>
+  <line x1="455" y1="120" x2="625" y2="120" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- Content box with subtle border matching cover style -->
+  <rect x="100" y="150" width="650" height="600" rx="5" ry="5" fill="url(#parchmentGradient)" stroke="url(#borderGradient)" stroke-width="1"/>
+  
+  <!-- Description text with serif font matching cover -->
+  <text x="140" y="190" font-family="Georgia, serif" font-size="15" fill="#3c1815">
+    <tspan x="140" y="190">Masomo haya ya Shule ya Sabato kuhusu "Maisha ya Kristo" yanachunguza</tspan>
+    <tspan x="140" y="225">huduma ya Bwana na Mwokozi wetu duniani. Yalitayarishwa awali mwaka 1899,</tspan>
+    <tspan x="140" y="260">yanatoa ufahamu wa milele kuhusu maisha na mafundisho ya Yesu kama</tspan>
+    <tspan x="140" y="295">yalivyoandikwa katika Injili.</tspan>
+  </text>
+  
+  <!-- Bullet points with cross bullets matching cross style from cover -->
+  <path d="M137,345 L143,345 M140,342 L140,348" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="350" font-family="Georgia, serif" font-size="17" fill="#3c1815">Kuzaliwa na utoto wa Yesu Kristo</text>
+  
+  <path d="M137,385 L143,385 M140,382 L140,388" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="390" font-family="Georgia, serif" font-size="17" fill="#3c1815">Ubatizo wake na majaribu yake jangwani</text>
+  
+  <path d="M137,425 L143,425 M140,422 L140,428" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="430" font-family="Georgia, serif" font-size="17" fill="#3c1815">Wito wa wanafunzi wa kwanza</text>
+  
+  <path d="M137,465 L143,465 M140,462 L140,468" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="470" font-family="Georgia, serif" font-size="17" fill="#3c1815">Muujiza wake wa kwanza na huduma ya mwanzo</text>
+  
+  <path d="M137,505 L143,505 M140,502 L140,508" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="510" font-family="Georgia, serif" font-size="17" fill="#3c1815">Utakaso wa hekalu na mazungumzo na watu watafutao</text>
+  
+  <path d="M137,545 L143,545 M140,542 L140,548" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="550" font-family="Georgia, serif" font-size="17" fill="#3c1815">Huduma yake katika Samaria na Yudea</text>
+  
+  <!-- Additional description -->
+  <text x="140" y="610" font-family="Georgia, serif" font-size="15" fill="#3c1815">
+    <tspan x="140" y="610">Kila somo lina maswali yaliyotayarishwa kwa uangalifu yanayomwongoza</tspan>
+    <tspan x="140" y="645">mwanafunzi kupitia maandiko ya Biblia, yakifunua tabia na</tspan>
+    <tspan x="140" y="680">kazi ya Kristo. Maelezo yanayoambatana yanatoa muktadha wa kihistoria</tspan>
+    <tspan x="140" y="715">na matumizi ya vitendo kwa waumini wa leo.</tspan>
+  </text>
+  
+  <!-- Quote with frame styled like title container on cover -->
+  <rect x="175" y="780" width="500" height="120" rx="5" ry="5" fill="#f5f1e6" stroke="url(#borderGradient)" stroke-width="1"/>
+  
+  <!-- Small cross at top of quote -->
+  <path d="M422,780 L428,780 M425,775 L425,785" stroke="#8b4513" stroke-width="1.5"/>
+  
+  <text x="425" y="820" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#3c1815">"Naye Neno alifanyika mwili, akakaa kwetu,</text>
+  <text x="425" y="855" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#3c1815">(nasi tukauona utukufu wake, utukufu kama wa</text>
+  <text x="425" y="890" font-family="Georgia, serif" font-size="15" font-style="italic" text-anchor="middle" fill="#3c1815">Mwana wa pekee atokaye kwa Baba), amejaa neema na kweli."</text>
+  <text x="555" y="920" font-family="Georgia, serif" font-size="18" text-anchor="end" fill="#3c1815">Yohana 1:14</text>
+  
+  <!-- Footer styled like the cover footer -->
+  <line x1="300" y1="965" x2="550" y2="965" stroke="#8b4513" stroke-width="1"/>
+  <text x="425" y="985" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#3c1815">GOSPEL SOUNDERS</text>
+  <text x="425" y="1010" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5a4130">Kuhifadhi Ukweli kwa Kizazi Kipya</text>
+  <text x="425" y="1040" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a4130">Kwa msingi wa masomo ya awali yaliyochapishwa na</text>
+  <text x="425" y="1060" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5a4130">PACIFIC PRESS PUBLISHING CO., 1899</text>
+</svg>
+            </div>
+            <!-- Back cover: starts at page 10 --><!-- Back cover: estimated 1 pages -->
+</body>
+</html>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100">
+  <!-- Background with same deep blue to purple gradient as front cover -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0033"/>
+      <stop offset="40%" stop-color="#1a1058"/>
+      <stop offset="70%" stop-color="#2a1f70"/>
+      <stop offset="100%" stop-color="#392d85"/>
+    </linearGradient>
+    
+    <!-- Gold accent gradients for sanctuary elements -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#daa520"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    
+    <!-- Parchment gradient for content box -->
+    <linearGradient id="parchmentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="100%" stop-color="#f5f1e6"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="850" height="1100" fill="url(#skyGradient)"/>
+  
+  <!-- Stars in the night sky -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="100" cy="100" r="1.5"/>
+    <circle cx="200" cy="150" r="2"/>
+    <circle cx="300" cy="80" r="1"/>
+    <circle cx="400" cy="120" r="1.5"/>
+    <circle cx="500" cy="90" r="1"/>
+    <circle cx="600" cy="160" r="2"/>
+    <circle cx="700" cy="130" r="1.5"/>
+    <circle cx="750" cy="70" r="1"/>
+    <circle cx="150" cy="200" r="1"/>
+    <circle cx="250" cy="220" r="1.5"/>
+    <circle cx="350" cy="180" r="1"/>
+    <circle cx="450" cy="230" r="2"/>
+    <circle cx="550" cy="190" r="1"/>
+    <circle cx="650" cy="210" r="1.5"/>
+    <!-- Additional stars -->
+    <circle cx="120" cy="250" r="1"/>
+    <circle cx="220" cy="180" r="1.5"/>
+    <circle cx="320" cy="240" r="1"/>
+    <circle cx="420" cy="150" r="2"/>
+    <circle cx="520" cy="270" r="1"/>
+    <circle cx="620" cy="120" r="1.5"/>
+    <circle cx="720" cy="200" r="2"/>
+  </g>
+  
+  <!-- Main content box -->
+  <rect x="125" y="200" width="600" height="600" rx="10" ry="10" fill="url(#parchmentGradient)" opacity="0.9" stroke="url(#goldGradient)" stroke-width="2"/>
+  
+  <!-- Small decorative Mercy Seat symbol at top of content box -->
+  <g transform="translate(425, 240)">
+    <rect x="-50" y="-10" width="100" height="20" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1"/>
+    <path d="M-40,-10 L-30,-25 L-20,-10 Z" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1"/>
+    <path d="M40,-10 L30,-25 L20,-10 Z" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="425" y="300" font-family="Georgia, serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2a1f70">ABOUT THIS SERIES</text>
+  
+  <!-- Decorative divider -->
+  <line x1="225" y1="320" x2="625" y2="320" stroke="url(#goldGradient)" stroke-width="1"/>
+  
+  <!-- Back cover text -->
+  <text x="175" y="370" font-family="Georgia, serif" font-size="16" fill="#2a1f70">
+    <tspan x="175" y="370">These Sabbath School lessons on "The Sanctuary of the Bible"</tspan>
+    <tspan x="175" y="400">explore the rich symbolism and deep spiritual truths represented</tspan>
+    <tspan x="175" y="430">in the sanctuary service. Originally published in 1895, these</tspan>
+    <tspan x="175" y="460">lessons remain relevant for believers today.</tspan>
+  </text>
+  
+  <text x="175" y="510" font-family="Georgia, serif" font-size="16" fill="#2a1f70">
+    <tspan x="175" y="510">Included in this quarterly:</tspan>
+  </text>
+  
+  <!-- Bullet points with decorative markers -->
+  <g>
+    <path d="M185,535 L195,535 M190,530 L190,540" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="210" y="540" font-family="Georgia, serif" font-size="16" fill="#2a1f70">The earthly sanctuary and its services</text>
+    
+    <path d="M185,565 L195,565 M190,560 L190,570" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="210" y="570" font-family="Georgia, serif" font-size="16" fill="#2a1f70">Christ's ministry in the heavenly sanctuary</text>
+    
+    <path d="M185,595 L195,595 M190,590 L190,600" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="210" y="600" font-family="Georgia, serif" font-size="16" fill="#2a1f70">The investigative judgment</text>
+    
+    <path d="M185,625 L195,625 M190,620 L190,630" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="210" y="630" font-family="Georgia, serif" font-size="16" fill="#2a1f70">The cleansing of the sanctuary</text>
+    
+    <path d="M185,655 L195,655 M190,650 L190,660" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="210" y="660" font-family="Georgia, serif" font-size="16" fill="#2a1f70">The 2300-day prophecy and its fulfillment</text>
+  </g>
+  
+  <!-- Scripture quote -->
+  <rect x="175" y="690" width="500" height="80" rx="5" ry="5" fill="#f5f1e6" stroke="url(#goldGradient)" stroke-width="1"/>
+  <text x="425" y="720" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#2a1f70">"Thy way, O God, is in the sanctuary: who is so great</text>
+  <text x="425" y="745" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#2a1f70">a God as our God?"</text>
+  <text x="580" y="765" font-family="Georgia, serif" font-size="14" text-anchor="end" fill="#2a1f70">Psalm 77:13</text>
+  
+  <!-- Contact information at bottom -->
+  <rect x="175" y="850" width="500" height="130" rx="8" ry="8" fill="#2a1f70" opacity="0.8" stroke="url(#goldGradient)" stroke-width="1"/>
+  <text x="425" y="880" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">GOSPEL SOUNDERS MINISTRY</text>
+  <text x="425" y="910" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffffff">Preserving the Truth for a New Generation</text>
+  <line x1="250" y1="925" x2="600" y2="925" stroke="url(#goldGradient)" stroke-width="1"/>
+  <text x="425" y="950" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffffff">www.gospelsoundersministry.org</text>
+  <text x="425" y="975" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffffff">info@gospelsoundersministry.org</text>
+</svg>

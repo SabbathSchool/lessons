@@ -1,0 +1,45 @@
+# Sabbath School Lesson Configuration
+
+# Year and quarter to download
+# The year of the lessons (e.g., 2025)
+year: 2025
+# The quarter of the lessons (q1, q2, q3, q4)
+quarter: q4
+# The language of the lessons (e.g., 'en' for English)
+language: swa
+
+# File paths
+# Path to the output PDF file for the lessons
+# Path to the front cover SVG file
+front_cover_svg: ./assets/front_cover.svg
+# Path to the back cover SVG file
+back_cover_svg: ./assets/back_cover.svg
+# Path to the color theme YAML file
+color_theme_path: themes/deep-blue.yaml
+
+# Reproduction options
+# Historical year to adapt (e.g., 1905)
+reproduce:
+  year: 1895
+# Historical quarter to adapt (e.g., q2)
+  quarter: q1
+# First lesson to include (default is 1)
+  start_lesson: 1
+# Last lesson to include (None for all lessons)
+  stop_lesson: null
+# The start date of the quarter (format: YYYY-MM-DD)
+  quarter_start_date: '2025-09-27'
+
+# PDF metadata
+# The title of the generated PDF
+title: Sabbath School Lessons
+# The subtitle for the PDF (typically the quarter and year)
+subtitle: Quarter 2, 2025
+# The publisher of the generated PDF
+publisher: Gospel Sounders
+
+# Language settings
+# Path to the language configuration file
+languages_dir: ./languages
+# lesson title: will use lesson title from english repo if this is not givelesson_title: lesson title
+lesson_title: Patakatifu katika Biblia

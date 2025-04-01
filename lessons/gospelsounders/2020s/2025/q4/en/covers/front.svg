@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100">
+  <!-- Background with deep blue to purple gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0033"/>
+      <stop offset="40%" stop-color="#1a1058"/>
+      <stop offset="70%" stop-color="#2a1f70"/>
+      <stop offset="100%" stop-color="#392d85"/>
+    </linearGradient>
+    
+    <!-- Gold accent gradients for sanctuary elements -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#daa520"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    
+    <!-- Radial gradient for divine light (Shekinah glory) -->
+    <radialGradient id="shekinahGlow" cx="50%" cy="38%" r="40%" fx="50%" fy="35%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffecd1" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Gold texture for ark -->
+    <pattern id="goldTexture" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="#daa520"/>
+      <path d="M0,0 L20,20 M20,0 L0,20" stroke="#ffd700" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <rect width="850" height="1100" fill="url(#skyGradient)"/>
+  
+  <!-- Stars in the night sky -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="100" cy="100" r="1.5"/>
+    <circle cx="200" cy="150" r="2"/>
+    <circle cx="300" cy="80" r="1"/>
+    <circle cx="400" cy="120" r="1.5"/>
+    <circle cx="500" cy="90" r="1"/>
+    <circle cx="600" cy="160" r="2"/>
+    <circle cx="700" cy="130" r="1.5"/>
+    <circle cx="750" cy="70" r="1"/>
+    <circle cx="150" cy="200" r="1"/>
+    <circle cx="250" cy="220" r="1.5"/>
+    <circle cx="350" cy="180" r="1"/>
+    <circle cx="450" cy="230" r="2"/>
+    <circle cx="550" cy="190" r="1"/>
+    <circle cx="650" cy="210" r="1.5"/>
+    <!-- Additional stars -->
+    <circle cx="120" cy="250" r="1"/>
+    <circle cx="220" cy="180" r="1.5"/>
+    <circle cx="320" cy="240" r="1"/>
+    <circle cx="420" cy="150" r="2"/>
+    <circle cx="520" cy="270" r="1"/>
+    <circle cx="620" cy="120" r="1.5"/>
+    <circle cx="720" cy="200" r="2"/>
+  </g>
+  
+  <!-- Shekinah glory as a much larger halo between cherubim reaching to the top of the page -->
+  <circle cx="425" cy="290" r="290" fill="url(#shekinahGlow)" opacity="0.85"/>
+  
+  <!-- Large, Detailed Ark of the Covenant -->
+  <g transform="translate(425, 350)">
+    <!-- Base of the Ark -->
+    <rect x="-90" y="-60" width="180" height="120" fill="url(#goldTexture)" stroke="#b8860b" stroke-width="4"/>
+    
+    <!-- Decorative rim around the top -->
+    <rect x="-95" y="-65" width="190" height="10" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="2"/>
+    
+    <!-- Larger Biblically-inspired Cherubim positioned properly on top of the Ark -->
+    <g transform="translate(0, -20)">
+      <!-- Left Cherub - positioned higher -->
+      <rect x="-85" y="-70" width="15" height="25" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1.5"/>  <!-- body -->
+      <circle cx="-78" cy="-85" r="15" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1.5"/>  <!-- head -->
+      <!-- Left Cherub Wings - enlarged -->
+      <path d="M-78,-75 C-115,-80 -125,-55 -110,-40" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="2.5"/>  <!-- outer wing -->
+      <path d="M-78,-75 C-100,-60 -90,-45 -78,-40" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="2"/>  <!-- inner wing -->
+      
+      <!-- Right Cherub - positioned higher -->
+      <rect x="70" y="-70" width="15" height="25" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1.5"/>  <!-- body -->
+      <circle cx="78" cy="-85" r="15" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1.5"/>  <!-- head -->
+      <!-- Right Cherub Wings - enlarged -->
+      <path d="M78,-75 C115,-80 125,-55 110,-40" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="2.5"/>  <!-- outer wing -->
+      <path d="M78,-75 C100,-60 90,-45 78,-40" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="2"/>  <!-- inner wing -->
+    </g>
+    
+    <!-- Mercy Seat -->
+    <rect x="-70" y="-65" width="140" height="10" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="1"/>
+    
+    <!-- Carrying poles -->
+    <rect x="-120" y="-40" width="240" height="10" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="2"/>
+    <rect x="-120" y="30" width="240" height="10" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="2"/>
+    
+    <!-- Decorative details on front of ark -->
+    <rect x="-70" y="-30" width="140" height="80" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <rect x="-60" y="-20" width="120" height="60" fill="none" stroke="#ffd700" stroke-width="1"/>
+  </g>
+  
+  <!-- Section with title and information - moved up -->
+  <g transform="translate(0, 80)">
+    <!-- Title container at bottom -->
+    <rect x="125" y="500" width="600" height="380" rx="20" ry="20" fill="#f5f1e6" opacity="0.9" stroke="url(#goldGradient)" stroke-width="2"/>
+    
+    <!-- Title -->
+    <text x="425" y="560" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#2a1f70">THE SANCTUARY</text>
+    <text x="425" y="620" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#2a1f70">OF THE BIBLE</text>
+    
+    <!-- Divider -->
+    <line x1="225" y1="660" x2="625" y2="660" stroke="url(#goldGradient)" stroke-width="2"/>
+    
+    <!-- Subtitle -->
+    <text x="425" y="700" font-family="Helvetica, Arial, sans-serif" font-size="24" text-anchor="middle" fill="#2a1f70" letter-spacing="1">SABBATH-SCHOOL LESSONS</text>
+    <text x="425" y="740" font-family="Helvetica, Arial, sans-serif" font-size="24" text-anchor="middle" fill="#2a1f70" letter-spacing="1">FOR SENIOR CLASSES</text>
+    
+    <!-- Scripture quote -->
+    <text x="425" y="780" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#2a1f70">"And there I will meet with thee, and I will commune with thee</text>
+    <text x="425" y="805" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#2a1f70">from above the mercy seat, from between the two cherubims..."</text>
+    <text x="580" y="830" font-family="Georgia, serif" font-size="14" text-anchor="end" fill="#2a1f70">Exodus 25:22</text>
+    
+    <!-- Quarter information - moved up from border -->
+    <line x1="225" y1="840" x2="625" y2="840" stroke="url(#goldGradient)" stroke-width="1"/>
+    <text x="425" y="865" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2a1f70">FOURTH QUARTER, 2025</text>
+    <text x="425" y="895" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#2a1f70">October - December 2025</text>
+  </g>
+  
+  <!-- Publisher info - moved up -->
+  <text x="425" y="990" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#f5f1e6">Based on the original lessons published by the</text>
+  <text x="425" y="1015" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#f5f1e6">PACIFIC PRESS PUBLISHING CO., 1895</text>
+  
+  <!-- Footer attribution - moved up -->
+  <line x1="300" y1="1035" x2="550" y2="1035" stroke="url(#goldGradient)" stroke-width="1" opacity="0.7"/>
+  <text x="425" y="1055" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#f5f1e6">GOSPEL SOUNDERS</text>
+  <text x="425" y="1075" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#f5f1e6">Preserving the Truth for a New Generation</text>
+</svg>
