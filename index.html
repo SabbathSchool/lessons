@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabbath School Lessons Viewer</title>
+    <style>
+        :root {
+            --primary-color: #7b0000;
+            --secondary-color: #900000;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+            --white: #ffffff;
+            --border-color: #ddd;
+            --hover-color: #6b0000;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .filter-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        
+        select {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background-color: var(--white);
+            font-size: 1rem;
+        }
+        
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .lesson-card {
+            background-color: var(--white);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .lesson-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .thumbnail {
+            height: 200px;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .thumbnail .placeholder {
+            color: #999;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .lesson-info {
+            padding: 15px;
+        }
+        
+        .lesson-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        
+        .lesson-meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .pdf-viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            z-index: 1000;
+            overflow: auto;
+        }
+        
+        .pdf-container {
+            width: 100%;
+            height: 100%;
+            margin: 2% auto;
+            background-color: var(--white);
+            position: relative;
+        }
+        
+        .pdf-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .pdf-iframe {
+            width: 100%;
+            height: calc(100% - 50px);
+            border: none;
+        }
+        
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 50px;
+            background-color: var(--white);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .filters {
+                grid-template-columns: 1fr;
+            }
+            
+            .lessons-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sabbath School Lessons</h1>
+            <p>Browse and filter lessons by organization, year, quarter, and language</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <label for="org-filter">Organization</label>
+                <select id="org-filter">
+                    <option value="all">All Organizations</option>
+                    <!-- Populated by JavaScript -->
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="year-filter">Year</label>
+                <select id="year-filter">
+                    <option value="all">All Years</option>
+                    <!-- Populated by JavaScript -->
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="quarter-filter">Quarter</label>
+                <select id="quarter-filter">
+                    <option value="all">All Quarters</option>
+                    <option value="q1">Q1 (Jan-Mar)</option>
+                    <option value="q2">Q2 (Apr-Jun)</option>
+                    <option value="q3">Q3 (Jul-Sep)</option>
+                    <option value="q4">Q4 (Oct-Dec)</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="lang-filter">Language</label>
+                <select id="lang-filter">
+                    <option value="all">All Languages</option>
+                    <!-- Populated by JavaScript -->
+                </select>
+            </div>
+        </div>
+        
+        <div class="lessons-grid" id="lessons-container">
+            <!-- Lessons will be populated here -->
+            <div class="no-results">
+                <h3>Loading lessons...</h3>
+                <p>If lessons don't appear, make sure the JSON file is available.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pdf-viewer" id="pdf-viewer">
+        <div class="pdf-container">
+            <div class="pdf-header">
+                <h2 id="pdf-title">Lesson Viewer</h2>
+                <button class="close-btn" id="close-pdf">&times;</button>
+            </div>
+            <iframe id="pdf-iframe" class="pdf-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const lessonsContainer = document.getElementById('lessons-container');
+            const orgFilter = document.getElementById('org-filter');
+            const yearFilter = document.getElementById('year-filter');
+            const quarterFilter = document.getElementById('quarter-filter');
+            const langFilter = document.getElementById('lang-filter');
+            const pdfViewer = document.getElementById('pdf-viewer');
+            const pdfIframe = document.getElementById('pdf-iframe');
+            const pdfTitle = document.getElementById('pdf-title');
+            const closePdfBtn = document.getElementById('close-pdf');
+            
+            // Global state
+            let lessonsData = null;
+            let filteredLessons = [];
+            
+            // Fetch lessons data
+            fetch('lessons_index.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    lessonsData = data;
+                    populateFilters();
+                    applyFilters();
+                })
+                .catch(error => {
+                    console.error('Error fetching lessons data:', error);
+                    lessonsContainer.innerHTML = `
+                        <div class="no-results">
+                            <h3>Error Loading Lessons</h3>
+                            <p>Unable to load lessons data. Please ensure the JSON file is accessible.</p>
+                            <p>Technical details: ${error.message}</p>
+                        </div>
+                    `;
+                });
+            
+            // Populate filter dropdowns
+            function populateFilters() {
+                // Organizations
+                const orgs = lessonsData.metadata.available_organizations;
+                orgs.forEach(org => {
+                    const option = document.createElement('option');
+                    option.value = org;
+                    option.textContent = org.charAt(0).toUpperCase() + org.slice(1); // Capitalize
+                    orgFilter.appendChild(option);
+                });
+                
+                // Years
+                const years = lessonsData.metadata.available_years;
+                years.sort((a, b) => b - a); // Sort descending (newest first)
+                years.forEach(year => {
+                    const option = document.createElement('option');
+                    option.value = year;
+                    option.textContent = year;
+                    yearFilter.appendChild(option);
+                });
+                
+                // Languages
+                const languages = lessonsData.metadata.available_languages;
+                languages.forEach(lang => {
+                    const option = document.createElement('option');
+                    option.value = lang;
+                    option.textContent = getLanguageName(lang);
+                    langFilter.appendChild(option);
+                });
+            }
+            
+            // Helper function to get language display name
+            function getLanguageName(code) {
+                const languageMap = {
+                    'en': 'English',
+                    'swa': 'Swahili',
+                    'sw': 'Swahili',
+                    'luo': 'Luo',
+                    'fr': 'French',
+                    'es': 'Spanish',
+                    'pt': 'Portuguese'
+                    // Add more languages as needed
+                };
+                
+                return languageMap[code] || code.toUpperCase();
+            }
+            
+            // Apply filters and update displayed lessons
+            function applyFilters() {
+                const selectedOrg = orgFilter.value;
+                const selectedYear = yearFilter.value;
+                const selectedQuarter = quarterFilter.value;
+                const selectedLang = langFilter.value;
+                
+                // Reset filtered lessons
+                filteredLessons = [];
+                
+                // Filter logic
+                const orgs = selectedOrg === 'all' ? Object.keys(lessonsData.organizations) : [selectedOrg];
+                
+                orgs.forEach(org => {
+                    const orgData = lessonsData.organizations[org];
+                    
+                    const years = selectedYear === 'all' ? Object.keys(orgData.years) : [selectedYear];
+                    
+                    years.forEach(year => {
+                        if (!orgData.years[year]) return;
+                        
+                        const quarters = selectedQuarter === 'all' ? Object.keys(orgData.years[year].quarters) : [selectedQuarter];
+                        
+                        quarters.forEach(quarter => {
+                            if (!orgData.years[year].quarters[quarter]) return;
+                            
+                            const langs = selectedLang === 'all' 
+                                ? Object.keys(orgData.years[year].quarters[quarter].languages) 
+                                : [selectedLang];
+                            
+                            langs.forEach(lang => {
+                                const lessonInfo = orgData.years[year].quarters[quarter].languages[lang];
+                                if (lessonInfo) {
+                                    filteredLessons.push({
+                                        org: org,
+                                        year: year,
+                                        quarter: quarter,
+                                        lang: lang,
+                                        pdfPath: lessonInfo.pdf_path,
+                                        thumbnailPath: lessonInfo.thumbnail_path
+                                    });
+                                }
+                            });
+                        });
+                    });
+                });
+                
+                // Sort lessons by year (descending) and quarter
+                filteredLessons.sort((a, b) => {
+                    if (a.year !== b.year) {
+                        return b.year - a.year; // Newest first
+                    }
+                    return a.quarter.localeCompare(b.quarter);
+                });
+                
+                renderLessons();
+            }
+            
+            // Render filtered lessons
+            function renderLessons() {
+                if (filteredLessons.length === 0) {
+                    lessonsContainer.innerHTML = `
+                        <div class="no-results">
+                            <h3>No Lessons Found</h3>
+                            <p>Try adjusting your filters to see more results.</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                let html = '';
+                filteredLessons.forEach(lesson => {
+                    const quarterDisplay = {
+                        'q1': 'Quarter 1 (Jan-Mar)',
+                        'q2': 'Quarter 2 (Apr-Jun)',
+                        'q3': 'Quarter 3 (Jul-Sep)',
+                        'q4': 'Quarter 4 (Oct-Dec)'
+                    }[lesson.quarter] || lesson.quarter;
+                    
+                    const thumbnailHtml = lesson.thumbnailPath 
+                        ? `<img src="lessons/${lesson.thumbnailPath}" alt="Lesson Cover">`
+                        : `<div class="placeholder">No Cover Available</div>`;
+                    
+                    html += `
+                        <div class="lesson-card" data-pdf="lessons/${lesson.pdfPath}" data-title="${lesson.year} ${quarterDisplay} (${getLanguageName(lesson.lang)})">
+                            <div class="thumbnail">
+                                ${thumbnailHtml}
+                            </div>
+                            <div class="lesson-info">
+                                <h3>${lesson.year} ${lesson.quarter.toUpperCase()}</h3>
+                                <div class="lesson-meta">
+                                    <p>${lesson.org.charAt(0).toUpperCase() + lesson.org.slice(1)}</p>
+                                    <p>Language: ${getLanguageName(lesson.lang)}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                lessonsContainer.innerHTML = html;
+                
+                // Add click event listeners to lesson cards
+                document.querySelectorAll('.lesson-card').forEach(card => {
+                    card.addEventListener('click', function() {
+                        const pdfPath = this.getAttribute('data-pdf');
+                        const title = this.getAttribute('data-title');
+                        openPdfViewer(pdfPath, title);
+                    });
+                });
+            }
+            
+            // Open PDF viewer
+            function openPdfViewer(pdfPath, title) {
+                pdfIframe.src = pdfPath;
+                pdfTitle.textContent = title;
+                pdfViewer.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when viewer is open
+            }
+            
+            // Close PDF viewer
+            closePdfBtn.addEventListener('click', function() {
+                pdfViewer.style.display = 'none';
+                document.body.style.overflow = ''; // Restore scrolling
+                // Reset iframe src to stop PDF rendering
+                setTimeout(() => {
+                    pdfIframe.src = '';
+                }, 300);
+            });
+            
+            // Filter change events
+            orgFilter.addEventListener('change', applyFilters);
+            yearFilter.addEventListener('change', applyFilters);
+            quarterFilter.addEventListener('change', applyFilters);
+            langFilter.addEventListener('change', applyFilters);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "organizations": {
+    "gospelsounders": {
+      "name": "gospelsounders",
+      "years": {
+        "2025": {
+          "quarters": {
+            "q4": {
+              "languages": {
+                "en": {
+                  "pdf_path": "gospelsounders/2020s/2025/q4/en/output/sabbath_school_lesson_2025_q4_en.pdf",
+                  "thumbnail_path": "gospelsounders/2020s/2025/q4/en/covers/front.use.png"
+                },
+                "swa": {
+                  "pdf_path": "gospelsounders/2020s/2025/q4/swa/output/sabbath_school_lesson_2025_q4_swa.pdf",
+                  "thumbnail_path": "gospelsounders/2020s/2025/q4/swa/assets/front_cover.svg"
+                }
+              }
+            },
+            "q3": {
+              "languages": {
+                "en": {
+                  "pdf_path": "gospelsounders/2020s/2025/q3/en/output/sabbath_school_lesson_2025_q3_en.pdf",
+                  "thumbnail_path": "gospelsounders/2020s/2025/q3/en/covers/front.use.png"
+                },
+                "swa": {
+                  "pdf_path": "gospelsounders/2020s/2025/q3/swa/output/sabbath_school_lesson_2025_q3_swa.pdf",
+                  "thumbnail_path": "gospelsounders/2020s/2025/q3/swa/assets/front_cover.svg"
+                }
+              }
+            },
+            "q2": {
+              "languages": {
+                "en": {
+                  "pdf_path": "gospelsounders/2020s/2025/q2/en/output/sabbath_school_lesson_2025_q2_en.pdf",
+                  "thumbnail_path": "gospelsounders/2020s/2025/q2/en/covers/front.use.correct.png"
+                },
+                "swa": {
+                  "pdf_path": "gospelsounders/2020s/2025/q2/swa/output/sabbath_school_lesson_2025_q2_swa.pdf",
+                  "thumbnail_path": "gospelsounders/2020s/2025/q2/swa/covers/front.svg"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "available_organizations": [
+      "gospelsounders"
+    ],
+    "available_years": [
+      "2025"
+    ],
+    "available_quarters": [
+      "q1",
+      "q2",
+      "q3",
+      "q4"
+    ],
+    "available_languages": [
+      "en",
+      "swa"
+    ]
+  }
+}
