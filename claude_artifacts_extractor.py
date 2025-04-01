@@ -119,7 +119,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description='Extract artifacts from Claude conversation JSON')
-    parser.add_argument('json_file', help='Path to the Claude conversation JSON file')
+    parser.add_argument('json_file', help='Path to the Claude conversation JSON file from eg https://claude.ai/api/organizations/584aa20d-181c-4659-8f8b-44a13429561e/chat_conversations/9dd52f87-f71b-40bd-b858-32f7d935239e?tree=True&rendering_mode=messages&render_all_tools=true')
     parser.add_argument('--output', '-o', help='Directory to save artifacts (default: current directory)')
     
     args = parser.parse_args()
