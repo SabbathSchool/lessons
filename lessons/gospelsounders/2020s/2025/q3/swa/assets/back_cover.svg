@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100">
+  <!-- Background using gradient similar to the cover -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f1e6"/>
+      <stop offset="100%" stop-color="#f8f5f0"/>
+    </linearGradient>
+    
+    <!-- Mountain vegetation gradients from cover -->
+    <linearGradient id="mountainGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3c1815"/>
+      <stop offset="40%" stop-color="#4a2a18"/>
+      <stop offset="70%" stop-color="#5a4130"/>
+      <stop offset="100%" stop-color="#6b5842"/>
+    </linearGradient>
+    
+    <linearGradient id="parchmentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="100%" stop-color="#f9f5e9"/>
+    </linearGradient>
+    
+    <!-- Border gradient from cover -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c28955"/>
+      <stop offset="50%" stop-color="#8b4513"/>
+      <stop offset="100%" stop-color="#5a3212"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Full page background -->
+  <rect width="850" height="1100" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative border with corner ornaments matching cover style -->
+  <rect x="50" y="50" width="750" height="1000" rx="5" ry="5" stroke="url(#borderGradient)" stroke-width="2" fill="none"/>
+  
+  <!-- Small mountain silhouette as decorative element at bottom -->
+  <path d="M50,1050 C125,1030 200,1010 275,1020 C350,1015 425,1040 475,1010 C525,1040 575,1020 650,1030 C725,1020 825,1040 850,1050 L850,1100 L50,1100 Z" fill="url(#mountainGradient1)" opacity="0.3"/>
+  
+  <!-- Title with same font as cover -->
+  <text x="425" y="100" font-family="Georgia, serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#3c1815">KUHUSU MASOMO HAYA</text>
+  
+  <!-- Decorative divider with cross matching cover style -->
+  <line x1="225" y1="120" x2="395" y2="120" stroke="#8b4513" stroke-width="2"/>
+  <path d="M420,110 L430,110 M425,105 L425,125" stroke="#8b4513" stroke-width="3"/>
+  <line x1="455" y1="120" x2="625" y2="120" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- Content box with subtle border matching cover style -->
+  <rect x="100" y="150" width="650" height="600" rx="5" ry="5" fill="url(#parchmentGradient)" stroke="url(#borderGradient)" stroke-width="1"/>
+  
+  <!-- Description text with serif font matching cover -->
+  <text x="140" y="190" font-family="Georgia, serif" font-size="15" fill="#3c1815">
+    <tspan x="140" y="190">Masomo haya ya Shule ya Sabato kuhusu "Maisha ya Kristo" yanachunguza</tspan>
+    <tspan x="140" y="225">huduma ya Bwana na Mwokozi wetu duniani. Yalitayarishwa awali mwaka 1899,</tspan>
+    <tspan x="140" y="260">yanatoa ufahamu wa milele kuhusu maisha na mafundisho ya Yesu kama</tspan>
+    <tspan x="140" y="295">yalivyoandikwa katika Injili.</tspan>
+  </text>
+  
+  <!-- Bullet points with cross bullets matching cross style from cover -->
+  <path d="M137,345 L143,345 M140,342 L140,348" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="350" font-family="Georgia, serif" font-size="17" fill="#3c1815">Kuzaliwa na utoto wa Yesu Kristo</text>
+  
+  <path d="M137,385 L143,385 M140,382 L140,388" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="390" font-family="Georgia, serif" font-size="17" fill="#3c1815">Ubatizo wake na majaribu yake jangwani</text>
+  
+  <path d="M137,425 L143,425 M140,422 L140,428" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="430" font-family="Georgia, serif" font-size="17" fill="#3c1815">Wito wa wanafunzi wa kwanza</text>
+  
+  <path d="M137,465 L143,465 M140,462 L140,468" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="470" font-family="Georgia, serif" font-size="17" fill="#3c1815">Muujiza wake wa kwanza na huduma ya mwanzo</text>
+  
+  <path d="M137,505 L143,505 M140,502 L140,508" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="510" font-family="Georgia, serif" font-size="17" fill="#3c1815">Utakaso wa hekalu na mazungumzo na watu watafutao</text>
+  
+  <path d="M137,545 L143,545 M140,542 L140,548" stroke="#8b4513" stroke-width="2"/>
+  <text x="160" y="550" font-family="Georgia, serif" font-size="17" fill="#3c1815">Huduma yake katika Samaria na Yudea</text>
+  
+  <!-- Additional description -->
+  <text x="140" y="610" font-family="Georgia, serif" font-size="15" fill="#3c1815">
+    <tspan x="140" y="610">Kila somo lina maswali yaliyotayarishwa kwa uangalifu yanayomwongoza</tspan>
+    <tspan x="140" y="645">mwanafunzi kupitia maandiko ya Biblia, yakifunua tabia na</tspan>
+    <tspan x="140" y="680">kazi ya Kristo. Maelezo yanayoambatana yanatoa muktadha wa kihistoria</tspan>
+    <tspan x="140" y="715">na matumizi ya vitendo kwa waumini wa leo.</tspan>
+  </text>
+  
+  <!-- Quote with frame styled like title container on cover -->
+  <rect x="175" y="780" width="500" height="120" rx="5" ry="5" fill="#f5f1e6" stroke="url(#borderGradient)" stroke-width="1"/>
+  
+  <!-- Small cross at top of quote -->
+  <path d="M422,780 L428,780 M425,775 L425,785" stroke="#8b4513" stroke-width="1.5"/>
+  
+  <text x="425" y="820" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#3c1815">"Naye Neno alifanyika mwili, akakaa kwetu,</text>
+  <text x="425" y="855" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#3c1815">(nasi tukauona utukufu wake, utukufu kama wa</text>
+  <text x="425" y="890" font-family="Georgia, serif" font-size="15" font-style="italic" text-anchor="middle" fill="#3c1815">Mwana wa pekee atokaye kwa Baba), amejaa neema na kweli."</text>
+  <text x="555" y="920" font-family="Georgia, serif" font-size="18" text-anchor="end" fill="#3c1815">Yohana 1:14</text>
+  
+  <!-- Footer styled like the cover footer -->
+  <line x1="300" y1="965" x2="550" y2="965" stroke="#8b4513" stroke-width="1"/>
+  <text x="425" y="985" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#3c1815">GOSPEL SOUNDERS</text>
+  <text x="425" y="1010" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5a4130">Kuhifadhi Ukweli kwa Kizazi Kipya</text>
+  <text x="425" y="1040" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a4130">Kwa msingi wa masomo ya awali yaliyochapishwa na</text>
+  <text x="425" y="1060" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5a4130">PACIFIC PRESS PUBLISHING CO., 1899</text>
+</svg>

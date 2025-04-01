@@ -1,0 +1,40 @@
+# Burgundy Theme for Sabbath School Lessons PDF
+# This default theme uses warm, burgundy tones for a traditional look.
+
+# Text colors
+text:
+  primary: '#3c1815'    # Main body text color (deep burgundy)
+  secondary: '#5a4130'  # Secondary text, used in footers/headers (brown)
+  accent: '#7d2b2b'     # Accent text color for headings (rich burgundy)
+  link: '#007bff'       # Color for links (blue)
+
+# Background colors
+background:
+  light: '#f9f7f1'        # Light background color (cream)
+  medium: '#f5f1e6'       # Medium background color (light tan)
+  dark: '#e0d5c0'         # Dark background color (tan)
+  additional: '#f0e5d8'   # Additional section background (lighter tan)
+  tableHeader: '#f4f4f4'  # Table header background (light grey)
+  tableRowEven: '#f9f7f1' # Even row background in tables (cream)
+  hover: '#f0f0f0'        # Hover state background (light grey)
+
+# Border colors
+border:
+  primary: '#8b4513'     # Primary border color (saddle brown)
+  secondary: '#d4c7a5'   # Secondary, lighter border (light tan)
+  additional: '#6a4e23'  # Additional section border (darker brown)
+  table: '#ddd'          # Table border color (light grey)
+
+# Accent colors
+accent:
+  primary: '#7d2b2b'      # Primary accent color (rich burgundy)
+  secondary: '#4b3b2f'    # Secondary accent color (dark brown)
+  tertiary: '#696969'     # Tertiary accent color (dim grey)
+  quaternary: '#808080'   # Quaternary accent color (grey)
+
+# Special colors for specific elements
+special:
+  sun: '#FFD700'       # Sun color in illustrations (gold)
+  lake: '#4682B4'      # Lake color in illustrations (steel blue)
+  grass: '#228B22'     # Grass color in illustrations (forest green)
+  tree: '#8B4513'      # Tree color in illustrations (saddle brown)

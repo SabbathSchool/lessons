@@ -1,0 +1,54 @@
+# Language configuration for swa
+# This file contains language-specific translations for Sabbath School Lesson Downloader
+
+# Basic terms
+notes: 'MAELEZO'  # Used for section headers and headings
+note: 'ELEZO'    # Used for single-note sections
+questions: 'MASWALI'  # Questions section header
+answer_prefix: 'Jibu'  # Prefix for answers in questions
+lesson: 'SOMO'  # Used for lesson titles
+
+# Quarter names (used in headings and footers)
+quarter_names:
+  q1: 'ROBO YA KWANZA'
+  q2: 'ROBO YA PILI'
+  q3: 'ROBO YA TATU'
+  q4: 'ROBO YA NNE'
+
+# Quarter month ranges (used in cover pages)
+quarter_months:
+  q1: 'Januari - Machi'
+  q2: 'Aprili - Juni'
+  q3: 'Julai - Septemba'
+  q4: 'Oktoba - Desemba'
+
+# Table of contents translations
+table_of_contents: 'YALIYOMO'
+lesson_column: 'Somo'
+title_column: 'Kichwa'
+date_column: 'Tarehe'
+page_column: 'Ukurasa'
+
+# Month names for date formatting
+month_names:
+  - 'Januari'
+  - 'Februari'
+  - 'Machi'
+  - 'Aprili'
+  - 'Mei'
+  - 'Juni'
+  - 'Julai'
+  - 'Agosti'
+  - 'Septemba'
+  - 'Oktoba'
+  - 'Novemba'
+  - 'Desemba'
+
+# Date format regular expressions (used for extracting dates from content)
+date_formats:
+  - '([A-Za-z]+ \d+, \d{4})'
+  - '(\d+ [A-Za-z]+, \d{4})'
+  - '(\d{1,2}/\d{1,2}/\d{4})'
+
+# Date format template for generating new dates
+date_format_template: '{day} {month}, {year}'

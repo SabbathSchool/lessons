@@ -1,0 +1,40 @@
+# Sanctuary Theme for Sabbath School Lessons PDF
+# This theme uses deep blues, gold, and light purples for an elegant and traditional look.
+
+# Text colors
+text:
+  primary: '#2a1f70'    # Main body text color (deep blue)
+  secondary: '#2a1f70'  # Secondary text, used in footers/headers (deep blue)
+  accent: '#1a1058'     # Accent text color for headings (deep blue)
+  link: '#1a1058'       # Color for links (deep blue)
+
+# Background colors
+background:
+  light: '#f9f7f1'        # Light background color (cream)
+  medium: '#f5f1e6'       # Medium background color (light tan)
+  dark: '#e0d5c0'         # Dark background color (tan)
+  additional: '#f0e5f5'   # Additional section background (light purple)
+  tableHeader: '#f5f1e6'  # Table header background (light tan)
+  tableRowEven: '#f9f7f1' # Even row background in tables (cream)
+  hover: '#e6e1ea'        # Hover state background (light blue-purple)
+
+# Border colors
+border:
+  primary: '#daa520'     # Primary border color (gold)
+  secondary: '#daa520'   # Secondary, lighter border (gold)
+  additional: '#daa520'  # Additional section border (gold)
+  table: '#daa520'       # Table border color (gold)
+
+# Accent colors
+accent:
+  primary: '#7d2b2b'      # Primary accent color (rich burgundy)
+  secondary: '#4b3b2f'    # Secondary accent color (dark brown)
+  tertiary: '#696969'     # Tertiary accent color (dim grey)
+  quaternary: '#808080'   # Quaternary accent color (grey)
+
+# Special colors for specific elements
+special:
+  sun: '#FFD700'       # Sun color in illustrations (gold)
+  lake: '#4682B4'      # Lake color in illustrations (steel blue)
+  grass: '#228B22'     # Grass color in illustrations (forest green)
+  tree: '#8B4513'      # Tree color in illustrations (saddle brown)
