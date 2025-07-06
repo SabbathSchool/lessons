@@ -77,13 +77,17 @@ def convert_pdf_with_pdftotext(pdf_path, output_dir):
                 if page_file.exists() and page_file.stat().st_size > 10:
                     success_count += 1
                 else:
-                    page_file.unlink(missing_ok=True)
+                    if page_file.exists():
+                        print(f"    Page {page_num}: No text content (blank/image-only page)")
+                        page_file.unlink(missing_ok=True)
+                    else:
+                        print(f"    Page {page_num}: Failed to create output file")
                     
             except subprocess.CalledProcessError as e:
                 print(f"    Error extracting page {page_num}: {e}")
         
         success_rate = success_count / pages
-        return success_rate > 0.5, f"Extracted {success_count}/{pages} pages"
+        return success_rate > 0.5, f"Extracted {success_count}/{pages} pages (skipped {pages - success_count} blank/image-only pages)"
         
     except subprocess.CalledProcessError as e:
         return False, f"pdftotext failed: {e}"
