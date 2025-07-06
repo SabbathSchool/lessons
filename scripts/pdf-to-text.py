@@ -228,7 +228,7 @@ def convert_lessons_in_directory(directory, force_ocr=False):
 
 def main():
     parser = argparse.ArgumentParser(description='Convert PDF lessons to page-by-page text files')
-    parser.add_argument('input', help='PDF file or directory containing PDFs')
+    parser.add_argument('input', nargs='?', help='PDF file or directory containing PDFs')
     parser.add_argument('--force-ocr', action='store_true', 
                        help='Force OCR even for text-based PDFs')
     parser.add_argument('--check-deps', action='store_true',
@@ -240,6 +240,9 @@ def main():
         check_dependencies()
         print("All required dependencies are installed!")
         return
+    
+    if not args.input:
+        parser.error("input argument is required when not checking dependencies")
     
     # Check dependencies
     check_dependencies()
