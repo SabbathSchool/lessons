@@ -42,7 +42,7 @@ install-pdf-deps:
 	@echo "Installing PDF processing dependencies..."
 	@echo "Note: You may need sudo privileges for system packages"
 	sudo apt-get update
-	sudo apt-get install -y poppler-utils tesseract-ocr
+	sudo apt-get install -y poppler-utils
 	pip install requests beautifulsoup4
 	@echo "Testing dependencies..."
 	python scripts/pdf-to-text.py --check-deps

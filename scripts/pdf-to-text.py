@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Convert PDF files to text page by page using various OCR methods.
+Convert PDF files to text page by page using pdftotext.
 Creates individual text files for each page for better processing control.
+Assumes PDFs already contain text (OCR'd) and simply extracts it page by page.
 """
 
 import os
@@ -12,11 +13,10 @@ import subprocess
 import json
 
 def check_dependencies():
-    """Check if required OCR tools are available"""
+    """Check if required PDF text extraction tools are available"""
     tools = {
         'pdftotext': 'poppler-utils',
-        'tesseract': 'tesseract-ocr',
-        'pdfimages': 'poppler-utils'
+        'pdfinfo': 'poppler-utils'
     }
     
     missing = []
@@ -31,7 +31,7 @@ def check_dependencies():
         for tool in missing:
             print(f"  - {tool}")
         print("\nInstall with:")
-        print("  sudo apt-get install poppler-utils tesseract-ocr")
+        print("  sudo apt-get install poppler-utils")
         sys.exit(1)
 
 def convert_pdf_with_pdftotext(pdf_path, output_dir):
@@ -87,65 +87,8 @@ def convert_pdf_with_pdftotext(pdf_path, output_dir):
     except subprocess.CalledProcessError as e:
         return False, f"pdftotext failed: {e}"
 
-def convert_pdf_with_tesseract(pdf_path, output_dir):
-    """Convert PDF to text using Tesseract OCR (slower, works for image PDFs)"""
-    print(f"  Trying Tesseract OCR extraction...")
-    
-    try:
-        # First convert PDF pages to images
-        temp_dir = output_dir / "temp_images"
-        temp_dir.mkdir(exist_ok=True)
-        
-        # Convert PDF to images
-        subprocess.run([
-            'pdftoppm', 
-            '-png',
-            str(pdf_path),
-            str(temp_dir / "page")
-        ], capture_output=True, check=True)
-        
-        # Get list of image files
-        image_files = sorted(temp_dir.glob("page-*.png"))
-        
-        if not image_files:
-            return False, "No images generated from PDF"
-        
-        success_count = 0
-        for i, image_file in enumerate(image_files, 1):
-            page_file = output_dir / f"page_{i:03d}.txt"
-            
-            # Skip if already exists
-            if page_file.exists():
-                success_count += 1
-                continue
-            
-            try:
-                # Run Tesseract OCR
-                result = subprocess.run([
-                    'tesseract',
-                    str(image_file),
-                    str(page_file.with_suffix('')),  # tesseract adds .txt automatically
-                    '-l', 'eng'
-                ], capture_output=True, text=True, check=True)
-                
-                if page_file.exists() and page_file.stat().st_size > 10:
-                    success_count += 1
-                
-            except subprocess.CalledProcessError as e:
-                print(f"    Error OCR'ing page {i}: {e}")
-        
-        # Cleanup temp images
-        for image_file in image_files:
-            image_file.unlink(missing_ok=True)
-        temp_dir.rmdir()
-        
-        success_rate = success_count / len(image_files)
-        return success_rate > 0.5, f"OCR'd {success_count}/{len(image_files)} pages"
-        
-    except subprocess.CalledProcessError as e:
-        return False, f"Tesseract OCR failed: {e}"
 
-def convert_single_pdf(pdf_path, force_ocr=False):
+def convert_single_pdf(pdf_path):
     """Convert a single PDF file to page-by-page text files"""
     pdf_path = Path(pdf_path)
     
@@ -160,23 +103,13 @@ def convert_single_pdf(pdf_path, force_ocr=False):
     print(f"Converting: {pdf_path}")
     print(f"Output dir: {output_dir}")
     
-    # Try pdftotext first (unless forced OCR)
-    if not force_ocr:
-        success, message = convert_pdf_with_pdftotext(pdf_path, output_dir)
-        print(f"  pdftotext: {message}")
-        
-        if success:
-            # Create metadata file
-            create_conversion_metadata(pdf_path, output_dir, "pdftotext")
-            return True
-    
-    # Fall back to Tesseract OCR
-    success, message = convert_pdf_with_tesseract(pdf_path, output_dir)
-    print(f"  Tesseract OCR: {message}")
+    # Extract text using pdftotext
+    success, message = convert_pdf_with_pdftotext(pdf_path, output_dir)
+    print(f"  pdftotext: {message}")
     
     if success:
         # Create metadata file
-        create_conversion_metadata(pdf_path, output_dir, "tesseract")
+        create_conversion_metadata(pdf_path, output_dir, "pdftotext")
         return True
     
     print(f"  ✗ Failed to convert {pdf_path}")
@@ -195,7 +128,7 @@ def create_conversion_metadata(pdf_path, output_dir, method):
     with open(metadata_file, 'w') as f:
         json.dump(metadata, f, indent=2)
 
-def convert_lessons_in_directory(directory, force_ocr=False):
+def convert_lessons_in_directory(directory):
     """Convert all PDF lessons in a directory structure"""
     directory = Path(directory)
     
@@ -216,7 +149,7 @@ def convert_lessons_in_directory(directory, force_ocr=False):
     failed = 0
     
     for pdf_file in pdf_files:
-        if convert_single_pdf(pdf_file, force_ocr):
+        if convert_single_pdf(pdf_file):
             successful += 1
         else:
             failed += 1
@@ -229,8 +162,6 @@ def convert_lessons_in_directory(directory, force_ocr=False):
 def main():
     parser = argparse.ArgumentParser(description='Convert PDF lessons to page-by-page text files')
     parser.add_argument('input', nargs='?', help='PDF file or directory containing PDFs')
-    parser.add_argument('--force-ocr', action='store_true', 
-                       help='Force OCR even for text-based PDFs')
     parser.add_argument('--check-deps', action='store_true',
                        help='Check if required dependencies are installed')
     
@@ -250,9 +181,9 @@ def main():
     input_path = Path(args.input)
     
     if input_path.is_file():
-        convert_single_pdf(input_path, args.force_ocr)
+        convert_single_pdf(input_path)
     elif input_path.is_dir():
-        convert_lessons_in_directory(input_path, args.force_ocr)
+        convert_lessons_in_directory(input_path)
     else:
         print(f"Error: Invalid input path: {input_path}")
         sys.exit(1)
