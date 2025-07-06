@@ -22,7 +22,8 @@ def check_dependencies():
     missing = []
     for tool, package in tools.items():
         try:
-            subprocess.run([tool, '--version'], capture_output=True, check=True)
+            # Poppler tools use --help to show version, not --version
+            subprocess.run([tool, '--help'], capture_output=True, check=True)
         except (subprocess.CalledProcessError, FileNotFoundError):
             missing.append(f"{tool} (install {package})")
     
