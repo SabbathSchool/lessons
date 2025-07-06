@@ -15,6 +15,7 @@ help:
 	@echo "  download-pdfs             - Download all lessons as .pdf files"
 	@echo "  download-pdfs-test        - Test download with first 10 .pdf files" 
 	@echo "  convert-pdfs              - Convert PDFs to page-by-page text files"
+	@echo "  convert-pdf               - Convert specific PDF file (Usage: make convert-pdf PDF=path/to/file.pdf)"
 	@echo "  install-pdf-deps          - Install PDF processing dependencies"
 	@echo ""
 	@echo "Progress and Status:"
