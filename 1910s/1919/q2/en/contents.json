@@ -1,0 +1,75 @@
+{
+  "title": "Fundamentals of the Christian Life",
+  "subtitle": "Q2, 1919",
+  "year": 1919,
+  "quarter": "Q2",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Our Hope of Salvation",
+      "date": "APRIL 5, 1919"
+    },
+    {
+      "id": "week-02",
+      "title": "Conversion",
+      "date": "APRIL 12, 1919"
+    },
+    {
+      "id": "week-03",
+      "title": "Conversion (Continued), APRIL 19, 1919",
+      "date": "APRIL 19, 1919"
+    },
+    {
+      "id": "week-04",
+      "title": "Regeneration, or the New Birth",
+      "date": "APRIL 26, 1919"
+    },
+    {
+      "id": "week-05",
+      "title": "Justification by Faith",
+      "date": "MAY 3, 1919"
+    },
+    {
+      "id": "week-06",
+      "title": "Adoption",
+      "date": "MAY 10, 1919"
+    },
+    {
+      "id": "week-07",
+      "title": "Union with God and Christ",
+      "date": "MAY 17, 1919"
+    },
+    {
+      "id": "week-08",
+      "title": "Sanctification",
+      "date": "MAY 24, 1919"
+    },
+    {
+      "id": "week-09",
+      "title": "Work of the Holy Spirit in",
+      "date": "MAY 31, 1919"
+    },
+    {
+      "id": "week-10",
+      "title": "Prayer",
+      "date": "JUNE 7, 1919"
+    },
+    {
+      "id": "week-11",
+      "title": "Feeding on the Word",
+      "date": ""
+    },
+    {
+      "id": "week-12",
+      "title": "Christian Service",
+      "date": "JUNE 21, 1919"
+    },
+    {
+      "id": "week-13",
+      "title": "The Ministry of Trials",
+      "date": "JUNE 28, 1919"
+    }
+  ]
+}

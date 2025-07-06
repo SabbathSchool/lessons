@@ -1,0 +1,75 @@
+{
+  "title": "The Mediation of Christ",
+  "subtitle": "Second Quarter, 1913",
+  "year": 1913,
+  "quarter": "Q2",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Man of Sin in the Temple of God",
+      "date": "April 5, 1913"
+    },
+    {
+      "id": "week-02", 
+      "title": "Ancient and Modern Babylon",
+      "date": "April 12, 1913"
+    },
+    {
+      "id": "week-03",
+      "title": "The Sanctuary in Prophecy",
+      "date": "April 19, 1913"
+    },
+    {
+      "id": "week-04",
+      "title": "The Sanctuary in Prophecy (Continued)",
+      "date": "April 26, 1913"
+    },
+    {
+      "id": "week-05",
+      "title": "A Further Interpretation of the Vision",
+      "date": "May 3, 1913"
+    },
+    {
+      "id": "week-06",
+      "title": "The Great Prophetic Period and Its Significance",
+      "date": "May 10, 1913"
+    },
+    {
+      "id": "week-07",
+      "title": "God Manifest in the Flesh",
+      "date": "May 17, 1913"
+    },
+    {
+      "id": "week-08",
+      "title": "The Blessing Ministered from the Sanctuary",
+      "date": "May 24, 1913"
+    },
+    {
+      "id": "week-09",
+      "title": "The Cleansing of the Sanctuary",
+      "date": "May 31, 1913"
+    },
+    {
+      "id": "week-10",
+      "title": "The Sanctuary and the Sabbath",
+      "date": "June 7, 1913"
+    },
+    {
+      "id": "week-11",
+      "title": "The Meaning of Christ's Ministry for Us",
+      "date": "June 14, 1913"
+    },
+    {
+      "id": "week-12",
+      "title": "The Everlasting Gospel to the World",
+      "date": "June 21, 1913"
+    },
+    {
+      "id": "week-13",
+      "title": "Review",
+      "date": "June 28, 1913"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "The Ministry of Angels",
+  "subtitle": "Q2, 1920",
+  "year": 1920,
+  "quarter": "Q2",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Angels Real Created Beings",
+      "date": "April 3, 1920"
+    },
+    {
+      "id": "week-02",
+      "title": "Angels a Higher Order of Being than Man",
+      "date": "April 10, 1920"
+    },
+    {
+      "id": "week-03",
+      "title": "Number and Glory of the Angels",
+      "date": "April 17, 1920"
+    },
+    {
+      "id": "week-04",
+      "title": "Power of the Angels",
+      "date": "April 24, 1920"
+    },
+    {
+      "id": "week-05",
+      "title": "Guardian Angels",
+      "date": "May 1, 1920"
+    },
+    {
+      "id": "week-06",
+      "title": "Angels and the Judgment Books",
+      "date": "May 8, 1920"
+    },
+    {
+      "id": "week-07",
+      "title": "Agents in Divine Revelation",
+      "date": "May 15, 1920"
+    },
+    {
+      "id": "week-08",
+      "title": "Angel Ministry to Men",
+      "date": "May 22, 1920"
+    },
+    {
+      "id": "week-09",
+      "title": "Angel Ministry to Men (Continued)",
+      "date": "May 29, 1920"
+    },
+    {
+      "id": "week-10",
+      "title": "Angel Ministry to Jesus",
+      "date": "June 5, 1920"
+    },
+    {
+      "id": "week-11",
+      "title": "Angel Ministry in the Gospel",
+      "date": "June 12, 1920"
+    },
+    {
+      "id": "week-12",
+      "title": "Angel Ministry in the Gospel (Continued)",
+      "date": "June 19, 1920"
+    },
+    {
+      "id": "week-13",
+      "title": "Angels in the World Harvest",
+      "date": "June 26, 1920"
+    }
+  ]
+}

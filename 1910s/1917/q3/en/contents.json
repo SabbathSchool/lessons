@@ -1,0 +1,65 @@
+{
+  "title": "Topical Bible Studies",
+  "subtitle": "Q3, 1917",
+  "year": 1917,
+  "quarter": "Q3",
+  "language": "en",
+  "weeks": 11,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Foundation Principles of the Gospel",
+      "date": "JULY 7, 1917"
+    },
+    {
+      "id": "week-02",
+      "title": "The Light of the World",
+      "date": "JULY 14, 1917"
+    },
+    {
+      "id": "week-03",
+      "title": "Christ and His Church",
+      "date": "JULY 21, 1917"
+    },
+    {
+      "id": "week-04",
+      "title": "Christ and His Church (Continued)",
+      "date": "JULY 28, 1917"
+    },
+    {
+      "id": "week-05",
+      "title": "Behavior in the House of God",
+      "date": "AUGUST 11, 1917"
+    },
+    {
+      "id": "week-06",
+      "title": "God's Ownership",
+      "date": "AUGUST 18, 1917"
+    },
+    {
+      "id": "week-07",
+      "title": "Man's Stewardship",
+      "date": "AUGUST 25, 1917"
+    },
+    {
+      "id": "week-08",
+      "title": "The Support of God's Work",
+      "date": "SEPTEMBER 1, 1917"
+    },
+    {
+      "id": "week-09",
+      "title": "Duty of the Church Toward",
+      "date": "SEPTEMBER 15, 1917"
+    },
+    {
+      "id": "week-10",
+      "title": "The Young People of the Church",
+      "date": "SEPTEMBER 22, 1917"
+    },
+    {
+      "id": "week-11",
+      "title": "The Christian Home",
+      "date": "SEPTEMBER 29, 1917"
+    }
+  ]
+}

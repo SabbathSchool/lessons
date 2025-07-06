@@ -1,0 +1,75 @@
+{
+  "title": "Parables of Jesus",
+  "subtitle": "Q3, 1919",
+  "year": 1919,
+  "quarter": "Q3",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Teaching in Parables",
+      "date": "JULY 5, 1919"
+    },
+    {
+      "id": "week-02",
+      "title": "The Parable of the Sower",
+      "date": "JULY 12, 1919"
+    },
+    {
+      "id": "week-03",
+      "title": "The Parable of the Tares",
+      "date": "JULY 19, 1919"
+    },
+    {
+      "id": "week-04",
+      "title": "The Parable of the Two Debtors",
+      "date": "JULY 26, 1919"
+    },
+    {
+      "id": "week-05",
+      "title": "The Parable of the Good Samaritan",
+      "date": "AUGUST 2, 1919"
+    },
+    {
+      "id": "week-06",
+      "title": "The Parable of the Foolish Rich Man",
+      "date": "AUGUST 9, 1919"
+    },
+    {
+      "id": "week-07",
+      "title": "The Parable of the Prodigal Son",
+      "date": "AUGUST 16, 1919"
+    },
+    {
+      "id": "week-08",
+      "title": "The Parable of the Laborers",
+      "date": "AUGUST 23, 1919"
+    },
+    {
+      "id": "week-09",
+      "title": "The Parable of the Wicked",
+      "date": "AUGUST 30, 1919"
+    },
+    {
+      "id": "week-10",
+      "title": "The Marriage of the King's Son",
+      "date": "SEPTEMBER 6, 1919"
+    },
+    {
+      "id": "week-11",
+      "title": "The Parable of the Ten Virgins",
+      "date": "SEPTEMBER 13, 1919"
+    },
+    {
+      "id": "week-12",
+      "title": "The Parable of the Ten Talents",
+      "date": "SEPTEMBER 20, 1919"
+    },
+    {
+      "id": "week-13",
+      "title": "The Parable of the Sheep and",
+      "date": "SEPTEMBER 27, 1919"
+    }
+  ]
+}

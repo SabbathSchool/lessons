@@ -1,0 +1,75 @@
+{
+  "title": "The Church: Its Work and Financial Support",
+  "subtitle": "Q4, 1919",
+  "year": 1919,
+  "quarter": "Q4",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Church",
+      "date": "OCTOBER 4, 1919"
+    },
+    {
+      "id": "week-02",
+      "title": "The Organization of the Church",
+      "date": "OCTOBER 11, 1919"
+    },
+    {
+      "id": "week-03",
+      "title": "The Unity of the Church",
+      "date": "OCTOBER 18, 1919"
+    },
+    {
+      "id": "week-04",
+      "title": "Baptism",
+      "date": "OCTOBER 25, 1919"
+    },
+    {
+      "id": "week-05",
+      "title": "The Ordinances of the Church",
+      "date": "NOVEMBER 1, 1919"
+    },
+    {
+      "id": "week-06",
+      "title": "The Mission of the Church",
+      "date": "NOVEMBER 8, 1919"
+    },
+    {
+      "id": "week-07",
+      "title": "The Anointing of the Church",
+      "date": "NOVEMBER 15, 1919"
+    },
+    {
+      "id": "week-08",
+      "title": "Covetousness",
+      "date": "NOVEMBER 22, 1919"
+    },
+    {
+      "id": "week-09",
+      "title": "The Blessing of Giving",
+      "date": "NOVEMBER 29, 1919"
+    },
+    {
+      "id": "week-10",
+      "title": "Offerings",
+      "date": "DECEMBER 6, 1919"
+    },
+    {
+      "id": "week-11",
+      "title": "The Lord's Ownership",
+      "date": "DECEMBER 13, 1919"
+    },
+    {
+      "id": "week-12",
+      "title": "Tithing",
+      "date": "DECEMBER 20, 1919"
+    },
+    {
+      "id": "week-13",
+      "title": "God's Plan for Support of",
+      "date": "DECEMBER 27, 1919"
+    }
+  ]
+}

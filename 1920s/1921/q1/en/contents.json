@@ -1,0 +1,70 @@
+{
+  "title": "Our Personal Savior Jesus Christ",
+  "subtitle": "Q1, 1921",
+  "year": 1921,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "A Personal Gospel",
+      "date": "JANUARY 1, 1921"
+    },
+    {
+      "id": "week-02",
+      "title": "Christ in All the Bible",
+      "date": "JANUARY 8, 1921"
+    },
+    {
+      "id": "week-03",
+      "title": "The Preexistence of Christ",
+      "date": "JANUARY 15, 1921"
+    },
+    {
+      "id": "week-04",
+      "title": ". The Incarnation",
+      "date": "JANUARY 22, 1921"
+    },
+    {
+      "id": "week-05",
+      "title": "The Purpose of the Incarnation",
+      "date": "JANUARY 29, 1921"
+    },
+    {
+      "id": "week-06",
+      "title": "The Son of God",
+      "date": "FEBRUARY 5, 1921"
+    },
+    {
+      "id": "week-07",
+      "title": "The Deity of Christ",
+      "date": "FEBRUARY 12, 1921"
+    },
+    {
+      "id": "week-08",
+      "title": "The Son of Man",
+      "date": "FEBRUARY 19, 1921"
+    },
+    {
+      "id": "week-09",
+      "title": "- The One Mediator",
+      "date": "FEBRUARY 26, 1921"
+    },
+    {
+      "id": "week-10",
+      "title": "The Saviour",
+      "date": "MARCH 12, 1921"
+    },
+    {
+      "id": "week-11",
+      "title": "The Lord of Glory",
+      "date": "MARCH 19, 1921"
+    },
+    {
+      "id": "week-12",
+      "title": "The Center of Christianity",
+      "date": "MARCH 26, 1921"
+    }
+  ]
+}

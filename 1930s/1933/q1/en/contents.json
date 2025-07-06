@@ -1,0 +1,70 @@
+{
+  "title": "The Epistles of John",
+  "subtitle": "Q1, 1933",
+  "year": 1933,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "January 7, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-02",
+      "title": "January 14, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-03",
+      "title": "January 21, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-04",
+      "title": "January 28, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-05",
+      "title": "February 4, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-06",
+      "title": "February 1 1, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-07",
+      "title": "February 18, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-08",
+      "title": "February 25, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-09",
+      "title": "March 4, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-10",
+      "title": "March 11, 1933",
+      "date": ""
+    },
+    {
+      "id": "week-11",
+      "title": "March 18, 193 3",
+      "date": ""
+    },
+    {
+      "id": "week-12",
+      "title": "March 25, 1933",
+      "date": ""
+    }
+  ]
+}

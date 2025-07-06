@@ -1,0 +1,70 @@
+{
+  "title": "Life and Teachings of Jesus As Recorded in the Book of Matthew",
+  "subtitle": "Q1, 1915",
+  "year": 1915,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Lineage and Birth of Jesus",
+      "date": "JANUARY 2, 1915"
+    },
+    {
+      "id": "week-02",
+      "title": "Visit of the Wise Men",
+      "date": "JANUARY 9, 1915"
+    },
+    {
+      "id": "week-03",
+      "title": "Flight into Egypt and the Return",
+      "date": "JANUARY 16, 5915"
+    },
+    {
+      "id": "week-04",
+      "title": "Work of John the Baptist",
+      "date": "JANUARY 23, 1915"
+    },
+    {
+      "id": "week-05",
+      "title": "The Temptation of Jesus",
+      "date": "JANUARY 30, 1915"
+    },
+    {
+      "id": "week-06",
+      "title": "Beginning of Jesus' Ministry",
+      "date": "FEBRUARY 6, 1915"
+    },
+    {
+      "id": "week-07",
+      "title": "The Mount of Blessing",
+      "date": "FEBRUARY 13, 1915"
+    },
+    {
+      "id": "week-08",
+      "title": "Work of Believers in the World",
+      "date": "FEBRUARY 20, 1915"
+    },
+    {
+      "id": "week-09",
+      "title": "Interpreting the Law",
+      "date": "FEBRUARY 27, 1915"
+    },
+    {
+      "id": "week-10",
+      "title": "Motive and Manner of Service",
+      "date": "MARCH 13, 1915"
+    },
+    {
+      "id": "week-11",
+      "title": "Two Masters",
+      "date": "MARCH 20, 1915"
+    },
+    {
+      "id": "week-12",
+      "title": "Summary of Chapters 1 to 6 MARCH 27, 1915",
+      "date": "MARCH 27, 1915"
+    }
+  ]
+}

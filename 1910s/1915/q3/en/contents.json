@@ -1,0 +1,75 @@
+{
+  "title": "Life and Teachings of Jesus",
+  "subtitle": "Q3, 1915",
+  "year": 1915,
+  "quarter": "Q3",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "With or Against Christ",
+      "date": "JULY 3, 1915"
+    },
+    {
+      "id": "week-02",
+      "title": "Repentance and Obedience",
+      "date": ""
+    },
+    {
+      "id": "week-03",
+      "title": "Living by the Word",
+      "date": "JULY 17, 1915"
+    },
+    {
+      "id": "week-04",
+      "title": "Parable of the Tares",
+      "date": "JULY 24, 1915"
+    },
+    {
+      "id": "week-05",
+      "title": "The Kingdom of Heaven",
+      "date": "JULY 31, 1915"
+    },
+    {
+      "id": "week-06",
+      "title": "The Carpenter's Son",
+      "date": "AUGUST 7, 1915"
+    },
+    {
+      "id": "week-07",
+      "title": "Death of John the Baptist",
+      "date": "AUGUST 14, 1915"
+    },
+    {
+      "id": "week-08",
+      "title": "Feeding the Multitude",
+      "date": "AUGUST 21, 1915"
+    },
+    {
+      "id": "week-09",
+      "title": "\"Lord, Save Me\"",
+      "date": "AUGUST 28, 1915"
+    },
+    {
+      "id": "week-10",
+      "title": "Heart Service",
+      "date": "SEPTEMBER 4, 1915"
+    },
+    {
+      "id": "week-11",
+      "title": "The Fruit of Faith",
+      "date": ""
+    },
+    {
+      "id": "week-12",
+      "title": "Spiritual Discernment",
+      "date": "SEPTEMBER 18, 1915"
+    },
+    {
+      "id": "week-13",
+      "title": "Review",
+      "date": "SEPTEMBER 25, 1915"
+    }
+  ]
+}

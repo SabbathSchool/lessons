@@ -1,0 +1,75 @@
+{
+  "title": "Studies in the Revelation",
+  "subtitle": "Q4, 1918",
+  "year": 1918,
+  "quarter": "Q4",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The One Hundred and Forty-Four",
+      "date": "OCTOBER 5, 1918"
+    },
+    {
+      "id": "week-02",
+      "title": "The Harvest of the Earth; the",
+      "date": "OCTOBER 12, 1918"
+    },
+    {
+      "id": "week-03",
+      "title": "The Plagues",
+      "date": "OCTOBER 19, 1918"
+    },
+    {
+      "id": "week-04",
+      "title": "----The Call out of Babylon; the Cup",
+      "date": "OCTOBER 26, 1918"
+    },
+    {
+      "id": "week-05",
+      "title": "The Final Overthrow of Babylon",
+      "date": "NOVEMBER 2, 1918"
+    },
+    {
+      "id": "week-06",
+      "title": "The Hallelujah Song; the Marriage",
+      "date": "NOVEMBER 9, 1918"
+    },
+    {
+      "id": "week-07",
+      "title": "The Smiting of the Nations",
+      "date": "NOVEMBER 16, 1918"
+    },
+    {
+      "id": "week-08",
+      "title": "The Millennium; the First Resurrec-tion; the Destruction of the Wicked",
+      "date": "NOVEMBER 23, 1918"
+    },
+    {
+      "id": "week-09",
+      "title": "The New Earth and the Holy City",
+      "date": "NOVEMBER 30, 1918"
+    },
+    {
+      "id": "week-10",
+      "title": "The Glories of the New Jerusalem",
+      "date": "DECEMBER 7, 1918"
+    },
+    {
+      "id": "week-11",
+      "title": "The Paradise of God",
+      "date": "DECEMBER 14, 1918"
+    },
+    {
+      "id": "week-12",
+      "title": "The Closing Announcements; Invitations and Warnings",
+      "date": "DECEMBER 21, 1918"
+    },
+    {
+      "id": "week-13",
+      "title": "Review",
+      "date": "DECEMBER 28, 1918"
+    }
+  ]
+}

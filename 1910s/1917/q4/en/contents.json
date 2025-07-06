@@ -1,0 +1,75 @@
+{
+  "title": "Topical Bible Studies",
+  "subtitle": "Q4, 1917",
+  "year": 1917,
+  "quarter": "Q4",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Hope of the Church—When",
+      "date": "OCTOBER 6, 1917"
+    },
+    {
+      "id": "week-02",
+      "title": "Signs of Christ's Coming",
+      "date": "OCTOBER 13, 1917"
+    },
+    {
+      "id": "week-03",
+      "title": "Present-Day Tokens",
+      "date": "OCTOBER 20, 1917"
+    },
+    {
+      "id": "week-04",
+      "title": "Events of the Day of the Lord",
+      "date": "OCTOBER 27, 1917"
+    },
+    {
+      "id": "week-05",
+      "title": "The Saints' Inheritance",
+      "date": "NOVEMBER 3, 1917"
+    },
+    {
+      "id": "week-06",
+      "title": "Nature of the Law of God",
+      "date": "NOVEMBER 10, 1917"
+    },
+    {
+      "id": "week-07",
+      "title": "Relation of the Law and the Gospel",
+      "date": "NOVEMBER 17, 1917"
+    },
+    {
+      "id": "week-08",
+      "title": "ThesSabbath in the Old Testament",
+      "date": "NOVEMBER 24, 1917"
+    },
+    {
+      "id": "week-09",
+      "title": "The Sabbath in the New Testament",
+      "date": "DECEMBER 1, 1917"
+    },
+    {
+      "id": "week-10",
+      "title": "The Change of the Sabbath",
+      "date": "DECEMBER 8, 1917"
+    },
+    {
+      "id": "week-11",
+      "title": "Proper Sabbath Observance, and",
+      "date": "DECEMBER 15, 1917"
+    },
+    {
+      "id": "week-12",
+      "title": "The Support of the Gospel Work",
+      "date": "DECEMBER 22, 1917"
+    },
+    {
+      "id": "week-13",
+      "title": "Christian Temperance",
+      "date": "DECEMBER 29, 1917"
+    }
+  ]
+}

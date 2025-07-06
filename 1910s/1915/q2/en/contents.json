@@ -1,0 +1,70 @@
+{
+  "title": "Life and Teachings of Jesus",
+  "subtitle": "Q2, 1915",
+  "year": 1915,
+  "quarter": "Q2",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Judging; Asking; Walking",
+      "date": "APRIL 3, 4491"
+    },
+    {
+      "id": "week-02",
+      "title": "Fruit Bearing; Doing; Building",
+      "date": ""
+    },
+    {
+      "id": "week-03",
+      "title": "The Touch and Word of Jesus",
+      "date": "APRIL 17, 1915"
+    },
+    {
+      "id": "week-04",
+      "title": "Mighty to Save. APRIL 24, 1915",
+      "date": "APRIL 24, 1915"
+    },
+    {
+      "id": "week-05",
+      "title": "Healing and Teaching",
+      "date": "MAY 8, 1915"
+    },
+    {
+      "id": "week-06",
+      "title": "Sending Out of the Twelve",
+      "date": "MAY 15, 1915"
+    },
+    {
+      "id": "week-07",
+      "title": "As Sheep among Wolves",
+      "date": "MAY 22, 1915"
+    },
+    {
+      "id": "week-08",
+      "title": "Bearing the Cross",
+      "date": "MAY 29, 1915"
+    },
+    {
+      "id": "week-09",
+      "title": "Pressing into the Kingdom",
+      "date": "JUNE 5, 1915"
+    },
+    {
+      "id": "week-10",
+      "title": "Come unto Me",
+      "date": "JUNE 12, 1915"
+    },
+    {
+      "id": "week-11",
+      "title": "Sabbath Keeping",
+      "date": "JUNE 19, 5955"
+    },
+    {
+      "id": "week-12",
+      "title": "Summary and Review",
+      "date": "JUNE 26, 1915"
+    }
+  ]
+}

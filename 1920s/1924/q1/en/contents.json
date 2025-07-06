@@ -1,0 +1,70 @@
+{
+  "title": "Christian Missions",
+  "subtitle": "Q1, 1924",
+  "year": 1924,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Christ, the Founder of Missions",
+      "date": "JANUARY 5, 1924"
+    },
+    {
+      "id": "week-02",
+      "title": "The Gospel Proclaimed in",
+      "date": "JANUARY 12, 1924"
+    },
+    {
+      "id": "week-03",
+      "title": "Israel's Missionary Opportunities",
+      "date": "JANUARY 19, 1924"
+    },
+    {
+      "id": "week-04",
+      "title": "Israel's Missionary Opportunities",
+      "date": "JANUARY 26, 1924"
+    },
+    {
+      "id": "week-05",
+      "title": "The Great Missionary",
+      "date": "FEBRUARY 2, 1924"
+    },
+    {
+      "id": "week-06",
+      "title": "Mission Service Under the",
+      "date": "FEBRUARY 9, 1924"
+    },
+    {
+      "id": "week-07",
+      "title": "Missionary Activities of the",
+      "date": "FEBRUARY 23, 1924"
+    },
+    {
+      "id": "week-08",
+      "title": "Missionary Activities of the",
+      "date": "MARCH 1, 1924"
+    },
+    {
+      "id": "week-09",
+      "title": "- The Place of Missions in the",
+      "date": "MARCH 8, 1924"
+    },
+    {
+      "id": "week-10",
+      "title": "Responsibilities and Privileges",
+      "date": "MARCH 15, 1924"
+    },
+    {
+      "id": "week-11",
+      "title": "The Missionary's Reward",
+      "date": "MARCH 22, 1924"
+    },
+    {
+      "id": "week-12",
+      "title": "Review",
+      "date": "MARCH 29, 1924"
+    }
+  ]
+}

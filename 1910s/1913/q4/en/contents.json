@@ -1,0 +1,75 @@
+{
+  "title": "Epistle to the Romans",
+  "subtitle": "Senior Division, Fourth Quarter, 1913",
+  "year": 1913,
+  "quarter": "Q4",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Servants of the Son",
+      "date": "October 4, 1913"
+    },
+    {
+      "id": "week-02",
+      "title": "Something Not to Be Ashamed Of",
+      "date": "October 11, 1913"
+    },
+    {
+      "id": "week-03",
+      "title": "Results of Rejecting the Gospel",
+      "date": "October 18, 1913"
+    },
+    {
+      "id": "week-04",
+      "title": "The Reprobate Mind",
+      "date": "October 25, 1913"
+    },
+    {
+      "id": "week-05",
+      "title": "Condemnation",
+      "date": "November 1, 1913"
+    },
+    {
+      "id": "week-06",
+      "title": "The True Jew",
+      "date": "November 8, 1913"
+    },
+    {
+      "id": "week-07",
+      "title": "Standing of Humanity Before God",
+      "date": "November 15, 1913"
+    },
+    {
+      "id": "week-08",
+      "title": "Establishing the Law",
+      "date": "November 22, 1913"
+    },
+    {
+      "id": "week-09",
+      "title": "Justified by Faith",
+      "date": "November 29, 1913"
+    },
+    {
+      "id": "week-10",
+      "title": "An Example and a Father",
+      "date": "December 6, 1913"
+    },
+    {
+      "id": "week-11",
+      "title": "Saved by His Life",
+      "date": "December 13, 1913"
+    },
+    {
+      "id": "week-12",
+      "title": "Abounding Grace",
+      "date": "December 20, 1913"
+    },
+    {
+      "id": "week-13",
+      "title": "Review of Romans, Chapters 1 to 5",
+      "date": "December 27, 1913"
+    }
+  ]
+}

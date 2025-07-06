@@ -1,0 +1,25 @@
+{
+  "name": "sabbath-school-lessons",
+  "version": "1.0.0",
+  "description": "Sabbath School Lessons OCR Processing and Management",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "download-lessons": "python scripts/download-lessons.py",
+    "update-lessons-json": "python scripts/update-lessons-json.py",
+    "list-undone": "python scripts/list-undone-lessons.py"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

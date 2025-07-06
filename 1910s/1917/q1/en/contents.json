@@ -1,0 +1,70 @@
+{
+  "title": "Book of Acts",
+  "subtitle": "Q1, 1917",
+  "year": 1917,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Council at Jerusalem",
+      "date": "JANUARY 6, 1917"
+    },
+    {
+      "id": "week-02",
+      "title": "The Council at Jerusalem",
+      "date": "JANUARY 13, 1917"
+    },
+    {
+      "id": "week-03",
+      "title": "Paul and Silas in Prison",
+      "date": "JANUARY 27, 1917"
+    },
+    {
+      "id": "week-04",
+      "title": "Paul at Thessalonica and Berea",
+      "date": "FEBRUARY 3, 1917"
+    },
+    {
+      "id": "week-05",
+      "title": "Paul at Athens",
+      "date": "FEBRUARY 10, 1917"
+    },
+    {
+      "id": "week-06",
+      "title": "Paul at Corinth",
+      "date": "FEBRUARY 17, 1917"
+    },
+    {
+      "id": "week-07",
+      "title": "- Paul at Ephesus",
+      "date": "FEBRUARY 24, 1917"
+    },
+    {
+      "id": "week-08",
+      "title": "The Gospel Opposed at Ephesus",
+      "date": "MARCH 3, 1917"
+    },
+    {
+      "id": "week-09",
+      "title": "Paul's Visit to Macedonia",
+      "date": "MARCH 10, 1917"
+    },
+    {
+      "id": "week-10",
+      "title": "Paul's Farewell Meeting with",
+      "date": "MARCH 17, 1917"
+    },
+    {
+      "id": "week-11",
+      "title": "Paul's Further Ministry",
+      "date": "MARCH 24, 1917"
+    },
+    {
+      "id": "week-12",
+      "title": "The Review",
+      "date": "MARCH 31, 1917"
+    }
+  ]
+}

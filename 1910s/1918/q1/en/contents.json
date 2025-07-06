@@ -1,0 +1,75 @@
+{
+  "title": "Topical Bible Studies",
+  "subtitle": "Q1, 1918",
+  "year": 1918,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The One Mediator",
+      "date": "JANUARY 5, 1918"
+    },
+    {
+      "id": "week-02",
+      "title": "Our Great High Priest",
+      "date": "JANUARY 12, 1918"
+    },
+    {
+      "id": "week-03",
+      "title": "The Advocate with the Father",
+      "date": "JANUARY 19, 1918"
+    },
+    {
+      "id": "week-04",
+      "title": "The Sanctuary in the Wilderness—",
+      "date": "JANUARY 26, 1918"
+    },
+    {
+      "id": "week-05",
+      "title": "Daniel 8 and 9 Outlined, with Expo-sitioU of the 2,300 Days",
+      "date": "FEBRUARY 2, 1918"
+    },
+    {
+      "id": "week-06",
+      "title": "The Cleansing of the Sanctuary",
+      "date": "FEBRUARY 9, 1918"
+    },
+    {
+      "id": "week-07",
+      "title": "The Judgment",
+      "date": "FEBRUARY 16, 1918"
+    },
+    {
+      "id": "week-08",
+      "title": "Life in Christ: The Nature of Man",
+      "date": "FEBRUARY 23, 1918"
+    },
+    {
+      "id": "week-09",
+      "title": "Condition of Man in Death",
+      "date": "MARCH 2, 1918"
+    },
+    {
+      "id": "week-10",
+      "title": "The Destiny of the Wicked",
+      "date": "MARCH 9, 1918"
+    },
+    {
+      "id": "week-11",
+      "title": "The Ministry of Angels",
+      "date": "MARCH 16, 1918"
+    },
+    {
+      "id": "week-12",
+      "title": "Spiritualism—Ancient and Modern",
+      "date": "MARCH 23, 1918"
+    },
+    {
+      "id": "week-13",
+      "title": "-Spiritual Gifts",
+      "date": "MARCH 30, 1918"
+    }
+  ]
+}

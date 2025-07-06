@@ -1,0 +1,75 @@
+{
+  "title": "Life and Teachings of Jesus",
+  "subtitle": "Q4, 1915",
+  "year": 1915,
+  "quarter": "Q4",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Service of Christ",
+      "date": "OCTOBER 2, 1915"
+    },
+    {
+      "id": "week-02",
+      "title": "Coming in His Kingdom",
+      "date": "OCTOBER 9, 1915"
+    },
+    {
+      "id": "week-03",
+      "title": "Jesus the Deliverer",
+      "date": "OCTOBER 16, 1915"
+    },
+    {
+      "id": "week-04",
+      "title": "Entering the Kingdom",
+      "date": "OCTOBER 23, 1915"
+    },
+    {
+      "id": "week-05",
+      "title": "Forgiveness",
+      "date": "OCTOBER 30, 1915"
+    },
+    {
+      "id": "week-06",
+      "title": "Loyalty to God's Plan",
+      "date": "NOVEMBER 6, 1915"
+    },
+    {
+      "id": "week-07",
+      "title": "Commandment Keeping",
+      "date": "NOVEMBER 13, 1915"
+    },
+    {
+      "id": "week-08",
+      "title": "The Spirit of Service",
+      "date": "NOVEMBER 20, 1915"
+    },
+    {
+      "id": "week-09",
+      "title": "Self-Seeking, Asking, and Receiving",
+      "date": "NOVEMBER 27, 1915"
+    },
+    {
+      "id": "week-10",
+      "title": "Hosanna to the Son of David",
+      "date": "DECEMBER 4, 1915"
+    },
+    {
+      "id": "week-11",
+      "title": "Faith and Repentance",
+      "date": "DECEMBER 11, 1915"
+    },
+    {
+      "id": "week-12",
+      "title": "Parable of the Vineyard",
+      "date": "DECEMBER 18, 1915"
+    },
+    {
+      "id": "week-13",
+      "title": "Review",
+      "date": "DECEMBER 25, 1915"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "With the Great Teacher",
+  "subtitle": "Q1, 1922",
+  "year": 1922,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 11,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "In Youth; in Later Years; in",
+      "date": "JANUARY 7, 1922"
+    },
+    {
+      "id": "week-02",
+      "title": "The Beatitudes",
+      "date": "JANUARY 14, 1922"
+    },
+    {
+      "id": "week-03",
+      "title": "The Law Unfolded",
+      "date": "JANUARY 21, 1922"
+    },
+    {
+      "id": "week-04",
+      "title": "Our Father's Care; Judging",
+      "date": "FEBRUARY 4, 1922"
+    },
+    {
+      "id": "week-05",
+      "title": "Asking; Living; a Sure",
+      "date": "FEBRUARY 11, 1922"
+    },
+    {
+      "id": "week-06",
+      "title": "Jesus and the Woman of Samaria",
+      "date": ""
+    },
+    {
+      "id": "week-07",
+      "title": ". The Bread of Life",
+      "date": ""
+    },
+    {
+      "id": "week-08",
+      "title": "The Good Shepherd",
+      "date": "MARCH 4, 1922"
+    },
+    {
+      "id": "week-09",
+      "title": "Words of Comfort",
+      "date": "MARCH 11, 1922"
+    },
+    {
+      "id": "week-10",
+      "title": "Jesus the True Vine",
+      "date": "MARCH 18, 1922"
+    },
+    {
+      "id": "week-11",
+      "title": "The Holy Spirit",
+      "date": "MARCH 25, 1922"
+    }
+  ]
+}

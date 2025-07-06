@@ -1,0 +1,75 @@
+{
+  "title": "Psalms of Trust",
+  "subtitle": "Q1, 1919",
+  "year": 1919,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Greatness of Jehovah",
+      "date": "JANUARY 4, 1919"
+    },
+    {
+      "id": "week-02",
+      "title": "The Great Provider",
+      "date": "JANUARY 11, 1919"
+    },
+    {
+      "id": "week-03",
+      "title": "God's Care for His Creatures",
+      "date": "JANUARY 18, 1919"
+    },
+    {
+      "id": "week-04",
+      "title": "An Exhortation to Make Known",
+      "date": "JANUARY 25, 1919"
+    },
+    {
+      "id": "week-05",
+      "title": "God's Care for His People",
+      "date": "FEBRUARY 1, 1919"
+    },
+    {
+      "id": "week-06",
+      "title": "god's Power Manifested in",
+      "date": "FEBRUARY 8, 1919"
+    },
+    {
+      "id": "week-07",
+      "title": "God's Purpose in Deliverance",
+      "date": "FEBRUARY 15, 1919"
+    },
+    {
+      "id": "week-08",
+      "title": "Experiences of Israel for Our",
+      "date": "FEBRUARY 22, 1919"
+    },
+    {
+      "id": "week-09",
+      "title": "Experiences in the Wilderness",
+      "date": "MARCH 1, 1919"
+    },
+    {
+      "id": "week-10",
+      "title": "The Result of Disobedience",
+      "date": "MARCH 8, 1919"
+    },
+    {
+      "id": "week-11",
+      "title": "Deliverance from Sin",
+      "date": "MARCH 15, 1919"
+    },
+    {
+      "id": "week-12",
+      "title": "A Saviour from Sin and Distress",
+      "date": "MARCH 22, 1919"
+    },
+    {
+      "id": "week-13",
+      "title": "The Wisdom of the Righteous",
+      "date": "MARCH 29, 1919"
+    }
+  ]
+}

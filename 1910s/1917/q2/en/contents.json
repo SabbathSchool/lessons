@@ -1,0 +1,75 @@
+{
+  "title": "Book of Acts",
+  "subtitle": "Q2, 1917",
+  "year": 1917,
+  "quarter": "Q2",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Paul Arrested in the Temple",
+      "date": "APRIL 7, 1917"
+    },
+    {
+      "id": "week-02",
+      "title": "Paul's Address on the Castle Stairs",
+      "date": "APRIL 14, 1917"
+    },
+    {
+      "id": "week-03",
+      "title": "Paul Before the Council",
+      "date": "APRIL 21, 1917"
+    },
+    {
+      "id": "week-04",
+      "title": "A Conspiracy; Paul a Prisoner",
+      "date": "APRIL 28, 1917"
+    },
+    {
+      "id": "week-05",
+      "title": "Paul's Defense Before Felix",
+      "date": "MAY 5, 1917"
+    },
+    {
+      "id": "week-06",
+      "title": "Paul Before Festus",
+      "date": "MAY 12, 1917"
+    },
+    {
+      "id": "week-07",
+      "title": "Paul Before Agrippa",
+      "date": "MAY 19, 1917"
+    },
+    {
+      "id": "week-08",
+      "title": "Paul Before Agrippa (Concluded)",
+      "date": "MAY 26, 1917"
+    },
+    {
+      "id": "week-09",
+      "title": "Paul Begins His Journey to Rome",
+      "date": "JUNE 2, 1917"
+    },
+    {
+      "id": "week-10",
+      "title": "Shipwrecked and Saved",
+      "date": "JUNE 9, 1917"
+    },
+    {
+      "id": "week-11",
+      "title": "On the Island of Malta; Arrival",
+      "date": "JUNE 16, 1917"
+    },
+    {
+      "id": "week-12",
+      "title": "Preaching the Gospel in Rome",
+      "date": "JUNE 23, 1917"
+    },
+    {
+      "id": "week-13",
+      "title": "The Review",
+      "date": "JUNE 30, 1917"
+    }
+  ]
+}

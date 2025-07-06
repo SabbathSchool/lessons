@@ -1,0 +1,45 @@
+{
+  "title": "Second Epistle of Peter",
+  "subtitle": "Q3, 1914",
+  "year": 1914,
+  "quarter": "Q3",
+  "language": "en",
+  "weeks": 7,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Simon Peter",
+      "date": "JULY 4, 1914"
+    },
+    {
+      "id": "week-02",
+      "title": "- Surety of the Lord's Promises",
+      "date": ""
+    },
+    {
+      "id": "week-03",
+      "title": "Sabbath-Keeping •",
+      "date": ""
+    },
+    {
+      "id": "week-04",
+      "title": "Returning to God the Tithe",
+      "date": ""
+    },
+    {
+      "id": "week-05",
+      "title": "Heatth and Temperance",
+      "date": ""
+    },
+    {
+      "id": "week-06",
+      "title": "Christian Education",
+      "date": ""
+    },
+    {
+      "id": "week-07",
+      "title": "Our Duty to Labor for",
+      "date": ""
+    }
+  ]
+}

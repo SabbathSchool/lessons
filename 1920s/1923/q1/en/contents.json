@@ -1,0 +1,65 @@
+{
+  "title": "Epistle of James",
+  "subtitle": "Q1, 1923",
+  "year": 1923,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 11,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "The Frailty of Man; the",
+      "date": "JANUARY 13, 1923"
+    },
+    {
+      "id": "week-02",
+      "title": "- The Engrafted Word; Pure Religion",
+      "date": "JANUARY 20, 1923"
+    },
+    {
+      "id": "week-03",
+      "title": "God Is No Respecter of Persons; the Judgment Standard",
+      "date": "JANUARY 27, 1923"
+    },
+    {
+      "id": "week-04",
+      "title": "- Faith and Works",
+      "date": "FEBRUARY 3, 1923"
+    },
+    {
+      "id": "week-05",
+      "title": "The Tongue",
+      "date": "FEBRUARY 10, 1923"
+    },
+    {
+      "id": "week-06",
+      "title": "The Tree Known by the Fruit",
+      "date": "FEBRUARY 17, 1923"
+    },
+    {
+      "id": "week-07",
+      "title": "Judging; Vanity of",
+      "date": "MARCH 3, 1923"
+    },
+    {
+      "id": "week-08",
+      "title": "Last-Day Conditions; Exhorta-tions to Patience",
+      "date": "MARCH 10, 1923"
+    },
+    {
+      "id": "week-09",
+      "title": "Patience; Prayer for the Sick; Saving a Sinner",
+      "date": "MARCH 17, 1923"
+    },
+    {
+      "id": "week-10",
+      "title": "Covetousness",
+      "date": "MARCH 24, 1923"
+    },
+    {
+      "id": "week-11",
+      "title": "Review",
+      "date": "MARCH 31, 1923"
+    }
+  ]
+}

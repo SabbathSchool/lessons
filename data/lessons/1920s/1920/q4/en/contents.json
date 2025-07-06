@@ -1,0 +1,100 @@
+{
+  "title": "Bible Studies on Creation",
+  "subtitle": "Senior Division, Fourth Quarter, 1920",
+  "language": "en",
+  "year": 1920,
+  "quarter": "Q4",
+  "division": "Senior",
+  "cover": {
+    "title": "Sabbath School Lesson Quarterly",
+    "volume": "102",
+    "date": "October, 1920",
+    "publisher": "Pacific Press Publishing Association",
+    "price": "20c a year"
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "The Creation",
+      "date": "October 2, 1920",
+      "file": "week-01.md"
+    },
+    {
+      "week": 2,
+      "title": "Man's Eden Home",
+      "date": "October 9, 1920",
+      "file": "week-02.md"
+    },
+    {
+      "week": 3,
+      "title": "The Temptation and the Fall",
+      "date": "October 16, 1920",
+      "file": "week-03.md"
+    },
+    {
+      "week": 4,
+      "title": "Creation Not Now Going On",
+      "date": "October 23, 1920",
+      "file": "week-04.md"
+    },
+    {
+      "week": 5,
+      "title": "The Literal Week",
+      "date": "October 30, 1920",
+      "file": "week-05.md"
+    },
+    {
+      "week": 6,
+      "title": "The Growth of Apostasy",
+      "date": "November 6, 1920",
+      "file": "week-06.md"
+    },
+    {
+      "week": 7,
+      "title": "The Flood",
+      "date": "November 13, 1920",
+      "file": "week-07.md"
+    },
+    {
+      "week": 8,
+      "title": "The Effects of the Flood",
+      "date": "November 20, 1920",
+      "file": "week-08.md"
+    },
+    {
+      "week": 9,
+      "title": "Lessons from the Book of Nature",
+      "date": "November 27, 1920",
+      "file": "week-09.md"
+    },
+    {
+      "week": 10,
+      "title": "Scientific Facts Anticipated",
+      "date": "December 4, 1920",
+      "file": "week-10.md"
+    },
+    {
+      "week": 11,
+      "title": "The Beginning of Apostate Sciences",
+      "date": "December 11, 1920",
+      "file": "week-11.md"
+    },
+    {
+      "week": 12,
+      "title": "The Truth of Creation a Part of the Gospel",
+      "date": "December 18, 1920",
+      "file": "week-12.md"
+    },
+    {
+      "week": 13,
+      "title": "The Review",
+      "date": "December 25, 1920",
+      "file": "week-13.md"
+    }
+  ],
+  "special_offering": {
+    "date": "December 25",
+    "title": "Thirteenth Sabbath Offering",
+    "mission_field": "Brazil and North Brazil"
+  }
+}

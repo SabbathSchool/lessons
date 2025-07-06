@@ -1,0 +1,65 @@
+{
+  "title": "Life and Teachings of Jesus",
+  "subtitle": "Q1, 1916",
+  "year": 1916,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 11,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Knowing the Scriptures",
+      "date": "JANUARY 8, 1916"
+    },
+    {
+      "id": "week-02",
+      "title": "Love God and Your Neighbor",
+      "date": "JANUARY 15, 1916"
+    },
+    {
+      "id": "week-03",
+      "title": "Hypocrisy and Its Remedy",
+      "date": "JANUARY 29, 1916"
+    },
+    {
+      "id": "week-04",
+      "title": "Works of Unbelief",
+      "date": "FEBRUARY 5, 1916"
+    },
+    {
+      "id": "week-05",
+      "title": "\"When Shall These Things Be?\"",
+      "date": "FEBRUARY 12, 1916"
+    },
+    {
+      "id": "week-06",
+      "title": "For the Elect's Sake",
+      "date": "FEBRUARY 19, 1916"
+    },
+    {
+      "id": "week-07",
+      "title": "Gathering the Elect",
+      "date": "FEBRUARY 26, 1916"
+    },
+    {
+      "id": "week-08",
+      "title": "Get Ready",
+      "date": "MARCH 4, 1916"
+    },
+    {
+      "id": "week-09",
+      "title": "The Tarrying Time",
+      "date": "MARCH 11, 1916"
+    },
+    {
+      "id": "week-10",
+      "title": "Use of the Lord's Goods",
+      "date": "MARCH 18, 1916"
+    },
+    {
+      "id": "week-11",
+      "title": "Chapter Outlines and Review",
+      "date": "MARCH 25, 1916"
+    }
+  ]
+}

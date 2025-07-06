@@ -1,0 +1,70 @@
+{
+  "title": "Book of Acts",
+  "subtitle": "Q3, 1916",
+  "year": 1916,
+  "quarter": "Q3",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Power for Witnessing",
+      "date": "JULY 1, 1916"
+    },
+    {
+      "id": "week-02",
+      "title": "The Ascension of Jesus",
+      "date": "JULY 8, 1916"
+    },
+    {
+      "id": "week-03",
+      "title": "Outpouring of the Spirit",
+      "date": "JULY 15, 1916"
+    },
+    {
+      "id": "week-04",
+      "title": "A Multitude Converted",
+      "date": "JULY 22, 1916"
+    },
+    {
+      "id": "week-05",
+      "title": "The Lame Man Healed",
+      "date": "JULY 29, 1916"
+    },
+    {
+      "id": "week-06",
+      "title": "Peter and John Witness for Jesus",
+      "date": "AUGUST 5, 1916"
+    },
+    {
+      "id": "week-07",
+      "title": "The Experience of Ananias. and Sapphira",
+      "date": "AUGUST 12, 1916"
+    },
+    {
+      "id": "week-08",
+      "title": "Gamaliel Gives Counsel",
+      "date": "AUGUST 26, 1916"
+    },
+    {
+      "id": "week-09",
+      "title": "Deacons Appointed; Arrest of Stephen",
+      "date": "SEPTEMBER 2, 1916"
+    },
+    {
+      "id": "week-10",
+      "title": "Stephen's Address Before the. Sanhedrin",
+      "date": "SEPTEMBER 9, 1916"
+    },
+    {
+      "id": "week-11",
+      "title": "Stephen's Address — (Continued)",
+      "date": "SEPTEMBER 16, 1916"
+    },
+    {
+      "id": "week-12",
+      "title": "Stephen's Address (Concluded); Stephen Stoned",
+      "date": "SEPTEMBER 23, 1916"
+    }
+  ]
+}

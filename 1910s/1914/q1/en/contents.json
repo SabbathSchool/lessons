@@ -1,0 +1,60 @@
+{
+  "title": "Epistle to the Romans",
+  "subtitle": "Q1, 1914",
+  "year": 1914,
+  "quarter": "Q1",
+  "language": "en",
+  "weeks": 10,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Baptista and Its Meaning",
+      "date": "JANUARY 3, 1914"
+    },
+    {
+      "id": "week-02",
+      "title": "Righteousness and Life",
+      "date": "JANUARY 10, 1914"
+    },
+    {
+      "id": "week-03",
+      "title": "The Sinner and the Law",
+      "date": "JANUARY 17, 1914"
+    },
+    {
+      "id": "week-04",
+      "title": "The Flesh and the Spirit",
+      "date": "JANUARY 31, 1914"
+    },
+    {
+      "id": "week-05",
+      "title": "Children of Adoption; the Twofold",
+      "date": "FEBRUARY 7, 1914"
+    },
+    {
+      "id": "week-06",
+      "title": "All-Comprehending Glory and",
+      "date": "FEBRUARY 14, 1914"
+    },
+    {
+      "id": "week-07",
+      "title": "The Infinite Working for Our Good",
+      "date": "FEBRUARY 21, 1914"
+    },
+    {
+      "id": "week-08",
+      "title": "The Purpose and Love of God",
+      "date": "FEBRUARY 28, 1914"
+    },
+    {
+      "id": "week-09",
+      "title": "God's Mercy in Election (Continued)",
+      "date": "MARCH 21, 1914"
+    },
+    {
+      "id": "week-10",
+      "title": "Review. MARCH 28, 1914",
+      "date": "MARCH 28, 1914"
+    }
+  ]
+}

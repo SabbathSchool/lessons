@@ -1,0 +1,75 @@
+{
+  "title": "Epistle to the Romans",
+  "subtitle": "Q2, 1914",
+  "year": 1914,
+  "quarter": "Q2",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Righteousness, but How? APRIL 4, 1914",
+      "date": "APRIL 4, 1914"
+    },
+    {
+      "id": "week-02",
+      "title": "Election by Grace",
+      "date": "APRIL 11, 1914"
+    },
+    {
+      "id": "week-03",
+      "title": "\"The Fulness\" of Jew and Gentile",
+      "date": "APRIL 18, 1914"
+    },
+    {
+      "id": "week-04",
+      "title": "A Living Sacrifice",
+      "date": "APRIL 25, 1914"
+    },
+    {
+      "id": "week-05",
+      "title": "Practical Duties and Privileges",
+      "date": "MAY 2, 1914"
+    },
+    {
+      "id": "week-06",
+      "title": "Duty Toward Governments; Last-Day Warnings",
+      "date": "MAY 9, 1914"
+    },
+    {
+      "id": "week-07",
+      "title": "Each to His Own Master; Judge Not",
+      "date": "MAY 16, 1914"
+    },
+    {
+      "id": "week-08",
+      "title": "The Call of Faith",
+      "date": "MAY 23, 1914"
+    },
+    {
+      "id": "week-09",
+      "title": "Helping the Weak; Glorifying God",
+      "date": "MAY 30, 1914"
+    },
+    {
+      "id": "week-10",
+      "title": "Ministering God's Blessings",
+      "date": "JUNE 6, 1914"
+    },
+    {
+      "id": "week-11",
+      "title": "Greetings and Uviity",
+      "date": "JUNE 13, 1914"
+    },
+    {
+      "id": "week-12",
+      "title": "The Obedience of Faith",
+      "date": "JUNE 20, 1914"
+    },
+    {
+      "id": "week-13",
+      "title": "Review",
+      "date": "JUNE 27, 1914"
+    }
+  ]
+}

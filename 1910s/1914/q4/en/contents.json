@@ -1,0 +1,75 @@
+{
+  "title": "Epistle of James",
+  "subtitle": "Q4, 1914",
+  "year": 1914,
+  "quarter": "Q4",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Trials; Seeking Wisdom",
+      "date": ""
+    },
+    {
+      "id": "week-02",
+      "title": "The Frailty of Man; The Root of Temptation",
+      "date": "OCTOBER 17, 1914"
+    },
+    {
+      "id": "week-03",
+      "title": "The Engrafted Word; Pure Religion",
+      "date": "OCTOBER 24, 1914"
+    },
+    {
+      "id": "week-04",
+      "title": "God No Respecter of Persons; The",
+      "date": "OCTOBER 31, 1914"
+    },
+    {
+      "id": "week-05",
+      "title": "Faith and Works",
+      "date": "NOVEMBER 7, 1914"
+    },
+    {
+      "id": "week-06",
+      "title": "The Tongue",
+      "date": "NOVEMBER 14, 1914"
+    },
+    {
+      "id": "week-07",
+      "title": "The Tree Known by the Fruit",
+      "date": "NOVEMBER 21, 1914"
+    },
+    {
+      "id": "week-08",
+      "title": "Friendship with the World; Its Results",
+      "date": "NOVEMBER 28, 1914"
+    },
+    {
+      "id": "week-09",
+      "title": "Judging; Vanity of Earthly Things",
+      "date": "DECEMBER 5, 1914"
+    },
+    {
+      "id": "week-10",
+      "title": "Last Day Conditions; Exhortations to Patience",
+      "date": "DECEMBER 12, 1914"
+    },
+    {
+      "id": "week-11",
+      "title": "Patience; Prayer for the Sick; Saving a Sinner",
+      "date": "DECEMBER 19, 1914"
+    },
+    {
+      "id": "week-12",
+      "title": "Covetousness",
+      "date": "DECEMBER 26, 1914"
+    },
+    {
+      "id": "week-13",
+      "title": "Review",
+      "date": ""
+    }
+  ]
+}

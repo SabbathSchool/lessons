@@ -1,0 +1,75 @@
+{
+  "title": "Christian Education",
+  "subtitle": "Q3, 1920",
+  "year": 1920,
+  "quarter": "Q3",
+  "language": "en",
+  "weeks": 13,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Education and Life",
+      "date": "July 3, 1920"
+    },
+    {
+      "id": "week-02",
+      "title": "The Eden School",
+      "date": "July 10, 1920"
+    },
+    {
+      "id": "week-03",
+      "title": "Education and Redemption",
+      "date": "July 17, 1920"
+    },
+    {
+      "id": "week-04",
+      "title": "Education in the Home",
+      "date": "July 24, 1920"
+    },
+    {
+      "id": "week-05",
+      "title": "Schools of the Prophets",
+      "date": "July 31, 1920"
+    },
+    {
+      "id": "week-06",
+      "title": "Results of True Education in Israel",
+      "date": "August 7, 1920"
+    },
+    {
+      "id": "week-07",
+      "title": "The Education of Jesus",
+      "date": "August 14, 1920"
+    },
+    {
+      "id": "week-08",
+      "title": "The School of Christ",
+      "date": "August 21, 1920"
+    },
+    {
+      "id": "week-09",
+      "title": "The School of the Apostles",
+      "date": "August 28, 1920"
+    },
+    {
+      "id": "week-10",
+      "title": "The School in the Advent Movement",
+      "date": "September 4, 1920"
+    },
+    {
+      "id": "week-11",
+      "title": "The Christian School of To-Day",
+      "date": "September 11, 1920"
+    },
+    {
+      "id": "week-12",
+      "title": "The School of the Hereafter",
+      "date": "September 18, 1920"
+    },
+    {
+      "id": "week-13",
+      "title": "The Review",
+      "date": "September 25, 1920"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Book of Acts",
+  "subtitle": "Q4, 1916",
+  "year": 1916,
+  "quarter": "Q4",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "Philip Preaching in Samaria",
+      "date": "OCTOBER 7, 1916"
+    },
+    {
+      "id": "week-02",
+      "title": "The Conversion of Saul",
+      "date": "OCTOBER 21, 1916"
+    },
+    {
+      "id": "week-03",
+      "title": "Ministry of Saul and Peter",
+      "date": "OCTOBER 28, 1916"
+    },
+    {
+      "id": "week-04",
+      "title": "Vision of Cornelius; Vision of Peter",
+      "date": "NOVEMBER 4, 1916"
+    },
+    {
+      "id": "week-05",
+      "title": "The Gospel to the Gentiles",
+      "date": "NOVEMBER 11, 1916"
+    },
+    {
+      "id": "week-06",
+      "title": "-Peter's Experience Retold; The Gospel in Antioch",
+      "date": "NOVEMBER 18, 1916"
+    },
+    {
+      "id": "week-07",
+      "title": "Peter Delivered from Prison",
+      "date": "NOVEMBER 25, 1916"
+    },
+    {
+      "id": "week-08",
+      "title": "Paul Begins His First Missionary",
+      "date": "DECEMBER 2, 1916"
+    },
+    {
+      "id": "week-09",
+      "title": "--.-Paul's Sermon at Antioch",
+      "date": "DECEMBER 9, 1916"
+    },
+    {
+      "id": "week-10",
+      "title": "The Gospel Rejected at Pisidia; Preaching at Iconium",
+      "date": "DECEMBER 16, 1916"
+    },
+    {
+      "id": "week-11",
+      "title": "Preaching at Lystra and Derbe; Paul's First Missionary Journey Ended",
+      "date": "DECEMBER 23, 1916"
+    },
+    {
+      "id": "week-12",
+      "title": "Review",
+      "date": "DECEMBER 30, 1916"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Life and Teachings of Jesus",
+  "subtitle": "Q2, 1916",
+  "year": 1916,
+  "quarter": "Q2",
+  "language": "en",
+  "weeks": 12,
+  "lessons": [
+    {
+      "id": "week-01",
+      "title": "\"Ye Have Done It unto Me\"",
+      "date": "APRIL 1, 1916"
+    },
+    {
+      "id": "week-02",
+      "title": "The Anointing at Simon's. APRIL 8, 1916",
+      "date": "APRIL 8, 1916"
+    },
+    {
+      "id": "week-03",
+      "title": "The First Lord's Supper",
+      "date": "APRIL 15, 1916"
+    },
+    {
+      "id": "week-04",
+      "title": "Gethsemane",
+      "date": "APRIL 22, 1916"
+    },
+    {
+      "id": "week-05",
+      "title": "The Betrayal of Jesus",
+      "date": "APRIL 29, 1916"
+    },
+    {
+      "id": "week-06",
+      "title": "The Trial of Jesus",
+      "date": "MAY 6, 1916"
+    },
+    {
+      "id": "week-07",
+      "title": "Jesus Before Pilate",
+      "date": "MAY 13, 1916"
+    },
+    {
+      "id": "week-08",
+      "title": "Trial and Crucifixion",
+      "date": "MAY 20, 1916"
+    },
+    {
+      "id": "week-09",
+      "title": "The Victory of the Cross",
+      "date": "MAY 27, 1916"
+    },
+    {
+      "id": "week-10",
+      "title": "\"He Is Risen\"",
+      "date": "JUNE 10, 1916"
+    },
+    {
+      "id": "week-11",
+      "title": "The Great Commission",
+      "date": "JUNE 17, 1916"
+    },
+    {
+      "id": "week-12",
+      "title": "Summary and Review",
+      "date": "JUNE 24, 1916"
+    }
+  ]
+}
